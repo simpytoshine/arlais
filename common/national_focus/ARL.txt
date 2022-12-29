@@ -231,12 +231,12 @@ focus_tree = {
 		relative_position_id = ARL_is_it_destiny
 		prerequisite = { focus = ARL_is_it_destiny }
 		allow_branch = {
-			###has_completed_focus = ARL_is_it_destiny
+			has_completed_focus = ARL_is_it_destiny
 		}
 		cost = 0.5
 		completion_reward = {
 			log = "[GetDateText]: [ARL.GetTag] focus ARL_accept_the_invite"
-			
+			custom_effect_tooltip = ARL_chance_win_arl_war
 		}
 	}
 	
@@ -263,7 +263,7 @@ focus_tree = {
 		completion_reward = {
 			log = "[GetDateText]: [ARL.GetTag] focus ARL_colour_of_nation"
 			country_event = { id = arl_events.18 }
-			set_technology = { tech_unicorn = 1 }
+			set_technology = { tech_unicorn = 1 popup = no }
 		}
 	}
 	
@@ -271,6 +271,11 @@ focus_tree = {
 		id = ARL_severyana_heritage
 		x = 3
 		y = 1
+		available = {
+			NOT = {
+				has_completed_focus = ARL_tour_de_france
+			}
+		}
 		relative_position_id = ARL_helping_hoof
 		prerequisite = { focus = ARL_helping_hoof }
 		cost = 2
@@ -284,6 +289,11 @@ focus_tree = {
 		id = ARL_weapons_money_guns
 		x = -1
 		y = 1
+		available = {
+			NOT = {
+				has_completed_focus = ARL_tour_de_france
+			}
+		}
 		relative_position_id = ARL_severyana_heritage
 		prerequisite = { focus = ARL_severyana_heritage }
 		cost = 2
@@ -297,6 +307,11 @@ focus_tree = {
 		id = ARL_severyana_division
 		x = 1
 		y = 1
+		available = {
+			NOT = {
+				has_completed_focus = ARL_tour_de_france
+			}
+		}
 		relative_position_id = ARL_severyana_heritage
 		prerequisite = { focus = ARL_severyana_heritage }
 		cost = 2
@@ -311,6 +326,11 @@ focus_tree = {
 		id = ARL_royal_guards_rebels
 		x = 1
 		y = 1
+		available = {
+			NOT = {
+				has_completed_focus = ARL_tour_de_france
+			}
+		}
 		relative_position_id = ARL_colour_of_nation
 		prerequisite = { focus = ARL_colour_of_nation }
 		cost = 2
@@ -344,7 +364,6 @@ focus_tree = {
 		cost = 1
 		completion_reward = {
 			log = "[GetDateText]: [ARL.GetTag] focus ARL_fleur_savey"
-			custom_effect_tooltip = ARL_lock_all_focuses
 			country_event = { id = arl_events.23 }
 		}
 	}
@@ -358,7 +377,6 @@ focus_tree = {
 		cost = 1
 		completion_reward = {
 			log = "[GetDateText]: [ARL.GetTag] focus ARL_flairs"
-			custom_effect_tooltip = ARL_lock_all_focuses
 			country_event = { id = arl_events.24 }
 		}
 	}
@@ -372,7 +390,6 @@ focus_tree = {
 		cost = 1
 		completion_reward = {
 			log = "[GetDateText]: [ARL.GetTag] focus ARL_marble_gavle"
-			custom_effect_tooltip = ARL_lock_all_focuses
 			country_event = { id = arl_events.25 }
 		}
 	}
@@ -386,7 +403,6 @@ focus_tree = {
 		cost = 1
 		completion_reward = {
 			log = "[GetDateText]: [ARL.GetTag] focus ARL_tropical_dream"
-			custom_effect_tooltip = ARL_lock_all_focuses
 			country_event = { id = arl_events.26 }
 		}
 	}
@@ -400,7 +416,6 @@ focus_tree = {
 		cost = 1
 		completion_reward = {
 			log = "[GetDateText]: [ARL.GetTag] focus ARL_end_tour"
-			custom_effect_tooltip = ARL_lock_all_focuses
 			country_event = { id = arl_events.27 }
 		}
 	}
@@ -415,7 +430,6 @@ focus_tree = {
 		cost = 0
 		completion_reward = {
 			log = "[GetDateText]: [ARL.GetTag] focus ARL_end_tour"
-			custom_effect_tooltip = ARL_lock_all_focuses
 			effect_tooltip = { 
 				country_event = { id = arl_events.28 }
 				add_stability = -0.25

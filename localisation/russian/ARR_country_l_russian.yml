@@ -1,0 +1,26 @@
+﻿l_russian:
+ 
+    ARR_democratic:0 "Клика трёх генералов"
+    ARR_democratic_DEF:0 "Клика трёх генералов"
+    ARR_democratic_ADJ:0 "Клика трёх генералов"
+    ARR_fascism:0 "Клика трёх генералов"
+    ARR_fascism_DEF:0 "Клика трёх генералов"
+    ARR_fascism_ADJ:0 "Клика трёх генералов"
+    ARR_communism:0 "Клика трёх генералов"
+    ARR_communism_DEF:0 "Клика трёх генералов"
+    ARR_communism_ADJ:0 "Клика трёх генералов"
+    ARR_neutrality:0 "Клика трёх генералов"
+    ARR_neutrality_DEF:0 "Клика трёх генералов"
+    ARR_neutrality_ADJ:0 "Клика трёх генералов"
+       
+    ARR_neutrality_party:0 "Клика трёх генералов"
+    ARR_neutrality_party_short:0 "Клика грёх генералов"
+    ARR_fascism_party:0 "Клика трёх генералов"
+    ARR_fascism_party_short:0 "Клика трёх генералов"
+    ARR_communism_party:0 "Клика трёх генералов"
+    ARR_communism_party_short:0 "Клика трёх генералов"
+    ARR_democratic_party:0 "Клика трёх генералов"
+    ARR_democratic_party_short:0 "Клика трёх генералов"
+    
+    
+   ARL_three_generals_no_francheska:0 "Три Генерала"
