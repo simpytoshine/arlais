@@ -59,4 +59,165 @@ characters = {
 		}
 	}
 	
+	ARL_fleur_de_lease = {
+		name = ARL_fleur_de_lease
+		portraits = {
+		
+		}
+		
+		advisor = {
+			slot = political_advisor
+			idea_token = ARL_fleur_de_lease
+			
+			allowed = {
+				original_tag = ARL 
+			}
+			
+			available = {
+				OR = {
+					AND = {
+						has_completed_focus = ARL_attack_ruayo
+						has_completed_focus = ARL_fleur_savey
+					}
+					has_government = fascism 
+				}
+			}
+		}
+	}
+	
+	ARL_savey_saddles = {
+		name = ARL_savey_saddles
+		portraits = {
+		
+		}
+		
+		advisor = {
+			slot = political_advisor
+			idea_token = ARL_savey_saddles
+			
+			allowed = {
+				original_tag = ARL 
+			}
+			
+			available = {
+				OR = {
+					AND = {
+						has_completed_focus = ARL_attack_ruayo
+						has_completed_focus = ARL_fleur_savey
+					}
+					has_government = fascism 
+				}
+			}
+		}
+	}
+	
+	ARL_stellar_flaire = {
+		name = ARL_stellar_flaire
+		portraits = {
+		
+		}
+		corps_commander={
+			traits={ adaptable }
+			skill=2
+			attack_skill=2
+			defense_skill=2
+			planning_skill=2
+			logistics_skill=2
+			legacy_id=-1
+			visible = {
+				has_completed_focus = ARL_attack_ruayo 
+			}
+		}
+	}
+	
+	ARL_fire_flaire = {
+		name = ARL_fire_flaire
+		portraits = {
+		
+		}
+		corps_commander={
+			traits={ adaptable }
+			skill=2
+			attack_skill=2
+			defense_skill=2
+			planning_skill=2
+			logistics_skill=2
+			legacy_id=-1
+			visible = {
+				has_completed_focus = ARL_attack_ruayo 
+			}
+		}
+	}
+	
+	ARL_black_marble = {
+		name = ARL_black_marble
+		portraits = {
+		
+		}
+		
+		advisor = {
+			slot = political_advisor
+			idea_token = ARL_black_marble
+			
+			allowed = {
+				original_tag = ARL 
+			}
+			
+			available = {
+				OR = {
+					AND = {
+						has_completed_focus = ARL_attack_ruayo
+						has_completed_focus = ARL_marble_gavle
+					}
+					has_government = fascism 
+				}
+			}
+		}
+	}
+	
+	ARL_golden_gavle = {
+		name = ARL_golden_gavle
+		portraits = {
+		
+		}
+		
+		advisor = {
+			slot = political_advisor
+			idea_token = ARL_golden_gavle
+			
+			allowed = {
+				original_tag = ARL 
+			}
+			
+			available = {
+				OR = {
+					AND = {
+						has_completed_focus = ARL_attack_ruayo
+						has_completed_focus = ARL_marble_gavle
+					}
+					has_government = fascism 
+				}
+			}
+		}
+	}
+	
+	ARL_tropical_dream = {
+		name = ARL_tropical_dream
+		portraits = {
+		
+		}
+		
+		navy_leader = {
+			skill = 3
+			attack_skill = 1
+			defense_skill = 3
+			maneuvering_skill = 5
+			coordination_skill = 4
+			legacy_id = -1
+			visible = {
+				has_completed_focus = ARL_attack_ruayo 
+			}
+		}
+	}
+	
 	

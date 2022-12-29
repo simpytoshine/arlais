@@ -130,6 +130,13 @@ actually_fix_weapon_techs = yes #THIS HAS TO BE CALLED IN EVERY HISTORY FILE RIG
 recruit_character = ARL_francheska_first
 recruit_character = ARL_three_generals
 recruit_character = ARL_workers_council
+recruit_character = ARL_fleur_de_lease
+recruit_character = ARL_savey_saddles
+recruit_character = ARL_stellar_flaire
+recruit_character = ARL_fire_flaire
+recruit_character = ARL_black_marble
+recruit_character = ARL_golden_gavle
+recruit_character = ARL_tropical_dream
 
 set_popularities = {
 	democratic = 40

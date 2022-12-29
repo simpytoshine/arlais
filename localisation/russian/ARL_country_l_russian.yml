@@ -29,3 +29,5 @@
     ARL_de_facto_puppet:0 "Номинальный правитель"
     ARL_can_not_declare_wars:0 "  - §RНе может объявлять войны§!"
     ARL_FRANCHESKA_IS_DE_FACTO_VASSAL:0 "§RНоминальный правитель не может объявлять войны!§!"
+    
+    CIVIL_WAR_NAME_ARR_ARL:0 "Война за Арлей"

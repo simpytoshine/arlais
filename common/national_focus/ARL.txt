@@ -1,0 +1,426 @@
+focus_tree = {
+	id = uns_focus_base
+	country = {
+		factor = 0
+		modifier = {
+			add = 10
+			tag = ARL
+		}
+	}
+	
+	continuous_focus_position = { x = 250 y = 100  }
+	
+	default = no
+	
+	focus = { 
+		id = ARL_we_had_dream
+		x = 16
+		y = 0
+		
+		cost = 1
+		completion_reward = {
+			log = "[GetDateText]: [ARL.GetTag] focus ARL_we_had_dream"
+			country_event = { id = arl_events.1 }
+		}
+	}
+	
+	focus = {
+		id = ARL_no_dream_follow
+		x = 0
+		y = 1
+		relative_position_id = ARL_we_had_dream
+		prerequisite = { focus = ARL_we_had_dream }
+		cost = 1
+		completion_reward = {
+			log = "[GetDateText]: [ARL.GetTag] focus ARL_no_dream_follow"
+			country_event = { id = arl_events.2 }
+		}
+	}
+		
+	focus = {
+		id = ARL_death_of_the_conqueror
+		x = 0
+		y = 1
+		relative_position_id = ARL_no_dream_follow
+		prerequisite = { focus = ARL_no_dream_follow }
+		cost = 1
+		completion_reward = {
+			log = "[GetDateText]: [ARL.GetTag] focus ARL_death_of_the_conqueror"
+			country_event = { id = arl_events.3 }
+		}
+	}
+	
+	focus = {
+		id = ARL_new_conqueror_birth
+		x = 0
+		y = 1
+		relative_position_id = ARL_death_of_the_conqueror
+		prerequisite = { focus = ARL_death_of_the_conqueror }
+		cost = 1
+		completion_reward = {
+			log = "[GetDateText]: [ARL.GetTag] focus ARL_new_conqueror_birth"
+			country_event = { id = arl_events.4 }
+		}
+	}
+	
+	focus = {
+		id = ARL_war_of_islands
+		x = 0
+		y = 1
+		relative_position_id = ARL_new_conqueror_birth
+		prerequisite = { focus = ARL_new_conqueror_birth }
+		cost = 1
+		completion_reward = {
+			log = "[GetDateText]: [ARL.GetTag] focus ARL_war_of_islands"
+			country_event = { id = arl_events.5 }
+		}
+	}
+	
+	focus = {
+		id = ARL_battle_for_cape
+		x = 0
+		y = 1
+		relative_position_id = ARL_war_of_islands
+		prerequisite = { focus = ARL_war_of_islands }
+		cost = 1
+		completion_reward = {
+			log = "[GetDateText]: [ARL.GetTag] focus ARL_battle_for_cape"
+			country_event = { id = arl_events.6 }
+		}
+	}
+	
+	focus = {
+		id = ARL_our_darkest_hour
+		x = 0
+		y = 1
+		relative_position_id = ARL_battle_for_cape
+		prerequisite = { focus = ARL_battle_for_cape }
+		cost = 1
+		completion_reward = {
+			log = "[GetDateText]: [ARL.GetTag] focus ARL_our_darkest_hour"
+			country_event = { id = arl_events.7 }
+		}
+	}
+	
+	focus = {
+		id = ARL_heroes_of_the_northern_war
+		x = 0
+		y = 1
+		relative_position_id = ARL_our_darkest_hour
+		prerequisite = { focus = ARL_our_darkest_hour }
+		cost = 1
+		completion_reward = {
+			log = "[GetDateText]: [ARL.GetTag] focus ARL_heroes_of_the_northern_war"
+			country_event = { id = arl_events.8 }
+		}
+	}
+	
+	focus = {
+		id = ARL_francheska_focus
+		x = 0
+		y = 1
+		relative_position_id = ARL_heroes_of_the_northern_war
+		prerequisite = { focus = ARL_heroes_of_the_northern_war }
+		cost = 1
+		completion_reward = {
+			log = "[GetDateText]: [ARL.GetTag] focus ARL_francheska_focus"
+			country_event = { id = arl_events.9 }
+		}
+	}
+	
+	focus = {
+		id = ARL_break_the_chains
+		x = -2
+		y = 1
+		relative_position_id = ARL_francheska_focus
+		prerequisite = { focus = ARL_francheska_focus }
+		cost = 2
+		completion_reward = {
+			log = "[GetDateText]: [ARL.GetTag] focus ARL_break_the_chains"
+			country_event = { id = arl_events.10 }
+		}
+	}
+	
+	focus = {
+		id = ARL_eqvus_focus
+		x = 0
+		y = 1
+		relative_position_id = ARL_break_the_chains
+		prerequisite = { focus = ARL_break_the_chains } 
+		cost = 2
+		completion_reward = {
+			log = "[GetDateText]: [ARL.GetTag] focus ARL_eqvus_focus"
+			country_event = { id = arl_events.11 }
+		}
+	}
+	
+	focus = {
+		id = ARL_friends_far_from_home
+		x = 0
+		y = 1
+		relative_position_id = ARL_eqvus_focus
+		prerequisite = { focus = ARL_eqvus_focus } 
+		cost = 4.5
+		completion_reward = {
+			log = "[GetDateText]: [ARL.GetTag] focus ARL_friends_far_from_home"
+			country_event = { id = arl_events.12 }
+		}
+	}
+	
+	focus = {
+		id = ARL_therestralian_mercenaries
+		x = -2
+		y = 1
+		relative_position_id = ARL_friends_far_from_home
+		prerequisite = { focus = ARL_friends_far_from_home }
+		cost = 2
+		completion_reward = {
+			log = "[GetDateText]: [ARL.GetTag] focus ARL_therestralian_mercenaries"
+			country_event = { id = arl_events.13 }
+			custom_effect_tooltip = ARL_cw_therestralian_mercs_tt
+		}
+	}
+	
+	focus = {
+		id = ARL_migration_bureau
+		x = 0
+		y = 1
+		relative_position_id = ARL_friends_far_from_home
+		prerequisite = { focus = ARL_friends_far_from_home }
+		cost = 2
+		completion_reward = {
+			log = "[GetDateText]: [ARL.GetTag] focus ARL_migration_bureau"
+			country_event = { id = arl_events.14 }
+			custom_effect_tooltip = ARL_cw_3_inf_1_pegs_tt
+		}
+	}
+	
+	focus = {
+		id = ARL_meeting_at_the_dockyard
+		x = 2
+		y = 1
+		relative_position_id = ARL_friends_far_from_home
+		prerequisite = { focus = ARL_friends_far_from_home }
+		cost = 2
+		completion_reward = {
+			log = "[GetDateText]: [ARL.GetTag] focus ARL_meeting_at_the_dockyard"
+			country_event = { id = arl_events.15 }
+			custom_effect_tooltip = ARL_cruiser_destroyers_tt
+		}
+	}
+	
+	focus = {
+		id = ARL_is_it_destiny
+		x = 0
+		y = 1
+		relative_position_id = ARL_migration_bureau
+		prerequisite = { focus = ARL_therestralian_mercenaries }
+		prerequisite = { focus = ARL_migration_bureau }
+		prerequisite = { focus = ARL_meeting_at_the_dockyard }
+		cost = 2
+		completion_reward = {
+			log = "[GetDateText]: [ARL.GetTag] focus ARL_is_it_destiny"
+			country_event = { id = arl_events.16 }
+		}
+	}
+	
+	focus = {
+		id = ARL_accept_the_invite
+		x = 0
+		y = 1
+		relative_position_id = ARL_is_it_destiny
+		prerequisite = { focus = ARL_is_it_destiny }
+		allow_branch = {
+			###has_completed_focus = ARL_is_it_destiny
+		}
+		cost = 0.5
+		completion_reward = {
+			log = "[GetDateText]: [ARL.GetTag] focus ARL_accept_the_invite"
+			
+		}
+	}
+	
+	focus = {
+		id = ARL_helping_hoof
+		x = -1
+		y = 1
+		relative_position_id = ARL_accept_the_invite
+		prerequisite = { focus =  ARL_accept_the_invite }
+		cost = 1
+		completion_reward = {
+			log = "[GetDateText]: [ARL.GetTag] focus ARL_helping_hoof"
+			country_event = { id = arl_events.17 }
+		}
+	}
+	
+	focus = {
+		id = ARL_colour_of_nation
+		x = -1
+		y = 1
+		relative_position_id = ARL_helping_hoof
+		prerequisite = { focus = ARL_helping_hoof }
+		cost = 2
+		completion_reward = {
+			log = "[GetDateText]: [ARL.GetTag] focus ARL_colour_of_nation"
+			country_event = { id = arl_events.18 }
+			set_technology = { tech_unicorn = 1 }
+		}
+	}
+	
+	focus = {
+		id = ARL_severyana_heritage
+		x = 3
+		y = 1
+		relative_position_id = ARL_helping_hoof
+		prerequisite = { focus = ARL_helping_hoof }
+		cost = 2
+		completion_reward = {
+			log = "[GetDateText]: [ARL.GetTag] focus ARL_severyana_heritage"
+			country_event = { id = arl_events.19 }
+		}
+	}
+	
+	focus = {
+		id = ARL_weapons_money_guns
+		x = -1
+		y = 1
+		relative_position_id = ARL_severyana_heritage
+		prerequisite = { focus = ARL_severyana_heritage }
+		cost = 2
+		completion_reward = {
+			log = "[GetDateText]: [ARL.GetTag] focus ARL_weapons_money_guns"
+			custom_effect_tooltip = ARL_get_4000_rifles_tt
+		}
+	}
+	
+	focus = {
+		id = ARL_severyana_division
+		x = 1
+		y = 1
+		relative_position_id = ARL_severyana_heritage
+		prerequisite = { focus = ARL_severyana_heritage }
+		cost = 2
+		completion_reward = {
+			log = "[GetDateText]: [ARL.GetTag] focus ARL_severyana_division"
+			custom_effect_tooltip = ARL_get_9_helms_1_art_1_eng_tt
+			country_event = { id = arl_events.20 }
+		}
+	}
+	
+	focus = {
+		id = ARL_royal_guards_rebels
+		x = 1
+		y = 1
+		relative_position_id = ARL_colour_of_nation
+		prerequisite = { focus = ARL_colour_of_nation }
+		cost = 2
+		completion_reward = {
+			log = "[GetDateText]: [ARL.GetTag] focus ARL_severyana_division"
+			custom_effect_tooltip = ARL_get_6_helms_1_unis_tt
+			country_event = { id = arl_events.21 }
+		}
+	}
+	
+	focus = {
+		id = ARL_tour_de_france
+		x = -1
+		y = 1
+		relative_position_id = ARL_colour_of_nation
+		prerequisite = { focus = ARL_colour_of_nation }
+		cost = 0.5
+		completion_reward = {
+			log = "[GetDateText]: [ARL.GetTag] focus ARL_tour_de_france"
+			custom_effect_tooltip = ARL_lock_all_focuses
+			country_event = { id = arl_events.22 }
+		}
+	}
+	
+	focus = {
+		id = ARL_fleur_savey
+		x = 0
+		y = 1
+		relative_position_id = ARL_tour_de_france
+		prerequisite = { focus = ARL_tour_de_france }
+		cost = 1
+		completion_reward = {
+			log = "[GetDateText]: [ARL.GetTag] focus ARL_fleur_savey"
+			custom_effect_tooltip = ARL_lock_all_focuses
+			country_event = { id = arl_events.23 }
+		}
+	}
+		
+	focus = {
+		id = ARL_flairs
+		x = 0
+		y = 1
+		relative_position_id = ARL_fleur_savey
+		prerequisite = { focus = ARL_fleur_savey }
+		cost = 1
+		completion_reward = {
+			log = "[GetDateText]: [ARL.GetTag] focus ARL_flairs"
+			custom_effect_tooltip = ARL_lock_all_focuses
+			country_event = { id = arl_events.24 }
+		}
+	}
+		
+	focus = {
+		id = ARL_marble_gavle
+		x = 0
+		y = 1
+		relative_position_id = ARL_flairs
+		prerequisite = { focus = ARL_flairs }
+		cost = 1
+		completion_reward = {
+			log = "[GetDateText]: [ARL.GetTag] focus ARL_marble_gavle"
+			custom_effect_tooltip = ARL_lock_all_focuses
+			country_event = { id = arl_events.25 }
+		}
+	}
+		
+	focus = {
+		id = ARL_tropical_dream
+		x = 0
+		y = 1
+		relative_position_id = ARL_marble_gavle
+		prerequisite = { focus = ARL_marble_gavle }
+		cost = 1
+		completion_reward = {
+			log = "[GetDateText]: [ARL.GetTag] focus ARL_tropical_dream"
+			custom_effect_tooltip = ARL_lock_all_focuses
+			country_event = { id = arl_events.26 }
+		}
+	}
+		
+	focus = {
+		id = ARL_end_tour
+		x = 0
+		y = 1
+		relative_position_id = ARL_tropical_dream
+		prerequisite = { focus = ARL_tropical_dream }
+		cost = 1
+		completion_reward = {
+			log = "[GetDateText]: [ARL.GetTag] focus ARL_end_tour"
+			custom_effect_tooltip = ARL_lock_all_focuses
+			country_event = { id = arl_events.27 }
+		}
+	}
+	
+	focus = {
+		id = ARL_attack_ruayo
+		x = 0
+		y = 1
+		available = { always = no }
+		relative_position_id = ARL_tropical_dream
+		prerequisite = { focus = ARL_tropical_dream }
+		cost = 0
+		completion_reward = {
+			log = "[GetDateText]: [ARL.GetTag] focus ARL_end_tour"
+			custom_effect_tooltip = ARL_lock_all_focuses
+			effect_tooltip = { 
+				country_event = { id = arl_events.28 }
+				add_stability = -0.25
+			}
+		}
+	}
+	
+		
