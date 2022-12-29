@@ -410,8 +410,8 @@ focus_tree = {
 		x = 0
 		y = 1
 		available = { always = no }
-		relative_position_id = ARL_tropical_dream
-		prerequisite = { focus = ARL_tropical_dream }
+		relative_position_id = ARL_end_tour
+		prerequisite = { focus = ARL_end_tour }
 		cost = 0
 		completion_reward = {
 			log = "[GetDateText]: [ARL.GetTag] focus ARL_end_tour"
@@ -423,4 +423,21 @@ focus_tree = {
 		}
 	}
 	
+	focus = {
+		id = ARL_francheska_first_focus
+		x = 0
+		y = 2
+		relative_position_id = ARL_attack_ruayo 
+		cost = 0
+		available = { always = no }
+		allow_branch = {
+			has_completed_focus = ARL_attack_ruayo 
+		}
 		
+		completion_reward = {
+			log = "[GetDateText]: [ARL.GetTag] ARL_francheska_first_focus ARL_end_tour"
+			effect_tooltip = { 
+				country_event = { id = arl_events.29 }
+			}
+		}
+	}

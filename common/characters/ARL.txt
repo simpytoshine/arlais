@@ -4,7 +4,9 @@ characters = {
 		
 		name = ARL_francheska_first
 		portraits = {
-		
+			civilian = {
+				large = "gfx/leaders/ARL/FrancheskaI_nogen.dds"
+			}
 		}
 		
 		country_leader = {

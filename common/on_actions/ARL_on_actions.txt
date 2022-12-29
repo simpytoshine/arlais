@@ -1,0 +1,36 @@
+on_actions = {
+	on_peaceconference_ended = {
+		effect = {
+			if = {
+				limit = {
+					ROOT = {
+						tag = ARL 
+					}
+					FROM = {
+						tag = ARR 
+					}
+				}
+				every_state = {
+					limit = {
+						OR = {
+							state = 404
+							state = 482
+						}
+					}
+					transfer_state_to = ROOT
+				}
+				if = {
+					limit = {
+						ROOT = {
+							has_completed_focus = ARL_attack_ruayo
+						}
+					}
+					ROOT = {
+						mark_focus_tree_layout_dirty = yes 
+						country_event = { id = arl_events.29 days = 5 }
+					}
+				}	
+			}
+		}
+	}
+	
