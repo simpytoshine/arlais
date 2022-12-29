@@ -1,0 +1,62 @@
+characters = {
+
+	ARL_francheska_first = {
+		
+		name = ARL_francheska_first
+		portraits = {
+		
+		}
+		
+		country_leader = {
+			desc = "ARL_francheska_first_desc"
+			expire = "1999.1.1"
+			traits = { }
+			ideology = magocracy
+			id = -1
+		}
+		
+		country_leader = {
+			desc = "ARL_francheska_first_desc"
+			expire = "1999.1.1"
+			traits = { }
+			ideology = socialism
+			id = -1
+		}
+		
+	}
+	
+	ARL_three_generals = {
+	
+		name = ARL_three_generals
+		portraits = {
+			civilian = {
+				large = "gfx/leaders/ARL/FrancheskaI.dds"
+			}
+		}
+		
+		country_leader = {
+			desc = "ARL_three_generals_desc"
+			expire = "1999.1.1"
+			traits = { ARL_de_facto_puppet }
+			ideology = populism
+			id = -1
+		}
+	} 
+	
+	ARL_workers_council = {
+	
+		name = ARL_workers_council
+		portraits = {
+		
+		}
+		
+		country_leader = {
+			desc = "ARL_workers_council_desc"
+			expire = "1999.1.1"
+			traits = { }
+			ideology = syndicalism
+			id = -1
+		}
+	}
+	
+	

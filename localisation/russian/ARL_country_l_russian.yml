@@ -1,0 +1,31 @@
+﻿l_russian:
+ 
+    ARL_democratic:0 "Герцогство Арлей"
+    ARL_democratic_DEF:0 "Герцогство Арлей"
+    ARL_democratic_ADJ:0 "Герцогство Арлей"
+    ARL_fascism:0 "Герцогство Арлей"
+    ARL_fascism_DEF:0 "Герцогство Арлей"
+    ARL_fascism_ADJ:0 "Герцогство Арлей"
+    ARL_communism:0 "Герцогство Арлей"
+    ARL_communism_DEF:0 "Герцогство Арлей"
+    ARL_communism_ADJ:0 "Герцогство Арлей"
+    ARL_neutrality:0 "Герцогство Арлей"
+    ARL_neutrality_DEF:0 "Герцогство Арлей"
+    ARL_neutrality_ADJ:0 "Герцогство Арлей"
+       
+    ARL_neutrality_party:0 "Клика трёх генералов"
+    ARL_neutrality_party_short:0 "Клика грёх генералов"
+    ARL_fascism_party:0 "Придворный совет - реакционеры"
+    ARL_fascism_party_short:0 "Реакционеры"
+    ARL_communism_party:0 "Северогрифоний народный фронт"
+    ARL_communism_party_short:0 "СНФ"
+    ARL_democratic_party:0 "Придворный совет - реформаторы"
+    ARL_democratic_party_short:0 "Реформаторы"
+    
+    ARL_francheska_first:0 "Франческа I"
+    ARL_three_generals:0 "Франческа I и Три Генерала"
+    ARL_workers_council:0 "Рабочий совет"
+    
+    ARL_de_facto_puppet:0 "Номинальный правитель"
+    ARL_can_not_declare_wars:0 "  - §RНе может объявлять войны§!"
+    ARL_FRANCHESKA_IS_DE_FACTO_VASSAL:0 "§RНоминальный правитель не может объявлять войны!§!"

@@ -1,0 +1,2 @@
+ARL = "countries/Arlais.txt"
+ARR = "countries/ArlaisClique.txt"

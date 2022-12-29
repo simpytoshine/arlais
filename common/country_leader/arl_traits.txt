@@ -1,0 +1,11 @@
+leader_traits = {
+
+	ARL_de_facto_puppet = {
+		random = no
+		stability_factor = -0.25
+		political_power_gain = -0.5
+		war_support_factor = -0.5
+		democratic_drift = 0.01
+		communism_drift = 0.01
+		custom_modifier_tooltip = ARL_can_not_declare_wars
+	}
