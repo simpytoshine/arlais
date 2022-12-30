@@ -1,0 +1,43 @@
+ideas = {
+
+	country = {
+		
+		ARL_francheska_first_idea = {
+			removal_cost = -1
+			allowed = {
+				always = yes 
+			}
+			
+			modifier = {
+				stability_factor = 0.05
+				war_support_factor = 0.05
+				political_power_gain = 0.2
+			}
+		}
+		
+		ARL_dreams_of_big = {
+			removal_cost = -1
+			allowed = {
+				always = yes 
+			}
+			
+			modifier = {
+				production_speed_arms_factory_factor = 0.05
+				production_speed_dockyard_factor = 0.05
+			}
+		}
+		
+		ARL_no_place_for_traitors = {
+			removal_cost = -1
+			allowed = {
+				always = yes 
+			}
+			
+			modifier = {
+				stability_factor = 0.1
+				fascism_drift = 0.02
+				political_power_gain = -0.1
+			}
+		}
+				
+		

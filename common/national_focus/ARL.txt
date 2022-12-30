@@ -445,13 +445,325 @@ focus_tree = {
 		cost = 0
 		available = { always = no }
 		allow_branch = {
-			has_completed_focus = ARL_attack_ruayo 
+			#has_completed_focus = ARL_attack_ruayo 
 		}
 		
 		completion_reward = {
-			log = "[GetDateText]: [ARL.GetTag] ARL_francheska_first_focus ARL_end_tour"
+			log = "[GetDateText]: [ARL.GetTag] focus ARL_francheska_first_focus "
 			effect_tooltip = { 
 				country_event = { id = arl_events.29 }
+				set_party_name = {
+					ideology = fascism
+					long_name = ARL_house_council_long
+					name = ARL_house_council
+				}
+				set_party_name = {
+					ideology = democratic
+					long_name = ARL_reformation_movement_long
+					name = ARL_reformation_movement
+				}
+				set_party_name = {
+					ideology = neutrality
+					long_name = ARL_national_saving_long
+					name = ARL_national_saving
+				}
+				set_party_name = {
+					ideology = communism
+					long_name = ARL_first_workers_party_long
+					name = ARL_first_workers_party
+				}
+				
 			}
 		}
 	}
+	
+	focus = {
+		id = ARL_bastion_court
+		x = -9
+		y = 1
+		relative_position_id = ARL_francheska_first_focus
+		prerequisite = { focus = ARL_francheska_first_focus }
+		mutually_exclusive = { focus = ARL_ruayo_court }
+		cost = 2 
+		completion_reward = {
+			log = "[GetDateText]: [ARL.GetTag] focus ARL_bastion_court"
+			country_event = { id = arl_events.30 }
+			add_stability = -0.05
+			add_political_power = -75
+		}
+	}
+	
+	focus = {
+		id = ARL_ruayo_court
+		x = -7
+		y = 1
+		relative_position_id = ARL_francheska_first_focus
+		prerequisite = { focus = ARL_francheska_first_focus }
+		mutually_exclusive = { focus = ARL_bastion_court }
+		cost = 2 
+		completion_reward = {
+			log = "[GetDateText]: [ARL.GetTag] focus ARL_ruayo_court"
+			country_event = { id = arl_events.31 }
+			add_stability = 0.05
+			add_war_support = -0.05
+			add_political_power = -100
+			custom_effect_tooltip = ARL_vivenne_de_monblan_general
+		}
+	}
+	
+	focus = {
+		id = ARL_no_place_for_traitors_focus
+		x = 0
+		y = 1
+		relative_position_id = ARL_bastion_court
+		prerequisite = { focus = ARL_bastion_court }
+		cost = 2
+		completion_reward = {
+			log = "[GetDateText]: [ARL.GetTag] focus ARL_no_place_for_traitors_focus"
+			add_ideas = ARL_no_place_for_traitors
+		}
+	}
+	
+	focus = {
+		id = ARL_confiscate_arrest
+		x = 0
+		y = 1
+		relative_position_id = ARL_ruayo_court
+		prerequisite = { focus = ARL_ruayo_court }
+		cost = 2
+		completion_reward = {
+			log = "[GetDateText]: [ARL.GetTag] focus ARL_confiscate_arrest"
+			country_event = { id = arl_events.32 }
+			404 = {
+				add_extra_state_shared_building_slots = 6
+				add_building_construction = {
+					type = industrial_complex
+					level = 3
+					instant_build = yes 
+				}
+				add_building_construction = {
+					type = arms_factory
+					level = 3
+					instant_build = yes 
+				}
+			}
+		}
+	}
+	
+	focus = {
+		id = ARL_no_more_smutas
+		x = -5
+		y = 1
+		relative_position_id = ARL_francheska_first_focus
+		prerequisite = { focus = ARL_francheska_first_focus }
+		cost = 4
+		completion_reward = {
+			log = "[GetDateText]: [ARL.GetTag] focus ARL_no_more_smutas"
+			country_event = { id = arl_events.33 }
+		}
+	}
+	
+	focus = {
+		id = ARL_puto_law_focus
+		x = 0
+		y = 1
+		relative_position_id = ARL_no_more_smutas
+		prerequisite = { focus = ARL_no_more_smutas }
+		cost = 3
+		completion_reward = {
+			log = "[GetDateText]: [ARL.GetTag] focus ARL_puto_law_focus"
+			add_popularity = {
+				ideology = fascism
+				popularity = 0.1
+			}
+			add_political_power = -100
+		}
+	}
+	
+	focus = {
+		id = ARL_puto_law_second_change_focus
+		x = 0
+		y = 1
+		relative_position_id = ARL_puto_law_focus
+		prerequisite = { focus = ARL_puto_law_focus }
+		cost = 3
+		completion_reward = {
+			log = "[GetDateText]: [ARL.GetTag] focus ARL_puto_law_second_change_focus"
+			country_event = { id = arl_events.34 }
+			add_political_power = -100
+		}
+	}
+	
+	focus = {
+		id = ARL_predict_events
+		x = 0
+		y = 1
+		relative_position_id = ARL_puto_law_second_change_focus
+		prerequisite = { focus = ARL_puto_law_second_change_focus }
+		available = {
+			OR = {
+				has_completed_focus = ARL_confiscate_arrest
+				has_completed_focus = ARL_no_place_for_traitors_focus 
+			}
+		}
+		cost = 4.3
+		completion_reward = {
+			log = "[GetDateText]: [ARL.GetTag] focus ARL_predict_events"
+			country_event = { id = arl_events.35 }
+			add_political_power = -50
+			add_stability = -0.25
+			add_popularity = {
+				ideology = communism
+				popularity = -1
+			}
+		}
+	}
+	
+	focus = {
+		id = ARL_journalist_oath
+		x = -2
+		y = 1
+		relative_position_id = ARL_predict_events
+		prerequisite = { focus = ARL_predict_events }
+		cost = 3.5
+		completion_reward = {
+			log = "[GetDateText]: [ARL.GetTag] focus ARL_journalist_oath"
+			country_event = { id = arl_events.37 }
+			add_political_power = -50
+			add_popularity = {
+				ideology = fascism
+				popularity = 0.05
+			}
+		}
+	}
+	
+	focus = {
+		id = ARL_national_saving_focus 
+		x = 0	
+		y = 1
+		relative_position_id = ARL_predict_events
+		prerequisite = { focus = ARL_predict_events }
+		cost = 4.3
+		completion_reward = {
+			log = "[GetDateText]: [ARL.GetTag] focus ARL_national_saving_focus"
+			country_event = { id = arl_events.38 }
+			add_political_power = -100
+			add_stability = -0.1
+			add_popularity = {
+				ideology = neutrality
+				popularity = -1
+			}
+			
+		}
+	}
+	
+	focus = {
+		id = ARL_prof_union_monopoly
+		x = 2
+		y = 1
+		relative_position_id = ARL_predict_events
+		prerequisite = { focus = ARL_predict_events }
+		cost = 3.5
+		completion_reward = {
+			log = "[GetDateText]: [ARL.GetTag] focus ARL_prof_union_monopoly"
+			country_event = { id = arl_events.39 }
+			add_political_power = -50
+			add_stability = -0.05
+
+		}
+	}
+	
+	focus = {
+		id = ARL_elections_no_elections
+		x = 0
+		y = 1
+		relative_position_id = ARL_national_saving_focus
+		prerequisite = { focus = ARL_journalist_oath }
+		prerequisite = { focus = ARL_national_saving_focus }
+		prerequisite = { focus = ARL_prof_union_monopoly }
+		cost = 4.3
+		completion_reward = {
+			log = "[GetDateText]: [ARL.GetTag] focus ARL_elections_no_elections"
+			country_event = { id = arl_events.40 }
+			set_popularities = {
+				democratic = 30
+				fascism = 70
+			}
+
+		}
+	}
+	
+	focus = {
+		id = ARL_little_francheskans
+		x = 0
+		y = 1
+		relative_position_id = ARL_elections_no_elections
+		prerequisite = { focus = ARL_elections_no_elections }
+		cost = 2
+		completion_reward = {
+			log = "[GetDateText]: [ARL.GetTag] focus ARL_little_francheskans"
+			country_event = { id = arl_events.41 }
+		}
+	}
+	
+	focus = {
+		id = ARL_offer_for_offer
+		x = -1
+		y = 1
+		relative_position_id = ARL_francheska_first_focus
+		prerequisite = { focus = ARL_francheska_first_focus }
+		cost = 2
+		completion_reward = {
+			log = "[GetDateText]: [ARL.GetTag] focus v"
+			country_event = { id = arl_events.42 }
+			add_stability = -0.1
+		}
+	}
+	
+	focus = {
+		id = ARL_migration_bureau_expansion
+		x = 0
+		y = 1
+		relative_position_id = ARL_offer_for_offer
+		prerequisite = { focus = ARL_offer_for_offer }
+		cost = 2
+		completion_reward = {
+			log = "[GetDateText]: [ARL.GetTag] focus ARL_migration_bureau_expansion"
+			country_event = { id = arl_events.43 }
+		}
+	}
+	
+	focus = {
+		id = ARL_equality_law
+		x = 0
+		y = 1
+		relative_position_id = ARL_migration_bureau_expansion
+		prerequisite = { focus = ARL_migration_bureau_expansion }
+		cost = 2
+		completion_reward = {
+			log = "[GetDateText]: [ARL.GetTag] focus ARL_equality_law"
+			country_event = { id = arl_events.44 }
+			add_stability = -0.2
+		}
+	}
+	
+	focus = {
+		id = ARL_unicorns_of_the_world
+		x = 0
+		y = 1
+		relative_position_id = ARL_equality_law
+		prerequisite = { focus = ARL_equality_law }
+		cost = 2
+		completion_reward = {
+			log = "[GetDateText]: [ARL.GetTag] focus ARL_unicorns_of_the_world"
+			country_event = { id = arl_events.45 }
+			add_stability = -0.05
+			482 = {
+				add_manpower = 250000
+			}
+			404 = {
+				add_manpower = 150000
+			}
+		}
+	}
+	
