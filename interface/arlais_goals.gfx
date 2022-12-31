@@ -1,0 +1,9 @@
+spriteTypes = {
+	
+	
+	SpriteType = {
+		name = "GFX_ARL_we_had_dream"
+		texturefile = "gfx/interface/goals/ARL/ARL_we_had_dream.tga"
+	}
+	
+}

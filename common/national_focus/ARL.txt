@@ -14,6 +14,7 @@ focus_tree = {
 	
 	focus = { 
 		id = ARL_we_had_dream
+		icon = GFX_ARL_we_had_dream
 		x = 16
 		y = 0
 		

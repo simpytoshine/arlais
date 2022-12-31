@@ -11,9 +11,9 @@ tags={
 	"Technologies"
 }
 dependencies={
-	"Equestria at War DEV" 
+	"Equestria at War" 
 }
 name="Arlais Mod"
 
-path="D:/GitHub/Arlais"
+path="mod/arlais/"
 supported_version="1.12.*"
