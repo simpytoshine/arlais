@@ -137,6 +137,9 @@ recruit_character = ARL_fire_flaire
 recruit_character = ARL_black_marble
 recruit_character = ARL_golden_gavle
 recruit_character = ARL_tropical_dream
+recruit_character = ARL_vivienne_de_monblan
+recruit_character = ARL_ditrich_trot
+recruit_character = ARL_shadow_dash
 
 set_popularities = {
 	democratic = 40

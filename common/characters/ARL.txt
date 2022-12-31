@@ -242,3 +242,42 @@ characters = {
 		}
 	}
 	
+	ARL_ditrich_trot = {
+		name = ARL_ditrich_trot
+		portraits = {
+		
+		}
+		corps_commander={
+			traits={ adaptable }
+			skill=2
+			attack_skill=2
+			defense_skill=2
+			planning_skill=2
+			logistics_skill=2
+			legacy_id=-1
+			visible = {
+				has_completed_focus = ARL_blitzkrieg_tactics 
+			}
+		}
+	}
+	
+	ARL_shadow_dash = {	
+		name = ARL_shadow_dash
+		portraits = {
+		
+		}
+		corps_commander={
+			traits={ adaptable }
+			skill=2
+			attack_skill=2
+			defense_skill=2
+			planning_skill=2
+			logistics_skill=2
+			legacy_id=-1
+			visible = {
+				has_completed_focus = ARL_blitzkrieg_tactics 
+			}
+		}
+	}
+	
+	

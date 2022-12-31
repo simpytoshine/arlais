@@ -767,3 +767,568 @@ focus_tree = {
 		}
 	}
 	
+	focus = {
+		id = ARL_enemies_everywhere
+		x = 6
+		y = 1
+		relative_position_id = ARL_francheska_first_focus
+		prerequisite = { focus = ARL_francheska_first_focus }
+		cost = 5.8
+		completion_reward = {
+			log = "[GetDateText]: [ARL.GetTag] focus ARL_enemies_everywhere"
+			add_ideas = ARL_dreams_of_big
+		}
+	}
+	
+	focus = {
+		id = ARL_army_reorganisation
+		x = -4
+		y = 1
+		relative_position_id = ARL_enemies_everywhere	
+		prerequisite = { focus = ARL_enemies_everywhere }
+		cost = 8.6
+		completion_reward = {
+			log = "[GetDateText]: [ARL.GetTag] focus ARL_army_reorganisation"
+			
+		}
+	}
+	
+	focus = {
+		id = ARL_forad_focus
+		x = 0
+		y = 1
+		relative_position_id = ARL_army_reorganisation	
+		prerequisite = { focus = ARL_army_reorganisation }
+		cost = 2
+		completion_reward = {
+			log = "[GetDateText]: [ARL.GetTag] focus ARL_forad_focus"
+			custom_effect_tooltip = available_designer
+			show_ideas_tooltip = ARL_tank_designer_forad
+		}
+	}
+	
+	focus = {
+		id = ARL_evre_steel
+		x = -1
+		y = 1
+		relative_position_id = ARL_forad_focus	
+		prerequisite = { focus = ARL_forad_focus }
+		cost = 3
+		completion_reward = {
+			log = "[GetDateText]: [ARL.GetTag] focus ARL_evre_steel"
+			482 = {
+				add_resource = {
+					type = steel
+					amount = 32
+				}
+			}
+		}
+	}
+	
+	focus = {
+		id = ARL_blitzkrieg_tactics
+		x = 1
+		y = 1
+		relative_position_id = ARL_forad_focus	
+		prerequisite = { focus = ARL_forad_focus }
+		cost = 2
+		completion_reward = {
+			log = "[GetDateText]: [ARL.GetTag] focus ARL_blitzkrieg_tactics"
+			add_doctrine_cost_reduction = {
+				name = ARL_blitzkrieg_tactic_red
+				cost_reduction = 0.5
+				uses = 3
+				category = cat_mobile_warfare
+			}
+			country_event = { id = arl_events.46 }
+			custom_effect_tooltip = ARL_available_ditrich
+		}
+	}
+	
+	focus = {
+		id = ARL_heavy_metals
+		x = 0
+		y = 1
+		relative_position_id = ARL_evre_steel
+		prerequisite = { focus = ARL_evre_steel }
+		cost = 5.8
+		completion_reward = {
+			log = "[GetDateText]: [ARL.GetTag] focus ARL_heavy_metals"
+			482 = {
+				add_resource = {
+					type = chromium
+					amount = 14
+				}
+				add_resource = {
+					type = tungsten
+					amount = 12
+				}
+			}
+		}
+	}
+	
+	focus = {
+		id = ARL_need_more_tanks
+		x = 0
+		y = 1
+		relative_position_id = ARL_blitzkrieg_tactics
+		prerequisite = { focus = ARL_blitzkrieg_tactics }
+		cost = 2
+		completion_reward = {
+			log = "[GetDateText]: [ARL.GetTag] focus ARL_need_more_tanks"
+			country_event = { id = arl_events.47 }
+		}
+	}
+	
+	focus = {
+		id = ARL_need_more_planes
+		x = 0
+		y = 1
+		relative_position_id = ARL_need_more_tanks
+		prerequisite = { focus = ARL_need_more_tanks }
+		cost = 2
+		completion_reward = {
+			log = "[GetDateText]: [ARL.GetTag] focus ARL_need_more_planes"
+			country_event = { id = arl_events.48 }
+			custom_effect_tooltip = ARL_available_shadow
+			482 = {
+				add_building_construction = {
+					type = air_base
+					level = 5
+					instant_build = yes 
+				}
+			}
+		}
+	}
+	
+	focus = {
+		id = ARL_lengrad_concern_focus
+		x = 0
+		y = 1
+		relative_position_id = ARL_need_more_planes
+		prerequisite = { focus = ARL_need_more_planes }
+		cost = 2
+		completion_reward = {
+			log = "[GetDateText]: [ARL.GetTag] focus ARL_lengrad_concern_focus"
+			custom_effect_tooltip = available_designer
+			show_ideas_tooltip = ARL_mat_designer_legrand
+		}
+	}
+	
+	focus = {
+		id = ARL_evaluate_milprom
+		x = -1
+		y = 1
+		relative_position_id = ARL_enemies_everywhere
+		prerequisite = { focus = ARL_enemies_everywhere }
+		cost = 5.8
+		completion_reward = {
+			log = "[GetDateText]: [ARL.GetTag] focus ARL_evaluate_milprom"
+			country_event = { id = arl_events.49 }
+			482 = {
+				add_extra_state_shared_building_slots = 4
+				add_building_construction = {
+					type = arms_factory
+					level = 4
+					instant_build = yes 
+				}
+			}
+		}
+	}
+	
+	focus = {
+		id = ARL_bastion_dockyards
+		x = 0
+		y = 1
+		relative_position_id = ARL_evaluate_milprom
+		prerequisite = { focus = ARL_evaluate_milprom }
+		cost = 5.8
+		completion_reward = {
+			log = "[GetDateText]: [ARL.GetTag] focus ARL_bastion_dockyards"
+			country_event = { id = arl_events.50 }
+			404 = {
+				add_extra_state_shared_building_slots = 5
+				add_building_construction = {
+					type = dockyard
+					level = 5
+					instant_build = yes 
+				}
+			}
+		}
+	}
+	
+	focus = {
+		id = ARL_alicorn_project
+		x = 0
+		y = 1
+		relative_position_id = ARL_bastion_dockyards
+		prerequisite = { focus = ARL_bastion_dockyards }
+		cost = 5.8
+		completion_reward = {
+			log = "[GetDateText]: [ARL.GetTag] focus ARL_alicorn_project"
+			country_event = { id = arl_events.51 }
+			if = {
+				limit = {
+					has_dlc = "Man The Guns"
+				}
+				custom_effect_tooltip = ARL_create_alicorn_lincor_killer
+			}
+			
+		}
+	}
+	
+	focus = {
+		id = ARL_stonks
+		x = 0
+		y = 1
+		relative_position_id = ARL_alicorn_project
+		prerequisite = { focus = ARL_alicorn_project }
+		cost = 5.8
+		completion_reward = {
+			log = "[GetDateText]: [ARL.GetTag] focus ARL_stonks"
+			country_event = { id = arl_events.52 }
+			if = {
+				limit = {
+					has_dlc = "By Blood Alone"
+				}
+			}
+			add_equipment_to_stockpile = {
+				type = small_plane_airframe
+				amount = 200
+			}
+			add_doctrine_cost_reduction = {
+				category = air_doctrine
+				uses = 2
+				cost_reduction = 0.5
+			}
+		}
+	}
+	
+	focus = {
+		id = ARL_carriers_are_the_key
+		x = 0
+		y = 1
+		
+		relative_position_id = ARL_stonks
+		prerequisite = { focus = ARL_stonks }
+		cost = 5.8
+		completion_reward = {
+			log = "[GetDateText]: [ARL.GetTag] focus ARL_carriers_are_the_key"
+			country_event = { id = arl_events.53 }
+			if = {
+				limit = {
+					has_dlc = "Man The Guns"
+				}
+			}
+			
+			add_doctrine_cost_reduction = {
+				category = fleet_in_being
+				uses = 3
+				cost_reduction = 0.5
+			}
+		}
+	}
+	
+	focus = {
+		id = ARL_arlua_concern_focus
+		x = 1
+		y = 1
+		relative_position_id = ARL_lengrad_concern_focus
+		prerequisite = { focus = ARL_lengrad_concern_focus }
+		prerequisite = { focus = ARL_carriers_are_the_key }
+		cost = 2
+		completion_reward = {
+			log = "[GetDateText]: [ARL.GetTag] focus ARL_arlua_concern_focus"
+			country_event = { id = arl_events.54 }
+			custom_effect_tooltip = available_designer
+			show_ideas_tooltip = ARL_nav_designer_arlua
+		}
+	}
+	
+	focus = {
+		id = ARL_develop_civ_industry
+		x = 3
+		y = 1
+		relative_position_id = ARL_enemies_everywhere
+		prerequisite = { focus = ARL_enemies_everywhere }
+		cost = 6.5
+		completion_reward = {
+			log = "[GetDateText]: [ARL.GetTag] focus ARL_develop_civ_industry"
+			country_event = { id = arl_events.55 }
+			404 = {
+				add_extra_state_shared_building_slots = 1
+				add_building_construction = {
+					type = industrial_complex
+					level = 1
+					instant_build = yes
+				}
+			}
+			482 = {
+				add_extra_state_shared_building_slots = 2
+				add_building_construction = {
+					type = industrial_complex
+					level = 2
+					instant_build = yes
+				}
+			}
+		}
+	}
+	
+	focus = {
+		id = ARL_skyfall_investitions
+		x = -2
+		y = 1
+		relative_position_id = ARL_develop_civ_industry
+		prerequisite = { focus = ARL_develop_civ_industry }
+		cost = 2
+		available = {
+			TRD = {
+				exist = ys
+				has_war = no
+			}
+		}
+		
+		completion_reward = {
+			log = "[GetDateText]: [ARL.GetTag] focus ARL_skyfall_investitions"
+			country_event = { id = arl_events.56 }
+		}
+	}
+	
+	focus = {
+		id = ARL_manehattan_investitions
+		x = 2
+		y = 1
+		relative_position_id = ARL_develop_civ_industry
+		prerequisite = { focus = ARL_develop_civ_industry }
+		cost = 2
+		available = {
+			EQS = {
+				exist = ys
+				has_war = no
+			}
+		}
+		
+		completion_reward = {
+			log = "[GetDateText]: [ARL.GetTag] focus ARL_skyfall_investitions"
+			country_event = { id = arl_events.61 }
+		}
+	}
+	
+	focus = {
+		id = ARL_rabotay_blyad
+		x = 0
+		y = 1
+		relative_position_id = ARL_develop_civ_industry
+		prerequisite = { focus = ARL_develop_civ_industry }
+		cost = 4.3
+
+		completion_reward = {
+			log = "[GetDateText]: [ARL.GetTag] focus ARL_rabotay_blyad"
+			country_event = { id = arl_events.57 }
+			482 = {
+				add_extra_state_shared_building_slots = 2
+				add_building_construction = {
+					type = industrial_complex
+					level = 2
+					instant_build = yes 
+				}
+			}
+			set_technology = {
+				tech_griffon_misc = 1
+				popup = no
+			}
+		}
+	}
+	
+	focus = {
+		id = ARL_yalmar_swamps
+		x = 0
+		y = 1
+		relative_position_id = ARL_rabotay_blyad
+		prerequisite = { focus = ARL_rabotay_blyad }
+		cost = 4.3
+
+		completion_reward = {
+			log = "[GetDateText]: [ARL.GetTag] focus ARL_yalmar_swamps"
+			country_event = { id = arl_events.58 }
+			482 = {
+				add_building_construction = {
+					type = infrastructure
+					level = 4
+					instant_build = yes 
+				}
+				add_resource = {
+					type = steel
+					amount = 8
+				}
+			}
+			404 = {
+				add_building_construction = {
+					type = infrastructure
+					level = 2
+					instant_build = yes 
+				}
+				add_resource = {
+					type = chromium
+					amount = 4
+				}
+				add_resource = {
+					type = tungsten
+					amount = 6
+				}
+			}
+
+		}
+	}
+	
+	focus = {
+		id = ARL_fort_bastion_railroad
+		x = 0
+		y = 1
+		relative_position_id = ARL_yalmar_swamps
+		prerequisite = { focus = ARL_yalmar_swamps }
+		cost = 4.3
+
+		completion_reward = {
+			log = "[GetDateText]: [ARL.GetTag] focus ARL_fort_bastion_railroad"
+			country_event = { id = arl_events.59 }
+			build_railway = {
+				level = 5
+				build_only_on_allied = yes 
+				start_province = 12860
+				target_province = 6226
+			}
+		}
+	}
+	
+	focus = {
+		id = ARL_arlais_help_association
+		x = 0
+		y = 1
+		relative_position_id = ARL_fort_bastion_railroad
+		prerequisite = { focus = ARL_fort_bastion_railroad }
+		cost = 4.3
+
+		completion_reward = {
+			log = "[GetDateText]: [ARL.GetTag] focus ARL_arlais_help_association"
+			country_event = { id = arl_events.60 }
+			custom_effect_tooltip = available_designer
+			show_ideas_tooltip = ARL_ind_designer_association
+		}
+	}
+	
+	focus = {
+		id = ARL_we_need_coal
+		x = -2
+		y = 1
+		relative_position_id = ARL_arlais_help_association
+		prerequisite = { focus = ARL_arlais_help_association }
+		cost = 2
+
+		completion_reward = {
+			log = "[GetDateText]: [ARL.GetTag] focus ARL_we_need_coal"
+			country_event = { id = arl_events.62 }
+			482 = {
+				add_extra_state_shared_building_slots = 1
+				add_building_construction = {
+					type = industrial_complex
+					level = 1
+					instant_build = yes 
+				}
+				add_resource = {
+					type = steel
+					amount = 18
+				}
+			}
+		}
+	}
+	
+	focus = {
+		id = ARL_synthetic_gasoline
+		x = 0
+		y = 1
+		relative_position_id = ARL_arlais_help_association
+		prerequisite = { focus = ARL_arlais_help_association }
+		cost = 4.3
+		available = {
+			has_tech = synth_oil_experiments
+		}
+		completion_reward = {
+			log = "[GetDateText]: [ARL.GetTag] focus ARL_synthetic_gasoline"
+			country_event = { id = arl_events.63 }
+			482 = {
+				add_extra_state_shared_building_slots = 3
+				add_building_construction = {
+					type = synthetic_refinery
+					level = 3
+					instant_build = yes 
+				}
+			}
+			404 = {
+				add_extra_state_shared_building_slots = 2
+				add_building_construction = {
+					type = fuel_silo
+					level = 2
+					instant_build = yes 
+				}
+			}
+			add_tech_bonus = {
+				category = synth_resources
+				uses = 2
+				bonus = 1
+			}
+		}
+	}
+	
+	focus = {
+		id = ARL_arley_work_service_focus
+		x = 2
+		y = 1
+		relative_position_id = ARL_arlais_help_association
+		prerequisite = { focus = ARL_arlais_help_association }
+		cost = 2
+
+		completion_reward = {
+			log = "[GetDateText]: [ARL.GetTag] focus ARL_arley_work_service_focus"
+			country_event = { id = arl_events.64 }
+			482 = {
+				add_extra_state_shared_building_slots = 1
+				add_building_construction = {
+					type = industrial_complex
+					level = 1
+					instant_build = yes 
+				}
+			}
+			404 = {
+				add_extra_state_shared_building_slots = 2
+				add_building_construction = {
+					type = arms_factory
+					level = 2
+					instant_build = yes 
+				}
+			}
+			custom_effect_tooltip = available_designer
+			show_ideas_tooltip = ARL_ind_designer_work_service
+		}
+	}
+	
+	focus = {
+		id = ARL_wealth_stonks_good
+		x = 0
+		y = 1
+		relative_position_id = ARL_synthetic_gasoline
+		prerequisite = { focus = ARL_synthetic_gasoline }
+		prerequisite = { focus = ARL_we_need_coal }
+		prerequisite = { focus = ARL_arley_work_service_focus }
+		cost = 6.4
+		completion_reward = {
+			log = "[GetDateText]: [ARL.GetTag] focus ARL_arley_work_service_focus"
+			country_event = { id = arl_events.65 }
+			add_stability = 0.3
+			add_political_power = 300
+			add_research_slot = 1
+		}
+	}
+	
+	
+	

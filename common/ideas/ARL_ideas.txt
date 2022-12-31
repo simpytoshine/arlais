@@ -40,4 +40,86 @@ ideas = {
 			}
 		}
 				
+	}
+	
+	tank_manufacturer = {
+		
+		designer = yes 
+		
+		ARL_tank_designer_forad = {
+			allowed = {
+				original_tag = ARL
+			}
+			available = {
+				has_completed_focus = ARL_forad_focus
+			}
+			research_bonus = {
+				armor = 0.15
+			}
+		}
+	}
+	
+	materiel_manufacturer = {
+		designer = yes 
+		
+		ARL_mat_designer_legrand = {
+			allowed = {
+				original_tag = ARL
+			}
+			available = {
+				has_completed_focus = ARL_lengrad_concern_focus
+			}
+			research_bonus = {
+				infantry = 0.1
+				magical_tech = 0.1
+			}
+		}
+	}
+	
+	naval_manufacturer = {
+		designer = yes 
+		
+		ARL_nav_designer_arlua = {
+			allowed = {
+				original_tag = ARL
+			}
+			available = {
+				has_completed_focus = ARL_arlua_concern_focus
+			}
+			equipment_bonus = {
+				
+				ship_hull_heavy = {
+					armor_value = 0.05
+					anti_air_attack = 0.05
+					surface_visibility = -0.05
+					instant = yes
+				}
+			}
+		}
+	}
+	
+	industrial_concern = {
+		designer = yes 
+		
+		ARL_ind_designer_association = {
+			allowed = {
+				original_tag = ARL
+			}
+			available = {
+				has_completed_focus = ARL_arlais_help_association
+			}
+			
+		}
+		
+		ARL_ind_designer_work_service = {
+			allowed = {
+				original_tag = ARL
+			}
+			available = {
+				has_completed_focus = ARL_arley_work_service_focus
+			}
+			
+		}
+	}
+	
 		
