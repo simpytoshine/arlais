@@ -41,3 +41,95 @@
     ARL_get_6_helms_1_unis_tt:0 "После начала §RВойны за Арлей§! будет развернута 1 дивизия §CИзгнанников Королевской стражи§!"
     ARL_lock_all_focuses:0 "Выполнение фокусов, позволяющих нам укрепить наши позиции в §RВойне за Арлей§!, будет заблокировано!"
     
+    ##НАЧАЛЬНЫЕ ФОКУСЫ##
+    ARL_we_had_dream:0 "У нас была мечта..."
+    ARL_we_had_dream_desc:0 "У МЕНЯ ЕСТЬ МЕЧТА!"
+    
+    ARL_no_dream_follow:0 "...которой не суждено было сбыться"
+    ARL_no_dream_follow_desc:0 "YOU ARE BAT-SHIT INSANE"
+    
+    ARL_death_of_the_conqueror:0 "Смерть завоевателя..."
+    ARL_death_of_the_conqueror_desc:0 "TODO"
+    
+    ARL_new_conqueror_birth:0 "...И рождение нового"
+    ARL_new_conqueror_birth_desc:0 "TODO"
+    
+    ARL_war_of_islands:0 "Война за Острова"
+    ARL_war_of_islands_desc:0 "TODO"
+    
+    ARL_battle_for_cape:0 "Битва за Мыс"
+    ARL_battle_for_cape_desc:0 "TODO"
+    
+    ARL_our_darkest_hour:0 "Наш самый горький час"
+    ARL_our_darkest_hour_desc:0 "TODO"
+    
+    ARL_heroes_of_the_northern_war:0 "Герои Северной войны"
+    ARL_heroes_of_the_northern_war_desc:0 "TODO"
+    
+    ARL_francheska_focus:0 "Франческа"
+    ARL_francheska_focus_desc:0 "TODO"
+    
+    ARL_break_the_chains:0 "Разбить оковы"
+    ARL_break_the_chains_desc:0 "TODO"
+    
+    ARL_equus_focus:0 "Эквус?"
+    ARL_equus_focus_desc:0 "TODO"
+    
+    ARL_friends_far_from_home:0 "Друзья вне дома"
+    ARL_friends_far_from_home_desc:0 "TODO"
+    
+    ARL_therestralian_mercenaries:0 "Наёмники-фестралы"
+    ARL_therestralian_mercenaries_desc:0 "TODO"
+    
+    ARL_migration_bureau:0 "Агентство по делам миграции"
+    ARL_migration_bureau_desc:0 "TODO"
+    
+    ARL_meeting_at_the_dockyard:0 "Встреча в доках"
+    ARL_meeting_at_the_dockyard_desc:0 "TODO"
+    
+    ARL_is_it_destiny:0 "Предназначение?"
+    ARL_is_it_destiny_desc:0 "TODO"
+    
+    ARL_accept_the_invite:0 "Принять приглашение"
+    ARL_accept_the_invite_desc:0 "TODO"
+    
+    ARL_helping_hoof:0 "Копыто помощи"
+    ARL_helping_hoof_desc:0 "TODO"
+    
+    ARL_colour_of_nation:0 "Цвет нации"
+    ARL_colour_of_nation_desc:0 "TODO"
+    
+    ARL_severyana_heritage:0 "Наследие Северяны"
+    ARL_severyana_heritage_desc:0 "TODO"
+    
+    ARL_weapons_money_guns:0 "Оружие, деньги и ещё больше оружия"
+    ARL_weapons_money_guns_desc:0 "TODO"
+    
+    ARL_severyana_division:0 "Северянская добровольческая дивизия"
+    ARL_severyana_division_desc:0 "TODO"
+    
+    ARL_royal_guards_rebels:0 "Изгнанники из Королевской Гвардии"
+    ARL_royal_guards_rebels_desc:0 "TODO"
+    
+    ARL_tour_de_france:0 "Турне" 
+    ARL_tour_de_france_desc:0 "TODO"
+    
+    ARL_fleur_savey:0 "Флёр де Лис и Сави Саддлс"
+    ARL_fleur_savey_desc:0 "TODO"
+    
+    ARL_flairs:0 "Стеллар и Файр Флейры"
+    ARL_flairs_desc:0 "TODO"
+    
+    ARL_marble_gavle:0 "Блэк Марбл и Голден Гэвл"
+    ARL_marble_gavle_desc:0 "TODO"
+    
+    ARL_tropical_dream:0 "Тропикал Дрим"
+    ARL_tropical_dream_desc:0 "TODO"
+    
+    ARL_end_tour:0 "Завершить турне"
+    ARL_end_tour_desc:0 "TODO"
+    
+    ARL_attack_ruayo:0 "На Руайо!"
+    ARL_attack_ruayo_desc:0 "TODO"
+    
+    

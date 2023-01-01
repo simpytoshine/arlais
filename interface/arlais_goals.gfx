@@ -5,5 +5,112 @@ spriteTypes = {
 		name = "GFX_ARL_we_had_dream"
 		texturefile = "gfx/interface/goals/ARL/ARL_we_had_dream.tga"
 	}
-	
+	SpriteType = {
+		name = "GFX_ARL_no_dream_follow"
+		texturefile = "gfx/interface/goals/ARL/ARL_no_dream_follow.tga"
+	}
+	SpriteType = {
+		name = "GFX_ARL_death_of_the_conqueror"
+		texturefile = "gfx/interface/goals/ARL/ARL_death_of_the_conqueror.tga"
+	}
+	SpriteType = {
+		name = "GFX_ARL_new_conqueror_birth"
+		texturefile = "gfx/interface/goals/ARL/ARL_new_conqueror_birth.tga"
+	}
+	SpriteType = {
+		name = "GFX_ARL_war_of_islands"
+		texturefile = "gfx/interface/goals/ARL/ARL_war_of_islands.tga"
+	}
+	SpriteType = {
+		name = "GFX_ARL_battle_for_cape"
+		texturefile = "gfx/interface/goals/ARL/ARL_battle_for_cape.tga"
+	}
+	SpriteType = {
+		name = "GFX_ARL_our_darkest_hour"
+		texturefile = "gfx/interface/goals/ARL/ARL_our_darkest_hour.tga"
+	}
+	SpriteType = {
+		name = "GFX_ARL_francheska"
+		texturefile = "gfx/interface/goals/ARL/ARL_francheska.tga"
+	}
+	SpriteType = {
+		name = "GFX_ARL_break_the_chains"
+		texturefile = "gfx/interface/goals/ARL/ARL_break_the_chains.tga"
+	}
+	SpriteType = {
+		name = "GFX_ARL_equus_focus"
+		texturefile = "gfx/interface/goals/ARL/ARL_equus_focus.tga"
+	}
+	SpriteType = {
+		name = "GFX_ARL_friends_far_from_home"
+		texturefile = "gfx/interface/goals/ARL/ARL_friends_far_from_home.tga"
+	}
+	SpriteType = {
+		name = "GFX_ARL_therestralian_mercenaries"
+		texturefile = "gfx/interface/goals/ARL/ARL_therestralian_mercenaries.tga"
+	}
+	SpriteType = {
+		name = "GFX_ARL_migration_bureau"
+		texturefile = "gfx/interface/goals/ARL/ARL_migration_bureau.tga"
+	}
+	SpriteType = {
+		name = "GFX_ARL_meeting_at_the_dockyard"
+		texturefile = "gfx/interface/goals/ARL/ARL_meeting_at_the_dockyard.tga"
+	}
+	SpriteType = {
+		name = "GFX_ARL_is_it_destiny"
+		texturefile = "gfx/interface/goals/ARL/ARL_is_it_destiny.tga"
+	}
+	SpriteType = {
+		name = "GFX_ARL_accept_the_invite"
+		texturefile = "gfx/interface/goals/ARL/ARL_accept_the_invite.tga"
+	}
+	SpriteType = {																
+		name = "GFX_ARL_helping_hoof"
+		texturefile = "gfx/interface/goals/ARL/ARL_helping_hoof.tga"	
+	}
+	SpriteType = {
+		name = "GFX_ARL_colour_of_nation"
+		texturefile = "gfx/interface/goals/ARL/ARL_colour_of_nation.tga"
+	}
+	SpriteType = {
+		name = "GFX_ARL_weapons_money_guns"
+		texturefile = "gfx/interface/goals/ARL/ARL_weapons_money_guns.tga"
+	}
+	SpriteType = {
+		name = "GFX_ARL_severyana_division"
+		texturefile = "gfx/interface/goals/ARL/ARL_severyana_division.tga"
+	}
+	SpriteType = {
+		name = "GFX_ARL_royal_guards_rebels"
+		texturefile = "gfx/interface/goals/ARL/ARL_royal_guards_rebels.tga"
+	}
+	SpriteType = {
+		name = "GFX_ARL_tour_de_france"
+		texturefile = "gfx/interface/goals/ARL/ARL_tour_de_france.tga"
+	}
+	SpriteType = {
+		name = "GFX_ARL_fleur_savey"
+		texturefile = "gfx/interface/goals/ARL/ARL_fleur_savey.tga"
+	}
+	SpriteType = {
+		name = "GFX_ARL_flairs"
+		texturefile = "gfx/interface/goals/ARL/ARL_flairs.tga"
+	}
+	SpriteType = {
+		name = "GFX_ARL_marble_gavle"
+		texturefile = "gfx/interface/goals/ARL/ARL_marble_gavle.tga"
+	}
+	SpriteType = {
+		name = "GFX_ARL_tropical_dream"
+		texturefile = "gfx/interface/goals/ARL/ARL_tropical_dream.tga"
+	}
+	SpriteType = {
+		name = "GFX_ARL_end_tour"
+		texturefile = "gfx/interface/goals/ARL/ARL_end_tour.tga"
+	}
+	SpriteType = {
+		name = "GFX_ARL_attack_ruayo"
+		texturefile = "gfx/interface/goals/ARL/ARL_attack_ruayo.tga"
+	}
 }

@@ -27,6 +27,7 @@ focus_tree = {
 	
 	focus = {
 		id = ARL_no_dream_follow
+		icon = GFX_ARL_no_dream_follow
 		x = 0
 		y = 1
 		relative_position_id = ARL_we_had_dream
@@ -40,6 +41,7 @@ focus_tree = {
 		
 	focus = {
 		id = ARL_death_of_the_conqueror
+		icon = GFX_ARL_death_of_the_conqueror
 		x = 0
 		y = 1
 		relative_position_id = ARL_no_dream_follow
@@ -53,6 +55,7 @@ focus_tree = {
 	
 	focus = {
 		id = ARL_new_conqueror_birth
+		icon = GFX_ARL_new_conqueror_birth
 		x = 0
 		y = 1
 		relative_position_id = ARL_death_of_the_conqueror
@@ -66,6 +69,7 @@ focus_tree = {
 	
 	focus = {
 		id = ARL_war_of_islands
+		icon = GFX_ARL_war_of_islands
 		x = 0
 		y = 1
 		relative_position_id = ARL_new_conqueror_birth
@@ -79,6 +83,7 @@ focus_tree = {
 	
 	focus = {
 		id = ARL_battle_for_cape
+		icon = GFX_ARL_battle_for_cape
 		x = 0
 		y = 1
 		relative_position_id = ARL_war_of_islands
@@ -92,6 +97,7 @@ focus_tree = {
 	
 	focus = {
 		id = ARL_our_darkest_hour
+		icon = GFX_ARL_our_darkest_hour
 		x = 0
 		y = 1
 		relative_position_id = ARL_battle_for_cape
@@ -118,6 +124,7 @@ focus_tree = {
 	
 	focus = {
 		id = ARL_francheska_focus
+		icon = GFX_ARL_francheska
 		x = 0
 		y = 1
 		relative_position_id = ARL_heroes_of_the_northern_war
@@ -131,6 +138,7 @@ focus_tree = {
 	
 	focus = {
 		id = ARL_break_the_chains
+		icon = GFX_ARL_break_the_chains
 		x = -2
 		y = 1
 		relative_position_id = ARL_francheska_focus
@@ -143,24 +151,26 @@ focus_tree = {
 	}
 	
 	focus = {
-		id = ARL_eqvus_focus
+		id = ARL_equus_focus
+		icon = GFX_ARL_equus_focus
 		x = 0
 		y = 1
 		relative_position_id = ARL_break_the_chains
 		prerequisite = { focus = ARL_break_the_chains } 
 		cost = 2
 		completion_reward = {
-			log = "[GetDateText]: [ARL.GetTag] focus ARL_eqvus_focus"
+			log = "[GetDateText]: [ARL.GetTag] focus ARL_equus_focus"
 			country_event = { id = arl_events.11 }
 		}
 	}
 	
 	focus = {
 		id = ARL_friends_far_from_home
+		icon = GFX_ARL_friends_far_from_home
 		x = 0
 		y = 1
-		relative_position_id = ARL_eqvus_focus
-		prerequisite = { focus = ARL_eqvus_focus } 
+		relative_position_id = ARL_equus_focus
+		prerequisite = { focus = ARL_equus_focus } 
 		cost = 4.5
 		completion_reward = {
 			log = "[GetDateText]: [ARL.GetTag] focus ARL_friends_far_from_home"
@@ -170,6 +180,7 @@ focus_tree = {
 	
 	focus = {
 		id = ARL_therestralian_mercenaries
+		icon = GFX_ARL_therestralian_mercenaries
 		x = -2
 		y = 1
 		relative_position_id = ARL_friends_far_from_home
@@ -184,6 +195,7 @@ focus_tree = {
 	
 	focus = {
 		id = ARL_migration_bureau
+		icon = GFX_ARL_migration_bureau
 		x = 0
 		y = 1
 		relative_position_id = ARL_friends_far_from_home
@@ -198,6 +210,7 @@ focus_tree = {
 	
 	focus = {
 		id = ARL_meeting_at_the_dockyard
+		icon = GFX_ARL_meeting_at_the_dockyard
 		x = 2
 		y = 1
 		relative_position_id = ARL_friends_far_from_home
@@ -212,6 +225,7 @@ focus_tree = {
 	
 	focus = {
 		id = ARL_is_it_destiny
+		icon = GFX_ARL_is_it_destiny
 		x = 0
 		y = 1
 		relative_position_id = ARL_migration_bureau
@@ -227,13 +241,14 @@ focus_tree = {
 	
 	focus = {
 		id = ARL_accept_the_invite
+		icon = GFX_ARL_accept_the_invite
 		x = 0
 		y = 1
 		relative_position_id = ARL_is_it_destiny
 		prerequisite = { focus = ARL_is_it_destiny }
-		allow_branch = {
-			has_completed_focus = ARL_is_it_destiny
-		}
+		#allow_branch = {
+		#	has_completed_focus = ARL_is_it_destiny
+		#}
 		cost = 0.5
 		completion_reward = {
 			log = "[GetDateText]: [ARL.GetTag] focus ARL_accept_the_invite"
@@ -243,6 +258,7 @@ focus_tree = {
 	
 	focus = {
 		id = ARL_helping_hoof
+		icon = GFX_ARL_helping_hoof
 		x = -1
 		y = 1
 		relative_position_id = ARL_accept_the_invite
@@ -256,6 +272,7 @@ focus_tree = {
 	
 	focus = {
 		id = ARL_colour_of_nation
+		icon = GFX_ARL_colour_of_nation
 		x = -1
 		y = 1
 		relative_position_id = ARL_helping_hoof
@@ -270,6 +287,7 @@ focus_tree = {
 	
 	focus = {
 		id = ARL_severyana_heritage
+		#icon = 
 		x = 3
 		y = 1
 		available = {
@@ -288,6 +306,7 @@ focus_tree = {
 	
 	focus = {
 		id = ARL_weapons_money_guns
+		icon = GFX_ARL_weapons_money_guns
 		x = -1
 		y = 1
 		available = {
@@ -306,6 +325,7 @@ focus_tree = {
 	
 	focus = {
 		id = ARL_severyana_division
+		icon = GFX_ARL_severyana_division
 		x = 1
 		y = 1
 		available = {
@@ -325,6 +345,7 @@ focus_tree = {
 	
 	focus = {
 		id = ARL_royal_guards_rebels
+		icon = GFX_ARL_royal_guards_rebels
 		x = 1
 		y = 1
 		available = {
@@ -344,6 +365,7 @@ focus_tree = {
 	
 	focus = {
 		id = ARL_tour_de_france
+		icon = GFX_ARL_tour_de_france
 		x = -1
 		y = 1
 		relative_position_id = ARL_colour_of_nation
@@ -358,6 +380,7 @@ focus_tree = {
 	
 	focus = {
 		id = ARL_fleur_savey
+		icon = GFX_ARL_fleur_savey
 		x = 0
 		y = 1
 		relative_position_id = ARL_tour_de_france
@@ -371,6 +394,7 @@ focus_tree = {
 		
 	focus = {
 		id = ARL_flairs
+		icon = GFX_ARL_flairs
 		x = 0
 		y = 1
 		relative_position_id = ARL_fleur_savey
@@ -384,6 +408,7 @@ focus_tree = {
 		
 	focus = {
 		id = ARL_marble_gavle
+		icon = GFX_ARL_marble_gavle
 		x = 0
 		y = 1
 		relative_position_id = ARL_flairs
@@ -397,6 +422,7 @@ focus_tree = {
 		
 	focus = {
 		id = ARL_tropical_dream
+		icon = GFX_ARL_tropical_dream
 		x = 0
 		y = 1
 		relative_position_id = ARL_marble_gavle
@@ -410,6 +436,7 @@ focus_tree = {
 		
 	focus = {
 		id = ARL_end_tour
+		icon = GFX_ARL_end_tour
 		x = 0
 		y = 1
 		relative_position_id = ARL_tropical_dream
@@ -423,6 +450,7 @@ focus_tree = {
 	
 	focus = {
 		id = ARL_attack_ruayo
+		icon = GFX_ARL_attack_ruayo
 		x = 0
 		y = 1
 		available = { always = no }
