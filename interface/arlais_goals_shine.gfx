@@ -1,7 +1,7 @@
 spriteTypes = {
 
 	SpriteType = {
-		name = "GFX_ARL_we_had_dream"
+		name = "GFX_ARL_we_had_dream_shine"
 		texturefile = "gfx/interface/goals/ARL/ARL_we_had_dream.tga"
 				effectFile = "gfx/FX/buttonstate.lua"
 		animation = {
