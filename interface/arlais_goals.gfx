@@ -30,6 +30,10 @@ spriteTypes = {
 		texturefile = "gfx/interface/goals/ARL/ARL_our_darkest_hour.tga"
 	}
 	SpriteType = {
+		name = "GFX_ARL_heroes_of_the_northern_war"
+		texturefile = "gfx/interface/goals/ARL/ARL_heroes_of_the_northern_war.tga"
+	}
+	SpriteType = {
 		name = "GFX_ARL_francheska"
 		texturefile = "gfx/interface/goals/ARL/ARL_francheska.tga"
 	}
@@ -74,6 +78,10 @@ spriteTypes = {
 		texturefile = "gfx/interface/goals/ARL/ARL_colour_of_nation.tga"
 	}
 	SpriteType = {
+		name = "GFX_ARL_severyana_heritage"
+		texturefile = "gfx/interface/goals/ARL/ARL_severyana_heritage.tga"
+	}
+	SpriteType = {
 		name = "GFX_ARL_weapons_money_guns"
 		texturefile = "gfx/interface/goals/ARL/ARL_weapons_money_guns.tga"
 	}
@@ -112,5 +120,185 @@ spriteTypes = {
 	SpriteType = {
 		name = "GFX_ARL_attack_ruayo"
 		texturefile = "gfx/interface/goals/ARL/ARL_attack_ruayo.tga"
+	}
+	SpriteType = {
+		name = "GFX_ARL_francheska_first_focus"
+		texturefile = "gfx/interface/goals/ARL/ARL_francheska_first_focus.tga"
+	}
+	SpriteType = {
+		name = "GFX_ARL_bastion_court"
+		texturefile = "gfx/interface/goals/ARL/ARL_bastion_court.tga"
+	}
+	SpriteType = {
+		name = "GFX_ARL_no_place_for_traitors_focus"
+		texturefile = "gfx/interface/goals/ARL/ARL_no_place_for_traitors_focus.tga"
+	}
+	SpriteType = {
+		name = "GFX_ARL_ruayo_court"
+		texturefile = "gfx/interface/goals/ARL/ARL_ruayo_court.tga"
+	}
+	SpriteType = {
+		name = "GFX_ARL_confiscate_arrest"
+		texturefile = "gfx/interface/goals/ARL/ARL_confiscate_arrest.tga"
+	}
+	SpriteType = {
+		name = "GFX_ARL_no_more_smutas"
+		texturefile = "gfx/interface/goals/ARL/ARL_no_more_smutas.tga"
+	}
+	SpriteType = {
+		name = "GFX_ARL_puto_law_focus"
+		texturefile = "gfx/interface/goals/ARL/ARL_puto_law_focus.tga"
+	}
+	SpriteType = {
+		name = "GFX_ARL_puto_law_second_change_focus"
+		texturefile = "gfx/interface/goals/ARL/ARL_puto_law_second_change_focus.tga"
+	}
+	SpriteType = {
+		name = "GFX_ARL_predict_events"
+		texturefile = "gfx/interface/goals/ARL/ARL_predict_events.tga"
+	}
+	SpriteType = {
+		name = "GFX_ARL_journalist_oath"
+		texturefile = "gfx/interface/goals/ARL/ARL_journalist_oath.tga"
+	}
+	SpriteType = {
+		name = "GFX_ARL_national_saving_focus"
+		texturefile = "gfx/interface/goals/ARL/ARL_national_saving_focus.tga"
+	}
+	SpriteType = {
+		name = "GFX_ARL_prof_union_monopoly"
+		texturefile = "gfx/interface/goals/ARL/ARL_prof_union_monopoly.tga"
+	}
+	SpriteType = {
+		name = "GFX_ARL_elections_no_elections"
+		texturefile = "gfx/interface/goals/ARL/ARL_elections_no_elections.tga"
+	}
+	SpriteType = {
+		name = "GFX_ARL_little_francheskans"
+		texturefile = "gfx/interface/goals/ARL/ARL_little_francheskans.tga"
+	}
+	SpriteType = {
+		name = "GFX_ARL_offer_for_offer"
+		texturefile = "gfx/interface/goals/ARL/ARL_offer_for_offer.tga"
+	}
+	SpriteType = {
+		name = "GFX_ARL_migration_bureau_expansion"
+		texturefile = "gfx/interface/goals/ARL/ARL_migration_bureau_expansion.tga"
+	}
+	SpriteType = {
+		name = "GFX_ARL_age_of_unicorns"
+		texturefile = "gfx/interface/goals/ARL/ARL_age_of_unicorns.tga"
+	}
+	SpriteType = {
+		name = "GFX_ARL_equality_law"
+		texturefile = "gfx/interface/goals/ARL/ARL_equality_law.tga"
+	}
+	SpriteType = {
+		name = "GFX_ARL_unicorns_of_the_world"
+		texturefile = "gfx/interface/goals/ARL/ARL_unicorns_of_the_world.tga"
+	}
+	SpriteType = {
+		name = "GFX_ARL_enemies_everywhere"
+		texturefile = "gfx/interface/goals/ARL/ARL_enemies_everywhere.tga"
+	}
+	SpriteType = {
+		name = "GFX_ARL_army_reorganisation"
+		texturefile = "gfx/interface/goals/ARL/ARL_army_reorganisation.tga"
+	}
+	SpriteType = {
+		name = "GFX_ARL_forad_focus"
+		texturefile = "gfx/interface/goals/ARL/ARL_forad_focus.tga"
+	}
+	SpriteType = {
+		name = "GFX_ARL_evre_steel"
+		texturefile = "gfx/interface/goals/ARL/ARL_evre_steel.tga"
+	}
+	SpriteType = {
+		name = "GFX_ARL_blitzkrieg_tactics"
+		texturefile = "gfx/interface/goals/ARL/ARL_blitzkrieg_tactics.tga"
+	}
+	SpriteType = {
+		name = "GFX_ARL_heavy_metals"
+		texturefile = "gfx/interface/goals/ARL/ARL_heavy_metals.tga"
+	}
+	SpriteType = {
+		name = "GFX_ARL_need_more_tanks"
+		texturefile = "gfx/interface/goals/ARL/ARL_need_more_tanks.tga"
+	}
+	SpriteType = {
+		name = "GFX_ARL_need_more_planes"
+		texturefile = "gfx/interface/goals/ARL/ARL_need_more_planes.tga"
+	}
+	SpriteType = {
+		name = "GFX_ARL_lengrad_concern_focus"
+		texturefile = "gfx/interface/goals/ARL/ARL_lengrad_concern_focus.tga"
+	}
+	SpriteType = {
+		name = "GFX_ARL_evaluate_milprom"
+		texturefile = "gfx/interface/goals/ARL/ARL_evaluate_milprom.tga"
+	}
+	SpriteType = {
+		name = "GFX_ARL_bastion_dockyards"
+		texturefile = "gfx/interface/goals/ARL/ARL_bastion_dockyards.tga"
+	}
+	SpriteType = {
+		name = "GFX_ARL_alicorn_project"
+		texturefile = "gfx/interface/goals/ARL/ARL_alicorn_project.tga"
+	}
+	SpriteType = {
+		name = "GFX_ARL_stonks"
+		texturefile = "gfx/interface/goals/ARL/ARL_stonks.tga"
+	}
+	SpriteType = {
+		name = "GFX_ARL_carriers_are_the_key"
+		texturefile = "gfx/interface/goals/ARL/ARL_carriers_are_the_key.tga"
+	}
+	SpriteType = {
+		name = "GFX_ARL_arlua_concern_focus"
+		texturefile = "gfx/interface/goals/ARL/ARL_arlua_concern_focus.tga"
+	}
+	SpriteType = {
+		name = "GFX_ARL_develop_civ_industry"
+		texturefile = "gfx/interface/goals/ARL/ARL_develop_civ_industry.tga"
+	}
+	SpriteType = {
+		name = "GFX_ARL_skyfall_investitions"
+		texturefile = "gfx/interface/goals/ARL/ARL_skyfall_investitions.tga"
+	}
+	SpriteType = {
+		name = "GFX_ARL_manehattan_investitions"
+		texturefile = "gfx/interface/goals/ARL/ARL_manehattan_investitions.tga"
+	}
+	SpriteType = {
+		name = "GFX_ARL_rabotay_blyad"
+		texturefile = "gfx/interface/goals/ARL/ARL_rabotay_blyad.tga"
+	}
+	SpriteType = {
+		name = "GFX_ARL_yalmar_swamps"
+		texturefile = "gfx/interface/goals/ARL/ARL_yalmar_swamps.tga"
+	}
+	SpriteType = {
+		name = "GFX_ARL_fort_bastion_railroad"
+		texturefile = "gfx/interface/goals/ARL/ARL_fort_bastion_railroad.tga"
+	}
+	SpriteType = {
+		name = "GFX_ARL_arlais_help_association"
+		texturefile = "gfx/interface/goals/ARL/ARL_arlais_help_association.tga"
+	}
+	SpriteType = {
+		name = "GFX_ARL_we_need_coal"
+		texturefile = "gfx/interface/goals/ARL/ARL_we_need_coal.tga"
+	}
+	SpriteType = {
+		name = "GFX_ARL_synthetic_gasoline"
+		texturefile = "gfx/interface/goals/ARL/ARL_synthetic_gasoline.tga"
+	}
+	SpriteType = {
+		name = "GFX_ARL_arley_work_service_focus"
+		texturefile = "gfx/interface/goals/ARL/ARL_arley_work_service_focus.tga"
+	}
+	SpriteType = {
+		name = "GFX_ARL_wealth_stonks_good"
+		texturefile = "gfx/interface/goals/ARL/ARL_wealth_stonks_good.tga"
 	}
 }

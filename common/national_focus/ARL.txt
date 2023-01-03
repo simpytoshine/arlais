@@ -111,6 +111,7 @@ focus_tree = {
 	
 	focus = {
 		id = ARL_heroes_of_the_northern_war
+		#icon = GFX_ARL_heroes_of_the_northern_war
 		x = 0
 		y = 1
 		relative_position_id = ARL_our_darkest_hour
@@ -287,7 +288,7 @@ focus_tree = {
 	
 	focus = {
 		id = ARL_severyana_heritage
-		#icon = 
+		#icon = GFX_ARL_severyana_heritage
 		x = 3
 		y = 1
 		available = {
@@ -468,6 +469,7 @@ focus_tree = {
 	
 	focus = {
 		id = ARL_francheska_first_focus
+		icon = GFX_ARL_francheska_first_focus
 		x = 0
 		y = 2
 		relative_position_id = ARL_attack_ruayo 
@@ -509,6 +511,7 @@ focus_tree = {
 	
 	focus = {
 		id = ARL_bastion_court
+		icon = GFX_ARL_bastion_court
 		x = -9
 		y = 1
 		relative_position_id = ARL_francheska_first_focus
@@ -525,6 +528,7 @@ focus_tree = {
 	
 	focus = {
 		id = ARL_ruayo_court
+		icon = GFX_ARL_ruayo_court
 		x = -7
 		y = 1
 		relative_position_id = ARL_francheska_first_focus
@@ -543,6 +547,7 @@ focus_tree = {
 	
 	focus = {
 		id = ARL_no_place_for_traitors_focus
+		icon = GFX_ARL_no_place_for_traitors_focus
 		x = 0
 		y = 1
 		relative_position_id = ARL_bastion_court
@@ -556,6 +561,7 @@ focus_tree = {
 	
 	focus = {
 		id = ARL_confiscate_arrest
+		icon = GFX_ARL_confiscate_arrest
 		x = 0
 		y = 1
 		relative_position_id = ARL_ruayo_court
@@ -582,6 +588,7 @@ focus_tree = {
 	
 	focus = {
 		id = ARL_no_more_smutas
+		icon = GFX_ARL_no_more_smutas
 		x = -5
 		y = 1
 		relative_position_id = ARL_francheska_first_focus
@@ -595,6 +602,7 @@ focus_tree = {
 	
 	focus = {
 		id = ARL_puto_law_focus
+		icon = GFX_ARL_puto_law_focus
 		x = 0
 		y = 1
 		relative_position_id = ARL_no_more_smutas
@@ -613,6 +621,7 @@ focus_tree = {
 	
 	focus = {
 		id = ARL_puto_law_second_change_focus
+		icon = GFX_ARL_puto_law_second_change_focus
 		x = 0
 		y = 1
 		relative_position_id = ARL_puto_law_focus
@@ -631,6 +640,7 @@ focus_tree = {
 	
 	focus = {
 		id = ARL_predict_events
+		icon = GFX_ARL_predict_events
 		x = 0
 		y = 1
 		relative_position_id = ARL_puto_law_second_change_focus
@@ -656,6 +666,7 @@ focus_tree = {
 	
 	focus = {
 		id = ARL_journalist_oath
+		icon = GFX_ARL_journalist_oath
 		x = -2
 		y = 1
 		relative_position_id = ARL_predict_events
@@ -674,6 +685,7 @@ focus_tree = {
 	
 	focus = {
 		id = ARL_national_saving_focus 
+		icon = GFX_ARL_national_saving_focus
 		x = 0	
 		y = 1
 		relative_position_id = ARL_predict_events
@@ -694,6 +706,7 @@ focus_tree = {
 	
 	focus = {
 		id = ARL_prof_union_monopoly
+		icon = GFX_ARL_prof_union_monopoly
 		x = 2
 		y = 1
 		relative_position_id = ARL_predict_events
@@ -710,6 +723,7 @@ focus_tree = {
 	
 	focus = {
 		id = ARL_elections_no_elections
+		icon = GFX_ARL_elections_no_elections
 		x = 0
 		y = 1
 		relative_position_id = ARL_national_saving_focus
@@ -731,6 +745,7 @@ focus_tree = {
 	
 	focus = {
 		id = ARL_little_francheskans
+		#icon = GFX_ARL_little_francheskans
 		x = 0
 		y = 1
 		relative_position_id = ARL_elections_no_elections
@@ -745,6 +760,7 @@ focus_tree = {
 	
 	focus = {
 		id = ARL_offer_for_offer
+		icon = GFX_ARL_offer_for_offer
 		x = -1
 		y = 1
 		relative_position_id = ARL_francheska_first_focus
@@ -759,6 +775,7 @@ focus_tree = {
 	
 	focus = {
 		id = ARL_migration_bureau_expansion
+		icon = GFX_ARL_migration_bureau_expansion
 		x = 0
 		y = 1
 		relative_position_id = ARL_offer_for_offer
@@ -772,6 +789,7 @@ focus_tree = {
 	
 	focus = {
 		id = ARL_age_of_unicorns
+		icon = GFX_ARL_age_of_unicorns
 		x = 0
 		y = 1
 		relative_position_id = ARL_migration_bureau_expansion
@@ -788,6 +806,7 @@ focus_tree = {
 	
 	focus = {
 		id = ARL_equality_law
+		icon = GFX_ARL_equality_law
 		x = 0
 		y = 1
 		relative_position_id = ARL_age_of_unicorns
@@ -802,6 +821,7 @@ focus_tree = {
 	
 	focus = {
 		id = ARL_unicorns_of_the_world
+		icon = GFX_ARL_unicorns_of_the_world
 		x = 0
 		y = 1
 		relative_position_id = ARL_equality_law
@@ -823,6 +843,7 @@ focus_tree = {
 	
 	focus = {
 		id = ARL_enemies_everywhere
+		icon = GFX_ARL_enemies_everywhere
 		x = 6
 		y = 1
 		relative_position_id = ARL_francheska_first_focus
@@ -836,6 +857,7 @@ focus_tree = {
 	
 	focus = {
 		id = ARL_army_reorganisation
+		icon = GFX_ARL_army_reorganisation
 		x = -4
 		y = 1
 		relative_position_id = ARL_enemies_everywhere	
@@ -878,6 +900,7 @@ focus_tree = {
 	
 	focus = {
 		id = ARL_forad_focus
+		icon = GFX_ARL_forad_focus
 		x = 0
 		y = 1
 		relative_position_id = ARL_army_reorganisation	
@@ -892,6 +915,7 @@ focus_tree = {
 	
 	focus = {
 		id = ARL_evre_steel
+		icon = GFX_ARL_evre_steel
 		x = -1
 		y = 1
 		relative_position_id = ARL_forad_focus	
@@ -910,6 +934,7 @@ focus_tree = {
 	
 	focus = {
 		id = ARL_blitzkrieg_tactics
+		icon = GFX_ARL_blitzkrieg_tactics
 		x = 1
 		y = 1
 		relative_position_id = ARL_forad_focus	
@@ -931,6 +956,7 @@ focus_tree = {
 	
 	focus = {
 		id = ARL_heavy_metals
+		icon = GFX_ARL_heavy_metals
 		x = 0
 		y = 1
 		relative_position_id = ARL_evre_steel
@@ -953,6 +979,7 @@ focus_tree = {
 	
 	focus = {
 		id = ARL_need_more_tanks
+		icon = GFX_ARL_need_more_tanks
 		x = 0
 		y = 1
 		relative_position_id = ARL_blitzkrieg_tactics
@@ -966,6 +993,7 @@ focus_tree = {
 	
 	focus = {
 		id = ARL_need_more_planes
+		icon = GFX_ARL_need_more_planes
 		x = 0
 		y = 1
 		relative_position_id = ARL_need_more_tanks
@@ -987,6 +1015,7 @@ focus_tree = {
 	
 	focus = {
 		id = ARL_lengrad_concern_focus
+		icon = GFX_ARL_lengrad_concern_focus
 		x = 0
 		y = 1
 		relative_position_id = ARL_need_more_planes
@@ -1001,6 +1030,7 @@ focus_tree = {
 	
 	focus = {
 		id = ARL_evaluate_milprom
+		icon = GFX_ARL_evaluate_milprom
 		x = -1
 		y = 1
 		relative_position_id = ARL_enemies_everywhere
@@ -1022,6 +1052,7 @@ focus_tree = {
 	
 	focus = {
 		id = ARL_bastion_dockyards
+		icon = GFX_ARL_bastion_dockyards
 		x = 0
 		y = 1
 		relative_position_id = ARL_evaluate_milprom
@@ -1044,6 +1075,7 @@ focus_tree = {
 	
 	focus = {
 		id = ARL_alicorn_project
+		icon = GFX_ARL_alicorn_project
 		x = 0
 		y = 1
 		relative_position_id = ARL_bastion_dockyards
@@ -1064,6 +1096,7 @@ focus_tree = {
 	
 	focus = {
 		id = ARL_stonks
+		icon = GFX_ARL_stonks
 		x = 0
 		y = 1
 		relative_position_id = ARL_alicorn_project
@@ -1091,6 +1124,7 @@ focus_tree = {
 	
 	focus = {
 		id = ARL_carriers_are_the_key
+		icon = GFX_ARL_carriers_are_the_key
 		x = 0
 		y = 1
 		
@@ -1116,6 +1150,7 @@ focus_tree = {
 	
 	focus = {
 		id = ARL_arlua_concern_focus
+		icon = GFX_ARL_arlua_concern_focus
 		x = 1
 		y = 1
 		relative_position_id = ARL_lengrad_concern_focus
@@ -1132,6 +1167,7 @@ focus_tree = {
 	
 	focus = {
 		id = ARL_develop_civ_industry
+		icon = GFX_ARL_develop_civ_industry
 		x = 3
 		y = 1
 		relative_position_id = ARL_enemies_everywhere
@@ -1161,6 +1197,7 @@ focus_tree = {
 	
 	focus = {
 		id = ARL_skyfall_investitions
+		icon = GFX_ARL_skyfall_investitions
 		x = -2
 		y = 1
 		relative_position_id = ARL_develop_civ_industry
@@ -1182,6 +1219,7 @@ focus_tree = {
 	
 	focus = {
 		id = ARL_manehattan_investitions
+		icon = GFX_ARL_manehattan_investitions
 		x = 2
 		y = 1
 		relative_position_id = ARL_develop_civ_industry
@@ -1203,6 +1241,7 @@ focus_tree = {
 	
 	focus = {
 		id = ARL_rabotay_blyad
+		icon = GFX_ARL_rabotay_blyad
 		x = 0
 		y = 1
 		relative_position_id = ARL_develop_civ_industry
@@ -1229,6 +1268,7 @@ focus_tree = {
 	
 	focus = {
 		id = ARL_yalmar_swamps
+		icon = GFX_ARL_yalmar_swamps
 		x = 0
 		y = 1
 		relative_position_id = ARL_rabotay_blyad
@@ -1264,12 +1304,12 @@ focus_tree = {
 					amount = 6
 				}
 			}
-
 		}
 	}
 	
 	focus = {
 		id = ARL_fort_bastion_railroad
+		icon = GFX_ARL_fort_bastion_railroad
 		x = 0
 		y = 1
 		relative_position_id = ARL_yalmar_swamps
@@ -1290,6 +1330,7 @@ focus_tree = {
 	
 	focus = {
 		id = ARL_arlais_help_association
+		icon = GFX_ARL_arlais_help_association
 		x = 0
 		y = 1
 		relative_position_id = ARL_fort_bastion_railroad
@@ -1306,6 +1347,7 @@ focus_tree = {
 	
 	focus = {
 		id = ARL_we_need_coal
+		icon = GFX_ARL_we_need_coal
 		x = -2
 		y = 1
 		relative_position_id = ARL_arlais_help_association
@@ -1332,6 +1374,7 @@ focus_tree = {
 	
 	focus = {
 		id = ARL_synthetic_gasoline
+		icon = GFX_ARL_synthetic_gasoline
 		x = 0
 		y = 1
 		relative_position_id = ARL_arlais_help_association
@@ -1369,6 +1412,7 @@ focus_tree = {
 	
 	focus = {
 		id = ARL_arley_work_service_focus
+		icon = GFX_ARL_arley_work_service_focus
 		x = 2
 		y = 1
 		relative_position_id = ARL_arlais_help_association
@@ -1401,6 +1445,7 @@ focus_tree = {
 	
 	focus = {
 		id = ARL_wealth_stonks_good
+		icon = GFX_ARL_wealth_stonks_good
 		x = 0
 		y = 1
 		relative_position_id = ARL_synthetic_gasoline
@@ -1419,6 +1464,6 @@ focus_tree = {
 			add_ideas = ARL_arlesian_miracle_idea
 		}
 	}
-	
+}
 	
 	

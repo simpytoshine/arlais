@@ -41,6 +41,10 @@
     ARL_get_6_helms_1_unis_tt:0 "После начала §RВойны за Арлей§! будет развернута 1 дивизия §CИзгнанников Королевской стражи§!"
     ARL_lock_all_focuses:0 "Выполнение фокусов, позволяющих нам укрепить наши позиции в §RВойне за Арлей§!, будет заблокировано!"
     
+    ##НАЦ ДУХИ##
+    
+    
+    
     ##НАЧАЛЬНЫЕ ФОКУСЫ##
     ARL_we_had_dream:0 "У нас была мечта..."
     ARL_we_had_dream_desc:0 "У МЕНЯ ЕСТЬ МЕЧТА!"
@@ -131,5 +135,142 @@
     
     ARL_attack_ruayo:0 "На Руайо!"
     ARL_attack_ruayo_desc:0 "TODO"
+    
+    ##ДО-ЮНИКОРНСКИЕ ФОКУСЫ##
+    ARL_francheska_first_focus:0 "Франческа I"
+    ARL_francheska_first_focus_desc:0 "TODO"
+    
+    ARL_bastion_court:0 "Суд в Бастионе"
+    ARL_bastion_court_desc:0 "TODO"
+    
+    ARL_ruayo_court:0 "Суд в Руайо"
+    ARL_ruayo_court_desc:0 "TODO"
+    
+    ARL_no_place_for_traitors_focus:0 "Нет места предателям"
+    ARL_no_place_for_traitors_focus_desc:0 "TODO"
+    
+    ARL_confiscate_arrest:0 "Конфискации, аресты и вымогательства"
+    ARL_confiscate_arrest_desc:0 "TODO"
+    
+    ARL_no_more_smutas:0 "Больше никаких смут"
+    ARL_no_more_smutas_desc:0 "TODO"
+    
+    ARL_puto_law_focus:0 "Закон Пюто"
+    ARL_puto_law_focus_desc:0 "TODO"
+    
+    ARL_puto_law_second_change_focus:0 "Закон Пюто, вторая поправка"
+    ARL_puto_law_second_change_focus_desc:0 "TODO"
+    
+    ARL_predict_events:0 "Опередить события"
+    ARL_predict_events_desc:0 "TODO"
+    
+    ARL_journalist_oath:0 "Журналистская присяга"
+    ARL_journalist_oath_desc:0 "TODO"
+    
+    ARL_national_saving_focus:0 "Вопрос о Национальном Спасении" 
+    ARL_national_saving_focus_desc:0 "TODO"
+    
+    ARL_prof_union_monopoly:0 "Монополия на профсоюзы"
+    ARL_prof_union_monopoly_desc:0 "TODO"
+    
+    ARL_elections_no_elections:0 "Выборы без выбора"
+    ARL_elections_no_elections_desc:0 "TODO"
+    
+    ARL_little_francheskans:0 "Малыши франческанцы"
+    ARL_little_francheskans_desc:0 "TODO"
+    
+    ARL_offer_for_offer:0 "Услуга за услугу"
+    ARL_offer_for_offer_desc:0 "TODO"
+    
+    ARL_migration_bureau_expansion:0 "Расширение Агентства по делам миграции"
+    ARL_migration_bureau_expansion_desc:0 "TODO"
+    
+    ARL_age_of_unicorns:0 "Единорожий век"
+    ARL_age_of_unicorns_desc:0 "TODO"
+    
+    ARL_equality_law:0 "Закон о равенстве"
+    ARL_equality_law_desc:0 "TODO"
+    
+    ARL_unicorns_of_the_world:0 "Единороги со всего мира"
+    ARL_unicorns_of_the_world_desc:0 "TODO"
+    
+    ARL_enemies_everywhere:0 "Враги со всех сторон"
+    ARL_enemies_everywhere_desc:0 "TODO"
+    
+    ARL_army_reorganisation:0 "Провести реорганизацию армии"
+    ARL_army_reorganisation_desc:0 "TODO"
+    
+    ARL_forad_focus:0 "Танковый концерн "ФОРАД""
+    ARL_forad_focus_desc:0 "TODO"
+    
+    ARL_evre_steel:0 "Железные рудники Эврё"
+    ARL_evre_steel_desc:0 "TODO"
+    
+    ARL_blitzkrieg_tactics:0 "Тактика блицкрига"
+    ARL_blitzkrieg_tactics_desc:0 "Нет, блять, блицкринжа"
+    
+    ARL_heavy_metals:0 "Тяжёлые металы"
+    ARL_heavy_metals_desc:0 "TODO"
+    
+    ARL_need_more_tanks:0 "Нужно больше танков..."
+    ARL_need_more_tanks_desc:0 "TODO"
+    
+    ARL_need_more_planes:0 "...и самолётов!"
+    ARL_need_more_planes_desc:0 "TODO"
+    
+    ARL_lengrad_concern_focus:0 "Концерн "Легранд""
+    ARL_lengrad_concern_focus_desc:0 "TODO"
+    
+    ARL_evaluate_milprom:0 "Оценить военную промышленность"
+    ARL_evaluate_milprom_desc:0 "TODO"
+    
+    ARL_bastion_dockyards:0 "Доки Бастиона"
+    ARL_bastion_dockyards_desc:0 "TODO"
+    
+    ARL_alicorn_project:0 "Проект "Аликорн""
+    ARL_alicorn_project_desc:0 "TODO"
+    
+    ARL_stonks:0 "Выгодная сделка"
+    ARL_stonks_desc:0 "TODO"
+    
+    ARL_carriers_are_the_key:0 "Авианосцы - ключ к морю"
+    ARL_carriers_are_the_key_desc:0 "TODO"
+    
+    ARL_arlua_concern_focus:0 "Концерн "Арлуа"
+    ARL_arlua_concern_focus_desc:0 "TODO"
+    
+    ARL_develop_civ_industry:0 "Развивать гражданскую промышленность"
+    ARL_develop_civ_industry_desc:0 "TODO"
+    
+    ARL_skyfall_investitions:0 "Инвестиции из Скайфола"
+    ARL_skyfall_investitions_desc:0 "TODO"
+    
+    ARL_manehattan_investitions:0 "Инвестиции из Мейнхеттена
+    ARL_manehattan_investitions_desc:0 "TODO"
+    
+    ARL_rabotay_blyad:0 "Я запрещаю вам не работать"
+    ARL_rabotay_blyad_desc:0 "TODO"
+    
+    ARL_yalmar_swamps:0 "Осушить Ялмарские болота"
+    ARL_yalmar_swamps_desc:0 "TODO"
+    
+    ARL_fort_bastion_railroad:0 "Железная дорога Фор-де-Арле - Бастион"
+    ARL_fort_bastion_railroad_desc:0 "TODO"
+    
+    ARL_arlais_help_association:0 "Ассоциация помощи Арлею"
+    ARL_arlais_help_association_desc:0 "TODO"
+    
+    ARL_we_need_coal:0 "Достаньте Герцогине угля!"
+    ARL_we_need_coal_desc:0 "TODO"
+    
+    ARL_synthetic_gasoline:0 "Синтетический бензин"
+    ARL_synthetic_gasoline_desc:0 "TODO"
+    
+    ARL_arley_work_service_focus:0 "Арлейская Служба Труда"
+    ARL_arley_work_service_focus_desc:0 "TODO"
+    
+    ARL_wealth_stonks_good:0 "Благополучие"
+    ARL_wealth_stonks_good_desc:0 "TODO"
+    
     
     
