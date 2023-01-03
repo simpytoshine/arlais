@@ -1,0 +1,236 @@
+division_template = {
+	name = "Division Cuirassée"
+	priority = 1
+				
+	regiments = {
+		light_armor = { x = 0 y = 0 }
+		light_armor = { x = 0 y = 1 }
+		light_armor = { x = 0 y = 2 }
+		light_armor = { x = 0 y = 3 }
+		light_armor = { x = 0 y = 4 }
+		motorized = { x = 1 y = 0 }
+		motorized = { x = 1 y = 1 }
+		motorized = { x = 1 y = 2 }
+		motorized = { x = 1 y = 3 }
+		mot_artillery_brigade = { x = 1 y = 4 }
+						
+	}
+	support = {
+		light_tank_recon = { x = 0 y = 0 }
+		engineer = { x = 0 y = 1 }
+		unicorn_company = { x = 0 y = 2 }
+	}
+}
+				
+division_template = {
+	name = "Division des Grenadiers"
+	priority = 1
+
+	regiments = {
+		infantry = { x = 0 y = 0 }
+		infantry = { x = 0 y = 1 }
+		infantry = { x = 0 y = 2 }
+		infantry = { x = 0 y = 3 }
+		infantry = { x = 0 y = 4 }
+		infantry = { x = 1 y = 0 }
+		infantry = { x = 1 y = 1 }
+		infantry = { x = 1 y = 2 }
+		infantry = { x = 1 y = 3 }
+		artillery_brigade = { x = 2 y = 0 }
+		artillery_brigade = { x = 2 y = 1 }
+		artillery_brigade = { x = 2 y = 2 }
+		artillery_brigade = { x = 2 y = 3 }
+					
+	}
+	support = {
+		mot_recon = { x = 0 y = 0 }
+		engineer = { x = 0 y = 1 }
+		unicorn_company = { x = 0 y = 2 }
+	}
+}
+				
+division_template = {
+	name = "Division d'Infanterie"
+	priority = 1
+	
+	regiments = {
+		infantry = { x = 0 y = 0 }
+		infantry = { x = 0 y = 1 }
+		infantry = { x = 0 y = 2 }
+		infantry = { x = 0 y = 3 }
+		infantry = { x = 0 y = 4 }
+		infantry = { x = 1 y = 0 }
+		infantry = { x = 1 y = 1 }
+		infantry = { x = 1 y = 2 }
+		infantry = { x = 1 y = 3 }
+		artillery_brigade = { x = 1 y = 4 }
+					
+	}
+	support = {
+		recon = { x = 0 y = 0 }
+		engineer = { x = 0 y = 1 }
+		unicorn_company = { x = 0 y = 2 }
+	}
+}			
+division_template = {
+	name = "Fusiliers de la Duchesse"
+	priority = 2
+		
+	regiments = {
+		infantry = { x = 0 y = 0 }
+		infantry = { x = 0 y = 1 }
+		infantry = { x = 0 y = 2 }
+		infantry = { x = 0 y = 3 }
+		infantry = { x = 1 y = 0 }
+		infantry = { x = 1 y = 1 }
+		infantry = { x = 1 y = 2 }
+		infantry = { x = 1 y = 3 }
+		artillery_brigade = { x = 2 y = 0 }
+		artillery_brigade = { x = 2 y = 1 }
+		artillery_brigade = { x = 2 y = 2 }
+		artillery_brigade = { x = 2 y = 3 }
+		light_armor = { x = 3 y = 0 }
+							
+	}
+	support = {
+		recon = { x = 0 y = 0 }
+		engineer = { x = 0 y = 1 }
+		unicorn_company = { x = 0 y = 2 }
+	}
+}
+				
+division_template = {
+	name = "Division Pégasienne"
+	priority = 1
+		
+	regiments = {
+		pegasi = { x = 0 y = 0 }
+		pegasi = { x = 0 y = 1 }
+		pegasi = { x = 0 y = 2 }
+		pegasi = { x = 1 y = 0 }
+		pegasi = { x = 1 y = 1 }
+		pegasi = { x = 1 y = 2 }
+		pegasi = { x = 2 y = 0 }
+		pegasi = { x = 2 y = 1 }
+		pegasi = { x = 2 y = 2 }
+			
+	}
+	support = {
+		recon = { x = 0 y = 0 }
+		engineer = { x = 0 y = 1 }
+		unicorn_company = { x = 0 y = 2 }
+	}
+}
+
+units = {	
+	division = {
+		name = "Division Cuirassée 'Francsesca'"
+		location = 6226
+		division_template = "Division Cuirassée"
+		start_equipment_factor = 1
+		start_experience_factor = 0.25
+	}
+	division = {
+		name = "Division Cuirassée 'Royeaux'"
+		location = 9502
+		division_template = "Division Cuirassée"
+		start_equipment_factor = 1
+		start_experience_factor = 0.25
+	}
+	
+	division = {
+		name = "Division des Grenadiers 'Severyana'"
+		location = 579
+		division_template = "Division des Grenadiers"
+		start_equipment_factor = 1
+		start_experience_factor = 0.25
+	}
+	
+	division = {
+		name = "Division d'Infanterie 'Equus'"
+		location = 487
+		division_template = "Division d'Infanterie"
+		start_equipment_factor = 1
+		start_experience_factor = 0.25
+	}
+	division = {
+		name = "Division d'Infanterie 'Celestia'"
+		location = 12860
+		division_template = "Division d'Infanterie"
+		start_equipment_factor = 1
+		start_experience_factor = 0.25
+	}
+	division = {
+		name = "Division d'Infanterie 'Montée'"
+		location = 3539
+		division_template = "Division d'Infanterie"
+		start_equipment_factor = 1
+		start_experience_factor = 0.25
+	}
+	division = {
+		name = "Division d'Infanterie 'Devoir'"
+		location = 4060
+		division_template = "Division d'Infanterie"
+		start_equipment_factor = 1
+		start_experience_factor = 0.25
+	}
+	division = {
+		name = "Division d'Infanterie 'Patrie'"
+		location = 3566
+		division_template = "Division d'Infanterie"
+		start_equipment_factor = 1
+		start_experience_factor = 0.25
+	}
+	division = {
+		name = "Division d'Infanterie 'Courageux'"
+		location = 6563
+		division_template = "Division d'Infanterie"
+		start_equipment_factor = 1
+		start_experience_factor = 0.25
+	}
+	division = {
+		name = "Division d'Infanterie 'Bastion'"
+		location = 6226
+		division_template = "Division d'Infanterie"
+		start_equipment_factor = 1
+		start_experience_factor = 0.25
+	}
+	
+	division = {
+		name = "Fusiliers de la Duchesse"
+		location = 9502
+		division_template = "Fusiliers de la Duchesse"
+		start_equipment_factor = 1
+		start_experience_factor = 1
+	}
+	
+	division = {
+		name = "Division Pégasienne 'Sud'"
+		location = 6226
+		division_template = "Division Pégasienne"
+		start_equipment_factor = 1
+		start_experience_factor = 0.25
+	}
+	division = {
+		name = "ivision Pégasienne 'Nord'"
+		location = 12860
+		division_template = "Division Pégasienne"
+		start_equipment_factor = 1
+		start_experience_factor = 0.25
+	}
+	division = {
+		name = "Division Pégasienne 'Luna'"
+		location = 11967
+		division_template = "Division Pégasienne"
+		start_equipment_factor = 1
+		start_experience_factor = 0.25
+	}
+	division = {
+		name = "Division Pégasienne 'Nuit'"
+		location = 3539
+		division_template = "Division Pégasienne"
+		start_equipment_factor = 1
+		start_experience_factor = 0.25
+	}
+	
+}

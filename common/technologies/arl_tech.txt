@@ -1,0 +1,26 @@
+
+technologies = {	
+
+	arlais_age_of_unicorns = {
+		research_cost = 0
+		start_year = 1007
+		
+		unicorn_company = {
+			manpower = 600
+			breakthrough = 0.5
+			reliability = 0.05
+			experience_loss_factor = -0.05
+			recon = 1
+			initiative = 0.1
+			defense = 0.3
+			soft_attack = 0.5
+			air_attack = 750
+			ap_attack = 1
+		}
+		
+		categories = {
+			cat_infantry_weapons
+			infantry_tech
+		}
+	}
+	

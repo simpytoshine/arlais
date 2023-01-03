@@ -503,6 +503,7 @@ focus_tree = {
 				}
 				
 			}
+			add_ideas = ARL_country_in_ruins
 		}
 	}
 	
@@ -606,6 +607,7 @@ focus_tree = {
 				popularity = 0.1
 			}
 			add_political_power = -100
+			add_ideas = ARL_puto_law_idea_1
 		}
 	}
 	
@@ -620,6 +622,10 @@ focus_tree = {
 			log = "[GetDateText]: [ARL.GetTag] focus ARL_puto_law_second_change_focus"
 			country_event = { id = arl_events.34 }
 			add_political_power = -100
+			swap_ideas = {
+				add_idea = ARL_puto_law_idea_2
+				remove_idea = ARL_puto_law_idea_1
+			}
 		}
 	}
 	
@@ -718,6 +724,7 @@ focus_tree = {
 				democratic = 30
 				fascism = 70
 			}
+			add_ideas = ARL_dutchess_list_idea
 
 		}
 	}
@@ -732,6 +739,7 @@ focus_tree = {
 		completion_reward = {
 			log = "[GetDateText]: [ARL.GetTag] focus ARL_little_francheskans"
 			country_event = { id = arl_events.41 }
+			add_ideas = ARL_my_little_franciscans_idea
 		}
 	}
 	
@@ -763,15 +771,31 @@ focus_tree = {
 	}
 	
 	focus = {
-		id = ARL_equality_law
+		id = ARL_age_of_unicorns
 		x = 0
 		y = 1
 		relative_position_id = ARL_migration_bureau_expansion
 		prerequisite = { focus = ARL_migration_bureau_expansion }
 		cost = 2
 		completion_reward = {
-			log = "[GetDateText]: [ARL.GetTag] focus ARL_equality_law"
+			log = "[GetDateText]: [ARL.GetTag] focus ARL_age_of_unicorns"
 			country_event = { id = arl_events.44 }
+			set_technology = { arlais_age_of_unicorns = 1 popup = no }
+			custom_effect_tooltip = ARL_arlais_age_of_unicorns_tt
+			
+		}
+	}
+	
+	focus = {
+		id = ARL_equality_law
+		x = 0
+		y = 1
+		relative_position_id = ARL_age_of_unicorns
+		prerequisite = { focus = ARL_age_of_unicorns }
+		cost = 2
+		completion_reward = {
+			log = "[GetDateText]: [ARL.GetTag] focus ARL_equality_law"
+			country_event = { id = arl_events.45 }
 			add_stability = -0.2
 		}
 	}
@@ -785,7 +809,7 @@ focus_tree = {
 		cost = 2
 		completion_reward = {
 			log = "[GetDateText]: [ARL.GetTag] focus ARL_unicorns_of_the_world"
-			country_event = { id = arl_events.45 }
+			country_event = { id = arl_events.46 }
 			add_stability = -0.05
 			482 = {
 				add_manpower = 250000
@@ -793,6 +817,7 @@ focus_tree = {
 			404 = {
 				add_manpower = 150000
 			}
+			add_ideas = ARL_migration_bang_idea
 		}
 	}
 	
@@ -818,7 +843,36 @@ focus_tree = {
 		cost = 8.6
 		completion_reward = {
 			log = "[GetDateText]: [ARL.GetTag] focus ARL_army_reorganisation"
-			
+			add_timed_idea = {
+				idea = ARL_army_reorg_idea
+				days = 420
+			}
+
+			custom_effect_tooltip = ARL_replace_units_after_complete
+			hidden_effect = {
+				delete_unit_template_and_units = {
+					division_template = "Therestralian Mercenaries"
+					disband = yes
+				}
+				delete_unit_template_and_units = {
+					division_template = "Pegasi Forces"
+					disband = yes
+				}
+				delete_unit_template_and_units = {
+					division_template = "Infantry Division"
+					disband = yes
+				}
+				delete_unit_template_and_units = {
+					division_template = "Severyanian Volunteers"
+					disband = yes
+				}
+				delete_unit_template_and_units = {
+					division_template = "Royal Guard Exiles"
+					disband = yes
+				}
+				
+				load_oob = ARL_units_after_reorg
+			}
 		}
 	}
 	
@@ -869,7 +923,8 @@ focus_tree = {
 				uses = 3
 				category = cat_mobile_warfare
 			}
-			country_event = { id = arl_events.46 }
+			add_ideas = ARL_blietzkrieg_idea
+			country_event = { id = arl_events.47 }
 			custom_effect_tooltip = ARL_available_ditrich
 		}
 	}
@@ -905,7 +960,7 @@ focus_tree = {
 		cost = 2
 		completion_reward = {
 			log = "[GetDateText]: [ARL.GetTag] focus ARL_need_more_tanks"
-			country_event = { id = arl_events.47 }
+			country_event = { id = arl_events.48 }
 		}
 	}
 	
@@ -918,7 +973,7 @@ focus_tree = {
 		cost = 2
 		completion_reward = {
 			log = "[GetDateText]: [ARL.GetTag] focus ARL_need_more_planes"
-			country_event = { id = arl_events.48 }
+			country_event = { id = arl_events.49 }
 			custom_effect_tooltip = ARL_available_shadow
 			482 = {
 				add_building_construction = {
@@ -953,7 +1008,7 @@ focus_tree = {
 		cost = 5.8
 		completion_reward = {
 			log = "[GetDateText]: [ARL.GetTag] focus ARL_evaluate_milprom"
-			country_event = { id = arl_events.49 }
+			country_event = { id = arl_events.50 }
 			482 = {
 				add_extra_state_shared_building_slots = 4
 				add_building_construction = {
@@ -974,7 +1029,7 @@ focus_tree = {
 		cost = 5.8
 		completion_reward = {
 			log = "[GetDateText]: [ARL.GetTag] focus ARL_bastion_dockyards"
-			country_event = { id = arl_events.50 }
+			country_event = { id = arl_events.51 }
 			404 = {
 				add_extra_state_shared_building_slots = 5
 				add_building_construction = {
@@ -983,6 +1038,7 @@ focus_tree = {
 					instant_build = yes 
 				}
 			}
+			add_ideas = ARL_bastion_dockyard
 		}
 	}
 	
@@ -995,7 +1051,7 @@ focus_tree = {
 		cost = 5.8
 		completion_reward = {
 			log = "[GetDateText]: [ARL.GetTag] focus ARL_alicorn_project"
-			country_event = { id = arl_events.51 }
+			country_event = { id = arl_events.52 }
 			if = {
 				limit = {
 					has_dlc = "Man The Guns"
@@ -1015,7 +1071,7 @@ focus_tree = {
 		cost = 5.8
 		completion_reward = {
 			log = "[GetDateText]: [ARL.GetTag] focus ARL_stonks"
-			country_event = { id = arl_events.52 }
+			country_event = { id = arl_events.53 }
 			if = {
 				limit = {
 					has_dlc = "By Blood Alone"
@@ -1043,7 +1099,7 @@ focus_tree = {
 		cost = 5.8
 		completion_reward = {
 			log = "[GetDateText]: [ARL.GetTag] focus ARL_carriers_are_the_key"
-			country_event = { id = arl_events.53 }
+			country_event = { id = arl_events.54 }
 			if = {
 				limit = {
 					has_dlc = "Man The Guns"
@@ -1068,7 +1124,7 @@ focus_tree = {
 		cost = 2
 		completion_reward = {
 			log = "[GetDateText]: [ARL.GetTag] focus ARL_arlua_concern_focus"
-			country_event = { id = arl_events.54 }
+			country_event = { id = arl_events.55 }
 			custom_effect_tooltip = available_designer
 			show_ideas_tooltip = ARL_nav_designer_arlua
 		}
@@ -1083,7 +1139,7 @@ focus_tree = {
 		cost = 6.5
 		completion_reward = {
 			log = "[GetDateText]: [ARL.GetTag] focus ARL_develop_civ_industry"
-			country_event = { id = arl_events.55 }
+			country_event = { id = arl_events.56 }
 			404 = {
 				add_extra_state_shared_building_slots = 1
 				add_building_construction = {
@@ -1119,7 +1175,8 @@ focus_tree = {
 		
 		completion_reward = {
 			log = "[GetDateText]: [ARL.GetTag] focus ARL_skyfall_investitions"
-			country_event = { id = arl_events.56 }
+			country_event = { id = arl_events.57 }
+			add_ideas = ARL_skyfall_invest_idea 
 		}
 	}
 	
@@ -1139,7 +1196,8 @@ focus_tree = {
 		
 		completion_reward = {
 			log = "[GetDateText]: [ARL.GetTag] focus ARL_skyfall_investitions"
-			country_event = { id = arl_events.61 }
+			country_event = { id = arl_events.58 }
+			add_ideas = ARL_manehattan_invest_idea
 		}
 	}
 	
@@ -1153,7 +1211,7 @@ focus_tree = {
 
 		completion_reward = {
 			log = "[GetDateText]: [ARL.GetTag] focus ARL_rabotay_blyad"
-			country_event = { id = arl_events.57 }
+			country_event = { id = arl_events.59 }
 			482 = {
 				add_extra_state_shared_building_slots = 2
 				add_building_construction = {
@@ -1179,7 +1237,7 @@ focus_tree = {
 
 		completion_reward = {
 			log = "[GetDateText]: [ARL.GetTag] focus ARL_yalmar_swamps"
-			country_event = { id = arl_events.58 }
+			country_event = { id = arl_events.60 }
 			482 = {
 				add_building_construction = {
 					type = infrastructure
@@ -1220,7 +1278,7 @@ focus_tree = {
 
 		completion_reward = {
 			log = "[GetDateText]: [ARL.GetTag] focus ARL_fort_bastion_railroad"
-			country_event = { id = arl_events.59 }
+			country_event = { id = arl_events.61 }
 			build_railway = {
 				level = 5
 				build_only_on_allied = yes 
@@ -1240,7 +1298,7 @@ focus_tree = {
 
 		completion_reward = {
 			log = "[GetDateText]: [ARL.GetTag] focus ARL_arlais_help_association"
-			country_event = { id = arl_events.60 }
+			country_event = { id = arl_events.62 }
 			custom_effect_tooltip = available_designer
 			show_ideas_tooltip = ARL_ind_designer_association
 		}
@@ -1256,7 +1314,7 @@ focus_tree = {
 
 		completion_reward = {
 			log = "[GetDateText]: [ARL.GetTag] focus ARL_we_need_coal"
-			country_event = { id = arl_events.62 }
+			country_event = { id = arl_events.63 }
 			482 = {
 				add_extra_state_shared_building_slots = 1
 				add_building_construction = {
@@ -1284,7 +1342,7 @@ focus_tree = {
 		}
 		completion_reward = {
 			log = "[GetDateText]: [ARL.GetTag] focus ARL_synthetic_gasoline"
-			country_event = { id = arl_events.63 }
+			country_event = { id = arl_events.64 }
 			482 = {
 				add_extra_state_shared_building_slots = 3
 				add_building_construction = {
@@ -1319,7 +1377,7 @@ focus_tree = {
 
 		completion_reward = {
 			log = "[GetDateText]: [ARL.GetTag] focus ARL_arley_work_service_focus"
-			country_event = { id = arl_events.64 }
+			country_event = { id = arl_events.65 }
 			482 = {
 				add_extra_state_shared_building_slots = 1
 				add_building_construction = {
@@ -1352,10 +1410,13 @@ focus_tree = {
 		cost = 6.4
 		completion_reward = {
 			log = "[GetDateText]: [ARL.GetTag] focus ARL_arley_work_service_focus"
-			country_event = { id = arl_events.65 }
+			country_event = { id = arl_events.66 }
 			add_stability = 0.3
 			add_political_power = 300
 			add_research_slot = 1
+			remove_ideas = ARL_dreams_of_big
+			remove_ideas = ARL_country_in_ruins
+			add_ideas = ARL_arlesian_miracle_idea
 		}
 	}
 	
