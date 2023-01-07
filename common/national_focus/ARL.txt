@@ -111,7 +111,7 @@ focus_tree = {
 	
 	focus = {
 		id = ARL_heroes_of_the_northern_war
-		#icon = GFX_ARL_heroes_of_the_northern_war
+		icon = GFX_ARL_heroes_of_the_northern_war
 		x = 0
 		y = 1
 		relative_position_id = ARL_our_darkest_hour
@@ -140,7 +140,7 @@ focus_tree = {
 	focus = {
 		id = ARL_break_the_chains
 		icon = GFX_ARL_break_the_chains
-		x = -2
+		x = 0
 		y = 1
 		relative_position_id = ARL_francheska_focus
 		prerequisite = { focus = ARL_francheska_focus }
@@ -260,7 +260,7 @@ focus_tree = {
 	focus = {
 		id = ARL_helping_hoof
 		icon = GFX_ARL_helping_hoof
-		x = -1
+		x = 0
 		y = 1
 		relative_position_id = ARL_accept_the_invite
 		prerequisite = { focus =  ARL_accept_the_invite }
@@ -274,7 +274,7 @@ focus_tree = {
 	focus = {
 		id = ARL_colour_of_nation
 		icon = GFX_ARL_colour_of_nation
-		x = -1
+		x = -2
 		y = 1
 		relative_position_id = ARL_helping_hoof
 		prerequisite = { focus = ARL_helping_hoof }
@@ -289,7 +289,7 @@ focus_tree = {
 	focus = {
 		id = ARL_severyana_heritage
 		#icon = GFX_ARL_severyana_heritage
-		x = 3
+		x = 2
 		y = 1
 		available = {
 			NOT = {

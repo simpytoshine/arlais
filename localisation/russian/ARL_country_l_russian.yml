@@ -245,7 +245,7 @@
     ARL_skyfall_investitions:0 "Инвестиции из Скайфола"
     ARL_skyfall_investitions_desc:0 "TODO"
     
-    ARL_manehattan_investitions:0 "Инвестиции из Мейнхеттена
+    ARL_manehattan_investitions:0 "Инвестиции из Мейнхеттена"
     ARL_manehattan_investitions_desc:0 "TODO"
     
     ARL_rabotay_blyad:0 "Я запрещаю вам не работать"
@@ -254,7 +254,7 @@
     ARL_yalmar_swamps:0 "Осушить Ялмарские болота"
     ARL_yalmar_swamps_desc:0 "TODO"
     
-    ARL_fort_bastion_railroad:0 "Железная дорога Фор-де-Арле - Бастион"
+    ARL_fort_bastion_railroad:0 "Железная дорога Форт-Арлей - Бастион"
     ARL_fort_bastion_railroad_desc:0 "TODO"
     
     ARL_arlais_help_association:0 "Ассоциация помощи Арлею"
@@ -273,4 +273,270 @@
     ARL_wealth_stonks_good_desc:0 "TODO"
     
     
+    ##Ивенты##
     
+    arl_events.1.t:0 "У нас была мечта"
+    arl_events.1.d:0 "TODO"
+    arl_events.1.a:0 "хуй на"
+    arl_events.1.b:0 "стаба"
+    arl_events.1.c:0 "поддержка войны"
+    
+    arl_events.2.t:0 "Во славу Арлея!"
+    arl_events.2.d:0 "TODO"
+    arl_events.2.a:0 "TODO"
+    
+    arl_events.3.t:0 "Смерть Завоевателя"
+    arl_events.3.d:0 "он сдох"
+    arl_events.3.a:0 "от кринжа"
+    
+    arl_events.4.t:0 "Наследный Герцог"
+    arl_events.4.d:0 "TODO"
+    arl_events.4.a:0 "TODO"
+    
+    arl_events.5.t:0 "Война за Острова"
+    arl_events.5.d:0 "TODO"
+    arl_events.5.a:0 "TODO"
+    
+    arl_events.6.t:0 "Битва за Мыс"
+    arl_events.6.d:0 "TODO"
+    arl_events.6.a:0 "TODO"
+    
+    arl_events.7.t:0 "Смерть наследника"
+    arl_events.7.d:0 "он тоже сдох от кринжа"
+    arl_events.7.a:0 "TODO"
+    
+    arl_events.8.t:0 "Триархия"
+    arl_events.8.d:0 "TODO"
+    arl_events.8.a:0 "TODO"
+   
+    arl_events.9.t:0 "Лицо Арлея"
+    arl_events.9.d:0 "ФРАНЧЕСКА ШЛЮХА"
+    arl_events.9.a:0 "TODO"
+    
+    arl_events.10.t:0 "Побег"
+    arl_events.10.d:0 "TODO"
+    arl_events.10.a:0 "TODO"
+    
+    arl_events.11.t:0 "Гармония"
+    arl_events.11.d:0 "TODO"
+    arl_events.11.a:0 "TODO"
+    
+    arl_events.12.t:0 "Мейнхеттен зовёт"
+    arl_events.12.d:0 "TODO"
+    arl_events.12.a:0 "TODO"
+    
+    arl_events.13.t:0 "Дом там, где мы"
+    arl_events.13.d:0 "TODO"
+    arl_events.13.a:0 "TODO"
+    
+    arl_events.14.t:0 "Капитан Джон Силвер"
+    arl_events.14.d:0 "TODO"
+    arl_events.14.a:0 "TODO"
+    
+    arl_events.15.t:0 "Рог изобилия"
+    arl_events.15.d:0 "TODO"
+    arl_events.15.a:0 "TODO"
+    
+    arl_events.16.t:0 "Мы повсюду"
+    arl_events.16.d:0 "TODO"
+    arl_events.16.a:0 "TODO"
+    
+    arl_events.17.t:0 "Война за Острова"
+    arl_events.17.d:0 "TODO"
+    arl_events.17.a:0 "TODO"
+    
+    arl_events.18.t:0 "Цвет нации"
+    arl_events.18.d:0 "TODO"
+    arl_events.18.a:0 "TODO"
+    
+    arl_events.19.t:0 "Адмирал Стоун Оушн"
+    arl_events.19.d:0 "TODO"
+    arl_events.19.a:0 "TODO"
+    
+    arl_events.20.t:0 "Троица"
+    arl_events.20.d:0 "TODO"
+    arl_events.20.a:0 "TODO"
+    
+    arl_events.21.t:0 "Это слишком"
+    arl_events.21.d:0 "TODO"
+    arl_events.21.a:0 "TODO"
+    
+    arl_events.22.t:0 "Турне"
+    arl_events.22.d:0 "TODO"
+    arl_events.22.a:0 "TODO"
+    
+    arl_events.23.t:0 "Сиять"
+    arl_events.23.d:0 "TODO"
+    arl_events.23.a:0 "TODO"
+    
+    arl_events.24.t:0 "Безумства восточного побережья"
+    arl_events.24.d:0 "TODO"
+    arl_events.24.a:0 "TODO"
+    
+    arl_events.25.t:0 "Эквестрийская тяжёлая промышленность"
+    arl_events.25.d:0 "TODO"
+    arl_events.25.a:0 "TODO"
+    
+    arl_events.26.t:0 "Ссылка"
+    arl_events.26.d:0 "TODO"
+    arl_events.26.a:0 "TODO"
+    
+    arl_events.27.t:0 "Полуночный совет"
+    arl_events.27.d:0 "TODO"
+    arl_events.27.a:0 "TODO"
+    
+    arl_events.28.t:0 "Взятие Бастиона"
+    arl_events.28.d:0 "TODO"
+    arl_events.28.a:0 "TODO"
+    
+    arl_events.29.t:0 "Кроваво-красный рассвет"
+    arl_events.29.d:0 "TODO"
+    arl_events.29.a:0 "TODO"
+    
+    arl_events.30.t:0 "День казни"
+    arl_events.30.d:0 "TODO"
+    arl_events.30.a:0 "TODO"
+    
+    arl_events.31.t:0 "Второй шанс"
+    arl_events.31.d:0 "TODO"
+    arl_events.31.a:0 "TODO"
+    
+    arl_events.32.t:0 "Чудесный день в Форт-Арлей"
+    arl_events.32.d:0 "TODO"
+    arl_events.32.a:0 "TODO"
+    
+    arl_events.33.t:0 "Затянуть петлю"
+    arl_events.33.d:0 "TODO"
+    arl_events.33.a:0 "TODO"
+    
+    arl_events.34.t:0 "Корабли наджеды"
+    arl_events.34.d:0 "TODO"
+    arl_events.34.a:0 "TODO"
+    
+    arl_events.35.t:0 "Солид Ниб"
+    arl_events.35.d:0 "TODO"
+    arl_events.35.a:0 "TODO"
+    
+    arl_events.36.t:0 "Война за Острова"
+    arl_events.36.d:0 "TODO"
+    arl_events.36.a:0 "TODO"
+    
+    arl_events.37.t:0 "Сертифицированная свобода"
+    arl_events.37.d:0 "TODO"
+    arl_events.37.a:0 "TODO"
+    
+    arl_events.38.t:0 "Кто такой Джон Силвер?"
+    arl_events.38.d:0 "TODO"
+    arl_events.38.a:0 "TODO"
+    
+    arl_events.39.t:0 "В трущобах Бастиона"
+    arl_events.39.d:0 "TODO"
+    arl_events.39.a:0 "TODO"
+    
+    arl_events.40.t:0 "Список Герцогини"
+    arl_events.40.d:0 "TODO"
+    arl_events.40.a:0 "TODO"
+    
+    arl_events.41.t:0 "Патриотизм с пелёнок"
+    arl_events.41.d:0 "TODO"
+    arl_events.41.a:0 "TODO"
+    
+    arl_events.42.t:0 "Нет места грязнопони"
+    arl_events.42.d:0 "TODO"
+    arl_events.42.a:0 "TODO"
+    
+    arl_events.43.t:0 "Представительства по всем Речным землям"
+    arl_events.43.d:0 "TODO"
+    arl_events.43.a:0 "TODO"
+    
+    arl_events.44.t:0 "Банкет в Шато-де-Шатийи"
+    arl_events.44.d:0 "TODO"
+    arl_events.44.a:0 "TODO"
+    
+    arl_events.45.t:0 "Мы правим, вы подчиняетесь"
+    arl_events.45.d:0 "TODO"
+    arl_events.45.a:0 "TODO"
+    
+    arl_events.46.t:0 "Срочное жилищное строительства"
+    arl_events.46.d:0 "TODO"
+    arl_events.46.a:0 "TODO"
+    
+    arl_events.47.t:0 "Самый милый из чейнджлингов"
+    arl_events.47.d:0 "TODO"
+    arl_events.47.a:0 "TODO"
+    
+    arl_events.48.t:0 "Беглец"
+    arl_events.48.d:0 "TODO"
+    arl_events.48.a:0 "TODO"
+    
+    arl_events.49.t:0 "Создать ЕМААЕ"
+    arl_events.49.d:0 "TODO"
+    arl_events.49.a:0 "TODO"
+    
+    arl_events.50.t:0 "Встреча в Компьене"
+    arl_events.50.d:0 "TODO"
+    arl_events.50.a:0 "TODO"
+    
+    arl_events.51.t:0 "Столица линкоров"
+    arl_events.51.d:0 "TODO"
+    arl_events.51.a:0 "TODO"
+    
+    arl_events.52.t:0 "Идеал для подражания"
+    arl_events.52.d:0 "TODO"
+    arl_events.52.a:0 "TODO"
+    
+    arl_events.53.t:0 "Таланты Блэк Марбла"
+    arl_events.53.d:0 "TODO"
+    arl_events.53.a:0 "TODO"
+    
+    arl_events.54.t:0 "Доктрина Стоун Оушна"
+    arl_events.54.d:0 "TODO"
+    arl_events.54.a:0 "TODO"
+    
+    arl_events.55.t:0 "Тройные субсидии"
+    arl_events.55.d:0 "TODO"
+    arl_events.55.a:0 "TODO"
+    
+    arl_events.56.t:0 "Станки прогресса"
+    arl_events.56.d:0 "TODO"
+    arl_events.56.a:0 "TODO"
+    
+    arl_events.57.t:0 "Посольство в Скайфол"
+    arl_events.57.d:0 "TODO"
+    arl_events.57.a:0 "TODO"
+    
+    arl_events.58.t:0 "Вернувшись с победой"
+    arl_events.58.d:0 "TODO"
+    arl_events.58.a:0 "TODO"
+    
+    arl_events.59.t:0 "Фронт общественных работ"
+    arl_events.59.d:0 "TODO"
+    arl_events.59.a:0 "TODO"
+    
+    arl_events.60.t:0 "Рабочие лошадки"
+    arl_events.60.d:0 "TODO"
+    arl_events.60.a:0 "TODO"
+    
+    arl_events.61.t:0 "Жизнь под колеёй"
+    arl_events.61.d:0 "TODO"
+    arl_events.61.a:0 "TODO"
+    
+    arl_events.62.t:0 "Председатель"
+    arl_events.62.d:0 "TODO"
+    arl_events.62.a:0 "TODO"
+    
+    arl_events.63.t:0 "Это приказ"
+    arl_events.63.d:0 "TODO"
+    arl_events.63.a:0 "TODO"
+    
+    arl_events.64.t:0 "Топливная проблема"
+    arl_events.64.d:0 "TODO"
+    arl_events.64.a:0 "TODO"
+    
+    arl_events.65.t:0 "Радость через труд"
+    arl_events.65.d:0 "TODO"
+    arl_events.65.a:0 "TODO"
+    
+    arl_events.66.t:0 "Чудес не бывает"
+    arl_events.66.d:0 "TODO"
+    arl_events.66.a:0 "TODO"
