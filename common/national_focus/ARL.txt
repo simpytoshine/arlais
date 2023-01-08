@@ -1141,7 +1141,7 @@ focus_tree = {
 			}
 			
 			add_doctrine_cost_reduction = {
-				category = fleet_in_being
+				category = cat_fleet_in_being
 				uses = 3
 				cost_reduction = 0.5
 			}
