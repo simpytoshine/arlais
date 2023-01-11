@@ -302,6 +302,7 @@ focus_tree = {
 		completion_reward = {
 			log = "[GetDateText]: [ARL.GetTag] focus ARL_severyana_heritage"
 			country_event = { id = arl_events.19 }
+			custom_effect_tooltip = ARL_arl_war_general_catherine
 		}
 	}
 	
@@ -390,6 +391,7 @@ focus_tree = {
 		completion_reward = {
 			log = "[GetDateText]: [ARL.GetTag] focus ARL_fleur_savey"
 			country_event = { id = arl_events.23 }
+			custom_effect_tooltip = ARL_arl_war_fleur_savey
 		}
 	}
 		
@@ -404,6 +406,7 @@ focus_tree = {
 		completion_reward = {
 			log = "[GetDateText]: [ARL.GetTag] focus ARL_flairs"
 			country_event = { id = arl_events.24 }
+			custom_effect_tooltip = ARL_arl_war_flairs
 		}
 	}
 		
@@ -418,6 +421,7 @@ focus_tree = {
 		completion_reward = {
 			log = "[GetDateText]: [ARL.GetTag] focus ARL_marble_gavle"
 			country_event = { id = arl_events.25 }
+			custom_effect_tooltip = ARL_arl_war_marble_gavle
 		}
 	}
 		
@@ -432,6 +436,7 @@ focus_tree = {
 		completion_reward = {
 			log = "[GetDateText]: [ARL.GetTag] focus ARL_tropical_dream"
 			country_event = { id = arl_events.26 }
+			custom_effect_tooltip = ARL_arl_war_tropical_dream_stark
 		}
 	}
 		
@@ -440,6 +445,9 @@ focus_tree = {
 		icon = GFX_ARL_end_tour
 		x = 0
 		y = 1
+		available = {
+			has_completed_focus = ARL_severyana_heritage
+		}
 		relative_position_id = ARL_tropical_dream
 		prerequisite = { focus = ARL_tropical_dream }
 		cost = 1
@@ -649,6 +657,9 @@ focus_tree = {
 			OR = {
 				has_completed_focus = ARL_confiscate_arrest
 				has_completed_focus = ARL_no_place_for_traitors_focus 
+			}
+			NOT = {
+				has_idea = ARL_country_in_ruins
 			}
 		}
 		cost = 4.3
@@ -895,6 +906,9 @@ focus_tree = {
 				
 				load_oob = ARL_units_after_reorg
 			}
+			custom_effect_tooltip = ARL_sarah_general_tooltip
+			custom_effect_tooltip = ARL_rosalinda_general_tooltip
+			
 		}
 	}
 	

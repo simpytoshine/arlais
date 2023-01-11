@@ -222,6 +222,25 @@ characters = {
 		}
 	}
 	
+	ARL_starke_cragen = {
+		name = ARL_starke_cragen
+		portraits = {
+		
+		}
+		
+		navy_leader = {
+			skill = 3
+			attack_skill = 1
+			defense_skill = 3
+			maneuvering_skill = 5
+			coordination_skill = 4
+			legacy_id = -1
+			visible = {
+				has_completed_focus = ARL_attack_ruayo 
+			}
+		}
+	}
+	
 	
 	ARL_vivienne_de_monblan = {
 		name = ARL_vivienne_de_monblan
@@ -279,5 +298,64 @@ characters = {
 			}
 		}
 	}
+	
+	ARL_catherine_fertz = {
+		name = ARL_catherine_fertz
+		portraits = {
+		
+		}
+		corps_commander={
+			traits={ adaptable }
+			skill=2
+			attack_skill=2
+			defense_skill=2
+			planning_skill=2
+			logistics_skill=2
+			legacy_id=-1
+			visible = {
+				has_completed_focus = ARL_attack_ruayo 
+			}
+		}
+	}
+	
+	ARL_sarah_saukort = {
+		name = ARL_sarah_saukort
+		portraits = {
+		
+		}
+		corps_commander={
+			traits={ adaptable }
+			skill=2
+			attack_skill=2
+			defense_skill=2
+			planning_skill=2
+			logistics_skill=2
+			legacy_id=-1
+			visible = {
+				has_completed_focus = ARL_army_reorganisation 
+			}
+		}
+	}
+	
+	ARL_rosaline_treytrua = {
+		name = ARL_rosaline_treytrua
+		portraits = {
+		
+		}
+		corps_commander={
+			traits={ adaptable }
+			skill=2
+			attack_skill=2
+			defense_skill=2
+			planning_skill=2
+			logistics_skill=2
+			legacy_id=-1
+			visible = {
+				has_completed_focus = ARL_army_reorganisation 
+			}
+		}
+	}
+	
+	
 	
 	

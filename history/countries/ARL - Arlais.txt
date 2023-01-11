@@ -140,6 +140,10 @@ recruit_character = ARL_tropical_dream
 recruit_character = ARL_vivienne_de_monblan
 recruit_character = ARL_ditrich_trot
 recruit_character = ARL_shadow_dash
+recruit_character = ARL_starke_cragen
+recruit_character = ARL_catherine_fertz
+recruit_character = ARL_sarah_saukort
+recruit_character = ARL_rosaline_treytrua
 
 set_popularities = {
 	democratic = 40
