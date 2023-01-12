@@ -1488,7 +1488,7 @@ country_event = {
 	
 	option = {
 		name = arl_events.67.a 
-		country_event = { id = arl.68 days = 30 }
+		country_event = { id = arl_events.68 days = 30 }
 	}
 }
 
@@ -1508,7 +1508,7 @@ country_event = {
 	
 	option = {
 		name = arl_events.68.a 
-		country_event = { id = arl.69 days = 30 }
+		country_event = { id = arl_events.69 days = 30 }
 	}
 }
 
@@ -1548,6 +1548,7 @@ country_event = {
 	
 	option = {
 		name = arl_events.70.a 
+		add_ideas = ARL_dutchess_seal
 	}
 }
 
