@@ -323,13 +323,14 @@ ideas = {
 			}
 			
 			modifier = {
+				political_advisor_cost_factor = -0.2
+				stability_factor = 0.1
 				materiel_manufacturer_cost_factor = -0.1
 				naval_manufacturer_cost_factor = -0.1
 				aircraft_manufacturer_cost_factor = -0.1
 				tank_manufacturer_cost_factor = -0.1
 				industrial_concern_cost_factor = -0.1
-				political_advisor_cost_factor = -0.2
-				stability_factor = 0.1
+				
 			}
 		
 		}
@@ -366,17 +367,18 @@ ideas = {
 			}
 			
 			modifier = {
-				materiel_manufacturer_cost_factor = -0.2
-				naval_manufacturer_cost_factor = -0.2
-				aircraft_manufacturer_cost_factor = -0.2
-				tank_manufacturer_cost_factor = -0.2
-				industrial_concern_cost_factor = -0.2
 				political_advisor_cost_factor = -0.25
 				stability_factor = 0.15
 				research_speed_factor = 0.05
 				resistance_growth = -0.15
 				war_support_factor = -0.1
 				monthly_population = 0.1
+				materiel_manufacturer_cost_factor = -0.2
+				naval_manufacturer_cost_factor = -0.2
+				aircraft_manufacturer_cost_factor = -0.2
+				tank_manufacturer_cost_factor = -0.2
+				industrial_concern_cost_factor = -0.2
+				
 			}
 		
 		}
@@ -388,11 +390,6 @@ ideas = {
 			}
 			
 			modifier = {
-				materiel_manufacturer_cost_factor = -0.25
-				naval_manufacturer_cost_factor = -0.25
-				aircraft_manufacturer_cost_factor = -0.25
-				tank_manufacturer_cost_factor = -0.25
-				industrial_concern_cost_factor = -0.25
 				political_advisor_cost_factor = -0.3
 				stability_factor = 0.25
 				research_speed_factor = 0.2
@@ -400,6 +397,12 @@ ideas = {
 				war_support_factor = -0.15
 				monthly_population = 0.25
 				consumer_goods_factor = 0.05
+				materiel_manufacturer_cost_factor = -0.25
+				naval_manufacturer_cost_factor = -0.25
+				aircraft_manufacturer_cost_factor = -0.25
+				tank_manufacturer_cost_factor = -0.25
+				industrial_concern_cost_factor = -0.25
+				
 			}
 		
 		}
@@ -432,8 +435,17 @@ ideas = {
 			}
 		}
 		
-		
-				
+		ARL_dutchess_seal = {
+			
+			removal_cost = -1
+			allowed = {
+				always = yes 
+			}
+			
+			modifier = {
+				democratic_drift = 0.1
+			}
+		}
 		
 		
 	}

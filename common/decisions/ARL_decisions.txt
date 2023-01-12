@@ -1,0 +1,52 @@
+
+
+ARL_arlusian_comittees = {
+	
+	ARL_comittee_create = {
+		
+		visible = { 
+			always = yes
+			if = {
+				limit = {
+					FROM = {
+						is_core_of = HAU 
+					}
+				}
+				ROOT = { has_completed_focus = ARL_true_arlesian_names }
+			}
+			if = {
+				limit = {
+					FROM = {
+						is_core_of = VED 
+					}
+				}
+				ROOT = { has_completed_focus = ARL_new_transfer_wave }
+			}
+		}
+		state_target = yes
+		targets_dynamic = yes
+		target_trigger = {
+			FROM = {
+				NOT = {
+					is_core_of = ARL
+				}
+				is_owned_by = ROOT
+				any_country_with_core = {
+					is_pony_race = no 
+				}
+				
+			}
+		}
+		
+		cost = 25
+		days_remove = 30
+		modifier = {
+			stability_factor = -0.05
+			political_power_gain = -0.1
+		}
+		remove_effect = {
+			FROM = {
+				add_core_of = ROOT 
+			}
+		}
+	}

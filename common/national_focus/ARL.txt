@@ -1219,7 +1219,7 @@ focus_tree = {
 		cost = 2
 		available = {
 			TRD = {
-				exist = ys
+				exists = yes
 				has_war = no
 			}
 		}
@@ -1241,7 +1241,7 @@ focus_tree = {
 		cost = 2
 		available = {
 			EQS = {
-				exist = ys
+				exists = yes
 				has_war = no
 			}
 		}
@@ -1539,7 +1539,7 @@ focus_tree = {
 		cost = 1
 		completion_reward = {
 			log = "[GetDateText]: [ARL.GetTag] focus ARL_integration_ministry"
-			country_event = { id = arl.71 }
+			country_event = { id = arl_events.71 }
 			add_ideas = ARL_migration_integration
 		}
 	}
@@ -1553,10 +1553,837 @@ focus_tree = {
 		cost = 1
 		completion_reward = {
 			log = "[GetDateText]: [ARL.GetTag] focus ARL_command_structure"
-			country_event = { id = arl.72 }
+			country_event = { id = arl_events.72 }
 			add_country_leader_trait = ARL_militarist_duchess_trait
 		}
 	}
+	
+	focus = {
+		id = ARL_government_structure
+		x = 0
+		y = 1
+		relative_position_id = ARL_command_structure
+		prerequisite = { focus = ARL_command_structure }
+		cost = 2
+		completion_reward = {
+			log = "[GetDateText]: [ARL.GetTag] focus ARL_government_structure"
+			country_event = { id = arl_events.73 }
+			add_ideas = ARL_court_police_idea
+		}
+	}
+	
+	focus = {
+		id = ARL_unicorns_school
+		x = -2
+		y = 1
+		relative_position_id = ARL_government_structure
+		prerequisite = { focus = ARL_government_structure }
+		cost = 5.6
+		completion_reward = {
+			log = "[GetDateText]: [ARL.GetTag] focus ARL_unicorns_school"
+			country_event = { id = arl_events.74 }
+			add_research_slot = 1
+			add_tech_bonus = {
+				category = race_tech
+				uses = 3
+				bonus = 1
+			}
+		}
+	}
+	
+	focus = {
+		id = ARL_rule_the_sea
+		x = -2
+		y = 1
+		relative_position_id = ARL_unicorns_school
+		prerequisite = { focus = ARL_unicorns_school }
+		cost = 2
+		completion_reward = {
+			log = "[GetDateText]: [ARL.GetTag] focus ARL_rule_the_sea"
+			country_event = { id = arl_events.75 }
+			add_tech_bonus = {
+				category = naval_equipment
+				uses = 4
+				bonus = 1
+			}
+			navy_experience = 50
+		}
+	}
+	
+	focus = {
+		id = ARL_electrification
+		x = 0
+		y = 1
+		relative_position_id = ARL_unicorns_school
+		prerequisite = { focus = ARL_unicorns_school }
+		cost = 4.3
+		completion_reward = {
+			log = "[GetDateText]: [ARL.GetTag] focus ARL_electrification"
+			country_event = { id = arl_events.75 }
+			unlock_decision_category_tooltip = ARL_water_plant_building_cat
+			add_tech_bonus = {
+				category = industry 
+				uses = 2
+				bonus = 1
+			}
+		}
+	}
+	
+	focus = {
+		id = ARL_avma_inst_focus
+		x = -2
+		y = 1
+		relative_position_id = ARL_rule_the_sea
+		prerequisite = { focus = ARL_rule_the_sea }
+		cost = 2
+		completion_reward = {
+			log = "[GetDateText]: [ARL.GetTag] focus ARL_avma_inst_focus"
+			add_tech_bonus = {
+				category = naval_equipment
+				uses = 3
+				bonus = 0.5
+			}
+			add_ideas = ARL_avma_institute_idea
+			navy_experience = 25
+		}
+	}
+	
+	focus = {
+		id = ARL_fusilie_moran
+		x = 0
+		y = 1
+		relative_position_id = ARL_rule_the_sea
+		prerequisite = { focus = ARL_rule_the_sea }
+		cost = 2
+		completion_reward = {
+			log = "[GetDateText]: [ARL.GetTag] focus ARL_fusilie_moran"
+			add_tech_bonus = {
+				category = cat_special_forces_generic
+				uses = 3
+				bonus = 1
+			}
+			army_experience = 20
+			navy_experience = 10
+		}
+	}
+	
+	focus = {
+		id = ARL_grapes_on_north
+		x = 0
+		y = 1
+		relative_position_id = ARL_electrification
+		prerequisite = { focus = ARL_electrification }
+		cost = 4.3
+		completion_reward = {
+			log = "[GetDateText]: [ARL.GetTag] focus ARL_grapes_on_north"
+			country_event = { id = arl_events.76 }
+			404 = {
+				add_extra_state_shared_building_slots = 1
+				add_building_construction = {
+					type = industrial_complex
+					level = 1
+					instant_build = yes
+				}
+			}
+			482 = {
+				add_extra_state_shared_building_slots = 1
+				add_building_construction = {
+					type = industrial_complex
+					level = 1
+					instant_build = yes
+				}
+			}
+		}
+	}
+	
+	focus = {
+		id = ARL_val_ruayo
+		x = 0
+		y = 1
+		relative_position_id = ARL_government_structure
+		prerequisite = { focus = ARL_government_structure }
+		cost = 1
+		completion_reward = {
+			log = "[GetDateText]: [ARL.GetTag] focus ARL_val_ruayo"
+			country_event = { id = arl_events.77 }
+			set_rule = { can_create_factions = yes }
+			create_faction = ARL_VAL_RUAYO_FACT
+		}
+	}
+	
+	focus = {
+		id = ARL_payback_time
+		x = 0
+		y = 1
+		available = {
+			has_army_manpower  = { size > 199999 }
+		}
+		relative_position_id = ARL_val_ruayo
+		prerequisite = { focus = ARL_val_ruayo }
+		cost = 1
+		completion_reward = {
+			log = "[GetDateText]: [ARL.GetTag] focus ARL_val_ruayo"
+			country_event = { id = arl_events.78 }
+			add_state_claim = 660
+			create_wargoal = {
+				type = annex_everything
+				target = HAU
+			}
+		}
+	}
+		
+	
+	focus = {
+		id = ARL_battle_for_cape_part_two
+		x = 0
+		y = 1
+		available = {
+			658 = { is_fully_controlled_by = ROOT }
+		}
+		cancel_if_invalid = no 
+		relative_position_id = ARL_payback_time
+		prerequisite = { focus = ARL_payback_time }
+		cost = 1
+		completion_reward = {
+			log = "[GetDateText]: [ARL.GetTag] focus ARL_battle_for_cape_part_two"
+			country_event = { id = arl_events.79 }
+			add_stability = 0.05
+			add_political_power = 100
+		}
+	}
+		
+	focus = {
+		id = ARL_end_of_pirates
+		x = 0
+		y = 2
+		available = {
+			HAU = {
+				OR = {
+					exist = no 
+					is_subject_of = ROOT 
+				}
+			}
+		}
+		relative_position_id = ARL_battle_for_cape_part_two
+		prerequisite = { focus = ARL_battle_for_cape_part_two }
+		cost = 1
+		completion_reward = {
+			log = "[GetDateText]: [ARL.GetTag] focus ARL_end_of_pirates"
+			country_event = { id = arl_events.80 }
+			add_stability = 0.05
+		}
+	}
+	
+	focus = {
+		id = ARL_de_monsimaar_family
+		x = 4
+		y = 1
+		available = {
+			democratic > 0.309
+		}
+		relative_position_id = ARL_government_structure
+		prerequisite = { focus = ARL_government_structure }
+		cost = 1
+		completion_reward = {
+			log = "[GetDateText]: [ARL.GetTag] focus ARL_de_monsimaar_family"
+			country_event = { id = arl_events.81 }
+		}
+	}
+	
+	focus = {
+		id = ARL_right_reformism
+		x = 0
+		y = 1
+		available = {
+			democratic > 0.309
+		}
+		relative_position_id = ARL_de_monsimaar_family
+		prerequisite = { focus = ARL_de_monsimaar_family }
+		cost = 1
+		completion_reward = {
+			log = "[GetDateText]: [ARL.GetTag] focus ARL_right_reformism"
+			country_event = { id = arl_events.82 }
+			add_ideas = ARL_klelism
+		}
+	}
+	
+	focus = {
+		id = ARL_to_serve_arley
+		x = -2
+		y = 1
+		relative_position_id = ARL_right_reformism
+		prerequisite = { focus = ARL_right_reformism }
+		available = {
+			democratic > 0.399 
+		}
+		bypass = {
+			has_idea = service_by_requirement
+		}
+		cost = 2
+		completion_reward = {
+			log = "[GetDateText]: [ARL.GetTag] focus ARL_to_serve_arley"
+			add_ideas = service_by_requirement
+		}
+	}
+	
+	focus = {
+		id = ARL_arlesians_arluans
+		x = 0
+		y = 1
+		relative_position_id = ARL_right_reformism
+		prerequisite = { focus = ARL_right_reformism }
+		available = {
+			democratic > 0.399 
+		}
+		cost = 2
+		completion_reward = {
+			log = "[GetDateText]: [ARL.GetTag] focus ARL_arlesians_arluans"
+			country_event = { id = arl_events.83 }
+		}
+	}
+		
+	focus = {
+		id = ARL_asp_politics
+		x = 2
+		y = 1
+		relative_position_id = ARL_right_reformism
+		prerequisite = { focus = ARL_right_reformism }
+		available = {
+			democratic > 0.399 
+		}
+		cost = 2
+		completion_reward = {
+			log = "[GetDateText]: [ARL.GetTag] focus ARL_asp_politics"
+			
+		}
+	}
+	
+	focus = {
+		id = ARL_lassales_law_focus
+		x = 0
+		y = 1
+		relative_position_id = ARL_to_serve_arley
+		prerequisite = { focus = ARL_to_serve_arley } 
+		cost = 1
+		completion_reward = {
+			log = "[GetDateText]: [ARL.GetTag] focus ARL_arlesians_arluans"
+			country_event = { id = arl_events.84 }
+			add_ideas = ARL_lassales_law
+		}
+	}
+	
+	focus = {
+		id = ARL_develop_arlean_comittees
+		x = 0
+		y = 1
+		relative_position_id = ARL_arlesians_arluans
+		prerequisite = { focus = ARL_arlesians_arluans } 
+		cost = 1
+		completion_reward = {
+			log = "[GetDateText]: [ARL.GetTag] focus ARL_develop_arlean_comittees"
+			country_event = { id = arl_events.85 }
+			remove_ideas = ARL_dutchess_list_idea
+			add_ideas = ARL_arlua_commitees
+			unlock_decision_category_tooltip = ARL_arlusian_comittees
+		}
+	}
+	
+	focus = {
+		id = ARL_10_hour_day
+		x = 0
+		y = 1
+		relative_position_id = ARL_asp_politics
+		prerequisite = { focus = ARL_asp_politics }
+		cost = 1
+		completion_reward = {
+			log = "[GetDateText]: [ARL.GetTag] focus ARL_10_hour_day"
+			country_event = { id = arl_events.86 }
+		}
+	}
+	
+	focus = {
+		id = ARL_arlua_bille
+		x = 0 
+		y = 1
+		relative_position_id = ARL_develop_arlean_comittees
+		prerequisite = { focus = ARL_develop_arlean_comittees }
+		prerequisite = { focus = ARL_10_hour_day }
+		prerequisite = { focus = ARL_lassales_law_focus }
+		cost = 0.4
+		completion_reward = {
+			log = "[GetDateText]: [ARL.GetTag] focus ARL_arlua_bille"
+			country_event = { id = arl_events.87 }
+			swap_ideas = {
+				remove_idea = ARL_klelism
+				add_idea = ARL_klelism_2
+			}
+		}
+	}
+	
+	focus = {
+		id = ARL_under_starry_skies
+		x = 0
+		y = 1
+		relative_position_id = ARL_arlua_bille
+		prerequisite = { focus = ARL_arlua_bille }
+		cost = 2
+		completion_reward = {
+			log = "[GetDateText]: [ARL.GetTag] focus ARL_under_starry_skies"
+			country_event = { id = arl_events.88 }
+			swap_ideas = {
+				remove_idea = ARL_klelism_2
+				add_idea = ARL_klelism_3
+			}
+			remove_ideas = ARL_migration_bang_idea
+			remove_ideas = ARL_dutchess_seal
+		}
+	}
+	
+	focus = {
+		id = ARL_haukland_military_administration
+		x = -2
+		y = 1
+		relative_position_id = ARL_end_of_pirates
+		prerequisite = { focus = ARL_end_of_pirates }
+		cost = 2
+		completion_reward = {
+			log = "[GetDateText]: [ARL.GetTag] focus ARL_haukland_military_administration"
+			country_event = { id = arl_events.89 }
+			every_owned_state = {
+				limit = {
+					is_core_of = HAU 
+				}
+				add_compliance = 20
+			}
+		}
+	}
+	
+	focus = {
+		id = ARL_great_griffon_movement
+		x = 0
+		y = 1
+		relative_position_id = ARL_haukland_military_administration
+		prerequisite = { focus = ARL_haukland_military_administration }
+		cost = 4.3
+		completion_reward = {
+			log = "[GetDateText]: [ARL.GetTag] focus ARL_great_griffon_movement"
+			country_event = { id = arl_events.90 }
+			660 = {
+				add_manpower = -70000
+			}
+			658 = {
+				add_manpower = -120000
+			}
+			659 = {
+				add_manpower = 190000
+			}
+		}
+	}
+	
+	focus = {
+		id = ARL_blanche_special_zone
+		x = -2
+		y = 1
+		relative_position_id = ARL_great_griffon_movement
+		prerequisite = { focus = ARL_great_griffon_movement }
+		cost = 2
+		completion_reward = {
+			log = "[GetDateText]: [ARL.GetTag] focus ARL_blanche_special_zone"
+			country_event = { id = arl_events.91 }
+			effect_tooltip = {
+				HAU = {
+					set_cosmetic_tag = HAU_ARL_beer
+				}
+				659 = {
+					set_state_name = ARL_STATE_blanch
+					add_resource = {
+						type = steel 
+						amount = 14
+					}
+				}
+				658 = {
+					set_state_name = ARL_STATE_chatone
+				}
+				660 = {
+					set_state_name = ARL_STATE_gera
+				}
+				
+			}
+			
+		}
+	}
+	
+	focus = {
+		id = ARL_true_arlesian_names
+		x = 0
+		y = 1
+		relative_position_id = ARL_great_griffon_movement
+		prerequisite = { focus = ARL_great_griffon_movement }
+		cost = 2
+		completion_reward = {
+			log = "[GetDateText]: [ARL.GetTag] focus ARL_true_arlesian_names"
+			482 = {
+				add_manpower = -105000
+			}
+			660 = {
+				add_manpower = 45000
+			}
+			658 = {
+				add_manpower = 60000
+			}
+			custom_effect_tooltip = ARL_available_new_comittees
+		}
+	}
+	
+	focus = {
+		id = ARL_sphere_of_interests
+		x = 2
+		y = 1
+		relative_position_id = ARL_end_of_pirates
+		prerequisite = { focus = ARL_end_of_pirates }
+		available = {
+			AND = {
+				CHN = {
+					exists = yes 
+					is_subject = no 
+				}
+				STG = {
+					exists = yes 
+					is_subject = no 
+				}
+				EQS = {
+					exists = yes 
+					is_subject = no 
+				}
+			}
+		}
+	
+		cost = 1
+		completion_reward = {
+			log = "[GetDateText]: [ARL.GetTag] focus ARL_sphere_of_interests"
+			country_event = { id = arl_events.92 }
+		}
+	}
+	
+	focus = {
+		id = ARL_vesalipolis_embassy
+		x = 0
+		y = 1
+		relative_position_id = ARL_sphere_of_interests
+		prerequisite = { focus = ARL_sphere_of_interests }
+		available = {
+			AND = {
+				CHN = {
+					exists = yes 
+					is_subject = no 
+				}
+				STG = {
+					exists = yes 
+					is_subject = no 
+				}
+				EQS = {
+					exists = yes 
+					is_subject = no 
+				}
+			}
+		}
+	
+		cost = 1
+		completion_reward = {
+			log = "[GetDateText]: [ARL.GetTag] focus ARL_vesalipolis_embassy"
+			country_event = { id = arl_events.93 }
+			add_opinion_modifier = {
+				modifier = common_cause
+				target = CHN 
+			}
+			reverse_add_opinion_modifier = {
+				modifier = common_cause
+				target = CHN 
+			}
+					
+		}
+	}		
+	
+	focus = {
+		id = ARL_outer_intelligence_direction
+		x = 0
+		y = 1
+		relative_position_id = ARL_end_of_pirates
+		prerequisite = { focus = ARL_end_of_pirates }
+		cost = 4.3
+		completion_reward = {
+			log = "[GetDateText]: [ARL.GetTag] focus ARL_outer_intelligence_direction"
+			country_event = { id = arl_events.94 }
+			create_intelligence_agency = {
+				name = "Military Intelligence Direction"
+				icon = 1
+			}
+		}
+	}
+	
+	focus = {
+		id = ARL_fuglafuordur 
+		x = 0
+		y = 1
+		relative_position_id = ARL_outer_intelligence_direction
+		prerequisite = { focus = ARL_outer_intelligence_direction }
+		cost = 1
+		completion_reward = {
+			log = "[GetDateText]: [ARL.GetTag] focus ARL_fuglafuordur"
+			country_event = { id = arl_events.95 }
+			every_state = {
+				limit = {
+					is_core_of = VED 
+					NOT = {
+						state = 429
+						state = 431
+					}
+				}
+				add_claim_by = ROOT
+			}
+			create_wargoal = {
+				type = annex_everything
+				target = VED 
+			}
+		}
+	}
+	
+	focus = {
+		id = ARL_our_new_home
+		x = 0
+		y = 1
+		relative_position_id = ARL_fuglafuordur
+		prerequisite = { focus = ARL_fuglafuordur }
+		available = {
+			VED = {
+				surrender_progress > 0.79
+			}
+		}
+		bypass = {
+			VED = {
+				exists = no
+			}
+		}
+		cost = 0.5
+		completion_reward = {
+			log = "[GetDateText]: [ARL.GetTag] focus ARL_our_new_home"
+			country_event = { id = arl_events.96 }
+			set_autonomy = {
+				target = VED 
+				autonomy_state = autonomy_demilitarized_puppet
+				end_wars = yes
+				end_civil_wars = yes
+			}
+			transfer_state = 483
+			transfer_state = 403
+			transfer_state = 484
+			transfer_state = 575
+			transfer_state = 430
+			transfer_state = 576
+			transfer_state = 584
+			VED = {
+				set_cosmetic_tag = VED_ARL_nordick
+			}
+		}
+	}
+	
+	focus = {
+		id = ARL_new_transfer_wave
+		x = 0
+		y = 1
+		relative_position_id = ARL_our_new_home
+		prerequisite = { focus = ARL_our_new_home }
+		cost = 2
+		completion_reward = {
+			log = "[GetDateText]: [ARL.GetTag] focus ARL_new_transfer_wave"
+			483 = {
+				add_manpower = -96000
+			}
+			403 = {
+				add_manpower = -48000
+			}
+			484 = {
+				add_manpower = -52000
+			}
+			575 = {
+				add_manpower = -66000
+			}
+			430 = {
+				add_manpower = -101000
+			}
+			576 = {
+				add_manpower = -114000
+			}
+			584 = {
+				add_manpower = -30000
+			}
+			
+			429 = {
+				add_manpower = 213000
+			}
+			431 = {
+				add_manpower = 124000
+			}
+			659 = {
+				add_manpower = 170000
+			}
+			
+			custom_effect_tooltip = ARL_available_new_comittees
+		}
+	}
+	
+	focus = {
+		id = ARL_nordik_rebuild_program
+		x = -2
+		y = 1
+		relative_position_id = ARL_new_transfer_wave
+		prerequisite = { focus = ARL_new_transfer_wave }
+		cost = 4.3
+		completion_reward = {
+			log = "[GetDateText]: [ARL.GetTag] focus ARL_nordik_rebuild_program"
+			country_event = { id = arl_events.97 }
+			add_timed_idea = {
+				idea = ARL_arley_rebuildance_programm
+				days = 365
+			}
+			VED = {
+				add_timed_idea = {
+					idea = ARL_nordik_rebuildance_programm
+					days = 365
+				}
+			}
+		}
+	}
+	
+	focus = {
+		id = ARL_new_lands_development
+		x = 0
+		y = 1
+		relative_position_id = ARL_new_transfer_wave
+		prerequisite = { focus = ARL_new_transfer_wave }
+		cost = 4.3
+		completion_reward = {
+			log = "[GetDateText]: [ARL.GetTag] focus ARL_new_lands_development"
+			country_event = { id = arl_events.98 }
+			
+		}
+	}
+	
+	focus = {
+		id = ARL_trimmel_trod_pact
+		x = 2
+		y = 1
+		relative_position_id = ARL_new_transfer_wave
+		prerequisite = { focus = ARL_new_transfer_wave }
+		cost = 4.3
+		completion_reward = {
+			log = "[GetDateText]: [ARL.GetTag] focus ARL_trimmel_trod_pact"
+			country_event = { id = arl_events.99 }
+			add_opinion_modifier = {
+				modifier = FBK_villages_diplo
+				target = CHN 
+			}
+			reverse_add_opinion_modifier = {
+				modifier = FBK_villages_diplo
+				target = CHN 
+			}
+			
+		}
+	}
+	
+	focus = {
+		id = ARL_help_need
+		x = 0
+		y = 1
+		relative_position_id = ARL_nordik_rebuild_program
+		prerequisite = { focus = ARL_nordik_rebuild_program }
+		cost = 4.3
+		completion_reward = {
+			log = "[GetDateText]: [ARL.GetTag] focus ARL_help_need"
+			482 = {
+				remove_building = {
+					type = industrial_complex
+					level = 3
+				}
+			}
+			404 = {
+				remove_building = {
+					type = industrial_complex
+					level = 4
+				}
+			}
+			429 = {
+				add_extra_state_shared_building_slots = 4
+				add_building_construction = {
+					type = industrial_complex
+					level = 4
+					instant_build = yes 
+				}
+			}
+			441 = {
+				add_extra_state_shared_building_slots = 3
+				add_building_construction = {
+					type = industrial_complex
+					level = 3
+					instant_build = yes 
+				}
+			}
+			
+		}
+	}
+	
+	focus = {
+		id = ARL_land_for_refugees
+		x = 0
+		y =	1
+		relative_position_id = ARL_new_lands_development
+		prerequisite = { focus = ARL_new_lands_development }
+		cost = 4.3
+		completion_reward = {
+			log = "[GetDateText]: [ARL.GetTag] focus ARL_land_for_refugees"
+			country_event = { id = arl_events.100 }
+			
+		}
+	}
+	
+	focus = {
+		id = ARL_vassal_oath
+		x = 0
+		y = 1
+		relative_position_id = ARL_land_for_refugees
+		prerequisite = { focus = ARL_land_for_refugees }
+		prerequisite = { focus = ARL_trimmel_trod_pact }
+		prerequisite = { focus = ARL_help_need }
+		cost = 1
+		completion_reward = {
+			log = "[GetDateText]: [ARL.GetTag] focus ARL_vassal_oath"
+			country_event = { id = arl_events.101 }
+			set_technology = { arlais_nordik_griffon_knights = 1 }
+			custom_effect_tooltip = ARL_arlais_nordik_griffon_knights_tt
+		}
+	}
+	
+	focus = {
+		id = ARL_promote_the_queendom_of_arleus
+		x = 0
+		y = 1
+		available = {
+			has_army_manpower = { size > 419999 }
+			has_completed_focus = ARL_under_starry_skies
+		}
+		relative_position_id = ARL_vassal_oath 
+		prerequisite = { focus = ARL_vassal_oath }
+		cost = 4.3
+		completion_reward = {
+			log = "[GetDateText]: [ARL.GetTag] focus ARL_promote_the_queendom_of_arleus"
+			country_event = { id = arl_events.102 }
+			add_political_power = 300
+			add_stability = 0.1
+			remove_country_leader_trait = ARL_militarist_duchess_trait
+			add_country_leader_trait = ARL_queen_mother
+		}
+		
+		
 	
 }
 	

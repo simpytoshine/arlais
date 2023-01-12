@@ -1,0 +1,19 @@
+ARL_water_plant_building_cat = {
+	icon = generic_formable_nations
+	allowed = {
+		#has_dlc = "Waking the Tiger"
+		original_tag = ARL
+	}
+}
+
+ARL_arlusian_comittees = {
+	icon = generic_formable_nations
+	allowed = {
+		#has_dlc = "Waking the Tiger"
+		original_tag = ARL
+	}
+	
+	visible = {
+		has_completed_focus = ARL_develop_arlean_comittees
+	}
+}

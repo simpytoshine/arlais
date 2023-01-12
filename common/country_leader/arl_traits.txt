@@ -15,3 +15,9 @@ leader_traits = {
 		army_attack_factor = 0.05
 		stability_factor = 0.1
 	}
+	
+	ARL_queen_mother = {
+		random = no 
+		stability_factor = 0.1
+		army_attack_factor = 0.1
+	}
