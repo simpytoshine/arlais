@@ -1478,6 +1478,86 @@ focus_tree = {
 			add_ideas = ARL_arlesian_miracle_idea
 		}
 	}
+	
+	focus = {
+		id = ARL_unicornia_focus
+		x = 0
+		y = 3
+		relative_position_id = ARL_unicorns_of_the_world
+		prerequisite = { focus = ARL_unicorns_of_the_world }
+		prerequisite = { focus = ARL_little_francheskans }
+		prerequisite = { focus = ARL_arlua_concern_focus }
+		cost = 1
+		completion_reward = {
+			log = "[GetDateText]: [ARL.GetTag] focus ARL_unicornia_focus"
+			country_event = { id = arl_events.67 }
+			add_named_threat = {
+				threat = 10
+				name = ARL_unicornia_focus_threat
+			}
+			every_other_country = {
+				limit = {
+					is_northern_griffonia_country = yes 
+				}
+				add_opinion_modifier = {
+					modifier = sworn_enemies
+					target = ROOT
+				}
+				
+				reverse_add_opinion_modifier = {
+					modifier = sworn_enemies
+					target = ROOT
+				}
+			}
+			add_stability = 0.1
+			add_political_power = 400
+			set_party_name = {
+				ideology = fascism
+				long_name = ARL_unicornia_fasc_long
+				name = ARL_unicornia_fasc
+			}
+			set_party_name = {
+				ideology = democratic
+				long_name = ARL_unicornia_dem_long
+				name = ARL_unicornia_dem
+			}
+			set_popularities = {
+				fascism = 75
+				democratic = 25
+			}
+			custom_effect_tooltip = ARL_francheska_ambitions
+			
+		}
+	}
+	
+	focus = {
+		id = ARL_integration_ministry
+		x = 0
+		y = 1
+		relative_position_id = ARL_unicornia_focus
+		prerequisite = { focus = ARL_unicornia_focus }
+		cost = 1
+		completion_reward = {
+			log = "[GetDateText]: [ARL.GetTag] focus ARL_integration_ministry"
+			country_event = { id = arl.71 }
+			add_ideas = ARL_migration_integration
+		}
+	}
+	
+	focus = {
+		id = ARL_command_structure
+		x = 0
+		y = 1
+		relative_position_id = ARL_integration_ministry 
+		prerequisite = { focus = ARL_integration_ministry }
+		cost = 1
+		completion_reward = {
+			log = "[GetDateText]: [ARL.GetTag] focus ARL_command_structure"
+			country_event = { id = arl.72 }
+			add_country_leader_trait = ARL_militarist_duchess_trait
+		}
+	}
+	
 }
 	
 	

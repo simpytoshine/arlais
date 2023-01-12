@@ -9,3 +9,9 @@ leader_traits = {
 		communism_drift = 0.01
 		custom_modifier_tooltip = ARL_can_not_declare_wars
 	}
+	
+	ARL_militarist_duchess_trait = {
+		random = no
+		army_attack_factor = 0.05
+		stability_factor = 0.1
+	}
