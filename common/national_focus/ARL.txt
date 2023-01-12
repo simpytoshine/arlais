@@ -2229,6 +2229,27 @@ focus_tree = {
 			}
 			
 			custom_effect_tooltip = ARL_available_new_comittees
+			
+			403 = {
+				set_state_name = ARL_STATE_malabry
+			}
+			484 = {
+				set_state_name = ARL_STATE_chatne
+			}
+			575 = {
+				set_state_name = ARL_STATE_neully
+			}
+			430 = {
+				set_state_name = ARL_STATE_nuasy
+			}
+			576 = {
+				set_state_name = ARL_STATE_fore
+			}
+			584 = {
+				set_state_name = ARL_STATE_serraine
+			}
+			
+			
 		}
 	}
 	
