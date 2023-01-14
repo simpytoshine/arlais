@@ -810,8 +810,6 @@ focus_tree = {
 			log = "[GetDateText]: [ARL.GetTag] focus ARL_age_of_unicorns"
 			country_event = { id = arl_events.44 }
 			set_technology = { arlais_age_of_unicorns = 1 popup = no }
-			custom_effect_tooltip = ARL_arlais_age_of_unicorns_tt
-			
 		}
 	}
 	
@@ -906,8 +904,7 @@ focus_tree = {
 				
 				load_oob = ARL_units_after_reorg
 			}
-			custom_effect_tooltip = ARL_sarah_general_tooltip
-			custom_effect_tooltip = ARL_rosalinda_general_tooltip
+			custom_effect_tooltip = ARL_reorganisation_general_tooltip
 			
 		}
 	}
@@ -964,7 +961,7 @@ focus_tree = {
 			}
 			add_ideas = ARL_blietzkrieg_idea
 			country_event = { id = arl_events.47 }
-			custom_effect_tooltip = ARL_available_ditrich
+			custom_effect_tooltip = ARL_available_ditricha
 		}
 	}
 	
@@ -1466,7 +1463,7 @@ focus_tree = {
 		prerequisite = { focus = ARL_synthetic_gasoline }
 		prerequisite = { focus = ARL_we_need_coal }
 		prerequisite = { focus = ARL_arley_work_service_focus }
-		cost = 6.4
+		cost = 6.5
 		completion_reward = {
 			log = "[GetDateText]: [ARL.GetTag] focus ARL_arley_work_service_focus"
 			country_event = { id = arl_events.66 }
@@ -2420,7 +2417,6 @@ focus_tree = {
 			log = "[GetDateText]: [ARL.GetTag] focus ARL_vassal_oath"
 			country_event = { id = arl_events.101 }
 			set_technology = { arlais_nordik_griffon_knights = 1 }
-			custom_effect_tooltip = ARL_arlais_nordik_griffon_knights_tt
 		}
 	}
 	
