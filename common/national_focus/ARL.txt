@@ -1584,7 +1584,7 @@ focus_tree = {
 		y = 1
 		relative_position_id = ARL_government_structure
 		prerequisite = { focus = ARL_government_structure }
-		cost = 5.6
+		cost = 5.8
 		completion_reward = {
 			log = "[GetDateText]: [ARL.GetTag] focus ARL_unicorns_school"
 			country_event = { id = arl_events.74 }
@@ -1627,7 +1627,7 @@ focus_tree = {
 		cost = 4.3
 		completion_reward = {
 			log = "[GetDateText]: [ARL.GetTag] focus ARL_electrification"
-			country_event = { id = arl_events.75 }
+			country_event = { id = arl_events.103 }
 			unlock_decision_category_tooltip = ARL_water_plant_building_cat
 			add_tech_bonus = {
 				category = industry 
@@ -1903,7 +1903,6 @@ focus_tree = {
 		cost = 1
 		completion_reward = {
 			log = "[GetDateText]: [ARL.GetTag] focus ARL_develop_arlean_comittees"
-			country_event = { id = arl_events.85 }
 			remove_ideas = ARL_dutchess_list_idea
 			add_ideas = ARL_arlua_commitees
 			unlock_decision_category_tooltip = ARL_arlusian_comittees
@@ -2060,7 +2059,7 @@ focus_tree = {
 			658 = {
 				add_manpower = 60000
 			}
-			custom_effect_tooltip = ARL_available_new_comittees
+			custom_effect_tooltip = ARL_available_new_comittees_haukland
 		}
 	}
 	
@@ -2263,7 +2262,7 @@ focus_tree = {
 				add_manpower = 170000
 			}
 			
-			custom_effect_tooltip = ARL_available_new_comittees
+			custom_effect_tooltip = ARL_available_new_comittees_vedina
 			
 			403 = {
 				set_state_name = ARL_STATE_malabry

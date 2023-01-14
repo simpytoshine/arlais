@@ -41,6 +41,8 @@
     ARL_get_6_helms_1_unis_tt:0 "После начала §RВойны за Арлей§! будет развернута 1 дивизия §CИзгнанников Королевской стражи§!"
     ARL_lock_all_focuses:0 "Выполнение фокусов, позволяющих нам укрепить наши позиции в §RВойне за Арлей§!, будет заблокировано!"
     
+    ARL_VAL_RUAYO_FACT:0 "Вал Руайо"
+    
     ##НАЦ ДУХИ##
     
     ARL_country_in_ruins:0 "Страна в руинах"
@@ -84,6 +86,41 @@
     
     ARL_arlesian_miracle_idea:0 "Арлейское чудо"
     ARL_arlesian_miracle_idea_desc:0 "TODO"
+    
+    ARL_migration_integration:0 "Миграция и интеграция"
+    ARL_migration_integration_desc:0 "TODO"
+    
+    ARL_court_police_idea:0 "Судебная полиция"
+    ARL_court_police_idea_desc:0 "TODO"
+    
+    ARL_avma_institute_idea:0 "НИИ АВМА"
+    ARL_avma_institute_idea_desc:0 "TODO"
+    
+    ARL_klelism:0 "Клелизм"
+    ARL_klelism_desc:0 "TODO"
+    
+    ARL_klelism_2:0 "Клелизм"
+    ARL_klelism_2_desc:0 "TODO"
+    
+    ARL_klelism_3:0 "Клелизм"
+    ARL_klelism_3_desc:0 "TODO"
+    
+    ARL_lassales_law:0 "Закон Лассаля"
+    ARL_lassales_law_desc:0 "TODO"
+    
+    ARL_arlua_commitees:0 "Арлуанские Комитеты"
+    ARL_arlua_comittees_desc:0 "TODO"
+    
+    ARL_dutchess_seal:0 "Печать Герцогини"
+    ARL_dutchess_seal_desc:0 "TODO"
+    
+    ARL_arley_rebuildance_programm:0 "Программа восстановления Нордика"
+    ARL_arley_rebuildance_programm_desc:0 "TODO"
+    
+    ARL_nordik_rebuildance_programm:0 "Программа восстановления Нордика"
+    ARL_nordik_rebuildance_programm_desc:0 "TODO"
+    
+    
     
     ##НАЧАЛЬНЫЕ ФОКУСЫ##
     ARL_we_had_dream:0 "У нас была мечта..."
@@ -312,6 +349,130 @@
     ARL_wealth_stonks_good:0 "Благополучие"
     ARL_wealth_stonks_good_desc:0 "TODO"
     
+    ##ЮНИКОРНСКИЕ ФОКУСЫ##
+    
+    ARL_unicornia_focus:0 "Юникорния"
+    ARL_unicornia_focus_desc:0 "TODO"
+    
+    ARL_integration_ministry:0 "Министерство по делам миграции и интеграции"
+    ARL_integration_ministry_desc:0 "TODO"
+    
+    ARL_command_structure:0 "Чёткая структура командования..."
+    ARL_command_structure_desc:0 "TODO"
+    
+    ARL_government_structure:0 "...и чёткая структура правления"
+    ARL_government_structure_desc:0 "TODO"
+    
+    ARL_unicorns_school:0 "Коллеж для одарённых единорогов"
+    ARL_unicorns_school_desc:0 "TODO"
+    
+    ARL_rule_the_sea:0 "Правь, Арлей, морями!"
+    ARL_rule_the_sea_desc:0 "TODO"
+    
+    ARL_electrification:0 "Электрификация" 
+    ARL_electrification_desc:0 "TODO"
+    
+    ARL_avma_inst_focus:0 "НИИ АВМА"
+    ARL_avma_inst_focus_desc:0 "TODO"
+    
+    ARL_fusilie_moran:0 "Фюзилье Моран"
+    ARL_fusilie_moran_desc:0 "TODO"
+    
+    ARL_grapes_on_north:0 "Виноград на севере растёт"
+    ARL_grapes_on_north_desc:0 "TODO"
+    
+    ARL_val_ruayo:0 "Вал Руайо"
+    ARL_val_ruayo_desc:0 "TODO"
+    
+    ARL_payback_time:0 "Час расплаты"
+    ARL_payback_time_desc:0 "TODO"
+    
+    ARL_battle_for_cape_part_two:0 "Битва за Мыс, часть вторая"
+    ARL_battle_for_cape_part_two_desc:0 "TODO"
+    
+    ARL_end_of_pirates:0 "Конец пиратства"
+    ARL_end_of_pirates_desc:0 "TODO"
+    
+    ARL_de_monsimaar_family:0 "Семейство де Монсиммар"
+    ARL_de_monsimaar_family_desc:0 "TODO"
+    
+    ARL_right_reformism:0 "Реформизм правого толка"
+    ARL_right_reformism_desc:0 "TODO"
+    
+    ARL_to_serve_arley:0 "Служить отчизне"
+    ARL_to_serve_arley_desc:0 "TODO"
+    
+    ARL_arlesians_arluans:0 "Арлесианцы и Арлуанцы"
+    ARL_arlesians_arluans_desc:0 "TODO"
+    
+    ARL_asp_politics:0 "Смягчение политки АСП"
+    ARL_asp_politics_desc:0 "TODO"
+    
+    ARL_lassales_law_focus:0 "Закон Лассаля"
+    ARL_lassales_law_focus_desc:0 "TODO"
+    
+    ARL_develop_arlean_comittees:0 "Учредить Арлуанские Комитеты"
+    ARL_develop_arlean_comittees_desc:0 "TODO"
+    
+    ARL_10_hour_day:0 "Закон о 10-часовом рабочем дне"
+    ARL_10_hour_day_desc:0 "TODO"
+    
+    ARL_arlua_bille:0 "Билль Арлуа"
+    ARL_arlua_bille_desc:0 "TODO"
+    
+    ARL_under_starry_skies:0 "Под звёздным небом"
+    ARL_under_starry_skies_desc:0 "TODO"
+    
+    ARL_haukland_military_administration:0 "Военная администрация Хаукленда"
+    ARL_haukland_military_administration_desc:0 "TODO"
+    
+    ARL_great_griffon_movement:0 "Великое переселение грифонов"
+    ARL_great_griffon_movement_desc:0 "TODO"
+    
+    ARL_blanche_special_zone:0 "Особая зона "Бланш"" 
+    ARL_blanche_special_zone_desc:0 "TODO"
+    
+    ARL_true_arlesian_names:0 "Исконно арлейские земли"
+    ARL_true_arlesian_names_desc:0 "TODO"
+    
+    ARL_sphere_of_interests:0 "Определить сферу интересов"
+    ARL_sphere_of_interests_desc:0 "TODO"
+    
+    ARL_vesalipolis_embassy:0 "Посольство из Весалиполиса"
+    ARL_vesalipolis_embassy_desc:0 "TODO"
+    
+    ARL_outer_intelligence_direction:0 "Дирекция Военной Разведки"
+    ARL_outer_intelligence_direction_desc:0 "TODO"
+    
+    ARL_fuglafuordur:0 "Пересмотреть Фуглафьордурский мир"
+    ARL_fuglafuordur_desc:0 "TODO"
+    
+    ARL_our_new_home:0 "Наш новый дом"
+    ARL_our_new_home_desc:0 "TODO"
+    
+    ARL_new_transfer_wave:0 "Новая волна переселений"
+    ARL_new_transfer_wave_desc:0 "TODO"
+    
+    ARL_nordik_rebuild_program:0 "Программа восстановления Нордика"
+    ARL_nordik_rebuild_program_desc:0 "TODO"
+    
+    ARL_new_lands_development:0 "Освоение новых земель"
+    ARL_new_lands_development_desc:0 "TODO"
+    
+    ARL_trimmel_trod_pact:0 "Пакт Триммеля-Трода"
+    ARL_trimmel_trod_pact_desc:0 "TODO"
+    
+    ARL_help_need:0 "Помощь нуждающимся"
+    ARL_help_need_desc:0 "TODO"
+    
+    ARL_land_for_refugees:0 "Льготы и земля для переселенцев"
+    ARL_land_for_refugees_desc:0 "TODO"
+    
+    ARL_vassal_oath:0 "Вассальная клятва"
+    ARL_vassal_oath_desc:0 "TODO"
+    
+    ARL_promote_the_queendom_of_arleus:0 "Провозгласить Королевство Арлей"
+    ARL_promote_the_queendom_of_arleus_desc:0 "TODO"
     
     ##Ивенты##
     
@@ -581,6 +742,154 @@
     arl_events.66.desc:0 "TODO"
     arl_events.66.a:0 "TODO"
     
+    arl_events.67.t:0 "Юникорния"
+    arl_events.67.desc:0 "TODO"
+    arl_events.67.a:0 "TODO"
+
+    arl_events.68.t:0 "TODO"
+    arl_events.68.desc:0 "TODO"
+    arl_events.68.a:0 "TODO"
+    
+    arl_events.69.t:0 "TODO"
+    arl_events.69.desc:0 "TODO"
+    arl_events.69.a:0 "TODO"
+    
+    arl_events.70.t:0 "TODO"
+    arl_events.70.desc:0 "TODO"
+    arl_events.70.a:0 "TODO"
+    
+    arl_events.71.t:0 "Мировая напряжённость"
+    arl_events.71.desc:0 "TODO"
+    arl_events.71.a:0 "TODO"
+    
+    arl_events.72.t:0 "Фельдмаршал Франческа I"
+    arl_events.72.desc:0 "TODO"
+    arl_events.72.a:0 "TODO"
+    
+    arl_events.73.t:0 "Судебная полиция"
+    arl_events.73.desc:0 "TODO"
+    arl_events.73.a:0 "TODO"
+    
+    arl_events.74.t:0 "Франческанцы идут в школу!"
+    arl_events.74.desc:0 "TODO"
+    arl_events.74.a:0 "TODO"
+    
+    arl_events.75.t:0 "Открытие Арлейской военно-морской академии"
+    arl_events.75.desc:0 "TODO"
+    arl_events.75.a:0 "TODO"
+    
+    arl_events.76.t:0 "Каберне Арле, Пино Руж и Грифлинг"
+    arl_events.76.desc:0 "TODO"
+    arl_events.76.a:0 "TODO"
+    
+    arl_events.77.t:0 "Планирование"
+    arl_events.77.desc:0 "TODO"
+    arl_events.77.a:0 "TODO"
+    
+    arl_events.78.t:0 "Грехи отца"
+    arl_events.78.desc:0 "TODO"
+    arl_events.78.a:0 "TODO"
+    
+    arl_events.79.t:0 "Покойся с миром"
+    arl_events.79.desc:0 "TODO"
+    arl_events.79.a:0 "TODO"
+    
+    arl_events.80.t:0 "Трибунал для Майера"
+    arl_events.80.desc:0 "TODO"
+    arl_events.80.a:0 "TODO"
+    
+    arl_events.81.t:0 "Неловкое молчание"
+    arl_events.81.desc:0 "TODO"
+    arl_events.81.a:0 "TODO"
+    
+    arl_events.82.t:0 "Клелизм на подъёме"
+    arl_events.82.desc:0 "TODO"
+    arl_events.82.a:0 "TODO"
+    
+    arl_events.83.t:0 "Один народ, две ипостаси"
+    arl_events.83.desc:0 "TODO"
+    arl_events.83.a:0 "TODO"
+    
+    arl_events.84.t:0 "Слушания в совете"
+    arl_events.84.desc:0 "TODO"
+    arl_events.84.a:0 "TODO"
+    
+    arl_events.85.t:0 "Поздравляем, с помощью консоли Вы нашли анекдот"
+    arl_events.85.desc:0 "Внимание, анекдот: Дагестанский адвокат понял что дело будет сложное, когда судья запретил обращаться к нему словом "Брат""
+    arl_events.85.a:0 "Смейтесь"
+    
+    arl_events.86.t:0 "300 арлейских битсов"
+    arl_events.86.desc:0 "TODO"
+    arl_events.86.a:0 "TODO"
+    
+    arl_events.87.t:0 "Билль о правах"
+    arl_events.87.desc:0 "TODO"
+    arl_events.87.a:0 "TODO"
+    
+    arl_events.88.t:0 "Признание"
+    arl_events.88.desc:0 "TODO"
+    arl_events.88.a:0 "TODO"
+    
+    arl_events.89.t:0 "Дядюшка Старк Оушн"
+    arl_events.89.desc:0 "TODO"
+    arl_events.89.a:0 "TODO"
+    
+    arl_events.90.t:0 "Искупление в следующем поколении"
+    arl_events.90.desc:0 "TODO"
+    arl_events.90.a:0 "TODO"
+    
+    arl_events.91.t:0 "Особая зона "Бланш""
+    arl_events.91.desc:0 "TODO"
+    arl_events.91.a:0 "TODO"
+    
+    arl_events.92.t:0 "Новости с полей"
+    arl_events.92.desc:0 "TODO"
+    arl_events.92.a:0 "TODO"
+    
+    arl_events.93.t:0 "Посольство из Весалиполиса"
+    arl_events.93.desc:0 "TODO"
+    arl_events.93.a:0 "TODO"
+    
+    arl_events.94.t:0 "Мы везде"
+    arl_events.94.desc:0 "TODO"
+    arl_events.94.a:0 "TODO"
+    
+    arl_events.95.t:0 "Ночь перед концом"
+    arl_events.95.desc:0 "TODO"
+    arl_events.95.a:0 "TODO"
+    
+    arl_events.96.t:0 "Корона, но поменьше"
+    arl_events.96.desc:0 "TODO"
+    arl_events.96.a:0 "TODO"
+    
+    arl_events.97.t:0 "Герцогиня и её новые подданые"
+    arl_events.97.desc:0 "TODO"
+    arl_events.97.a:0 "TODO"
+    
+    arl_events.98.t:0 "Расширение АСП"
+    arl_events.98.desc:0 "TODO"
+    arl_events.98.a:0 "TODO"
+    
+    arl_events.99.t:0 "Посольство в Весалиполис"
+    arl_events.99.desc:0 "TODO"
+    arl_events.99.a:0 "TODO"
+    
+    arl_events.100.t:0 "Снежный ком"
+    arl_events.100.desc:0 "TODO"
+    arl_events.100.a:0 "TODO"
+    
+    arl_events.101.t:0 "Скёльдсвард I, Герцогиня Нордика"
+    arl_events.101.desc:0 "TODO"
+    arl_events.101.a:0 "TODO"
+    
+    arl_events.102.t:0 "День коронации"
+    arl_events.102.desc:0 "TODO"
+    arl_events.102.a:0 "TODO"
+    
+    arl_events.103.t:0 "ЛЭП в каждый двор!"
+    arl_events.103.desc:0 "TODO"
+    arl_events.103.a:0 "TODO"
+    
     ##КОНЦЕРНЫ##
     
     ARL_tank_designer_forad:0 "ФОРАД"
@@ -603,3 +912,46 @@
     
     arlais_age_of_unicorns:0 "Единорожий век"
     ARL_arlais_age_of_unicorns_tt:0 "Артём, сделай пж тултип для единорогов, а то мне чёт лень да"
+    
+    arlais_nordik_griffon_knights:0 "Грифоны-рыцари из Нордика"
+    ARL_arlais_nordik_griffon_knights_tt:0 "TODO"
+    
+    ##Трейты##
+    
+    ARL_de_facto_puppet:0 "Номинальный правитель"
+    ARL_can_not_declare_wars:0 "  - §RНе может объявлять войны§!"
+    ARL_FRANCHESKA_IS_DE_FACTO_VASSAL:0 "§RНоминальный правитель не может объявлять войны!§!"
+    
+    ARL_militarist_duchess_trait:0 "Воинственная Герцогиня"
+    
+    ARL_queen_mother:0 "Королева-Мать Арлея"
+    
+    ##ТЕРРИТОРИИ##
+    
+    ARL_available_new_comittees_haukland:0 "Позволяет создать §YАрлуанский Комитет§! на бывших территориях §YХаукленда§!"
+    
+    ARL_available_new_comittees_vedina:0 "Позволяет создать §YАрлуанский Комитет§! на бывших территориях §YВедины§!"
+    
+    ARL_STATE_chatone:0 "Шатонё"
+    
+    ARL_STATE_gera:0 "Гера"
+    
+    ARL_STATE_malabry:0 "Малабри"
+    
+    ARL_STATE_chatne:0 "Шатне"
+    
+    ARL_STATE_neully:0 "Нёйи"
+    
+    ARL_STATE_nuasy:0 "Нуази"
+    
+    ARL_STATE_fore:0 "Форе"
+    
+    ARL_STATE_serraine:0 "Серейн"
+    
+    ARL_STATE_blanch:0 "Бланш"
+    
+    ##РЕШЕНИЯ##
+    
+    ARL_water_plant_building_cat:0 "Строительство ГЭС"
+    
+    ARL_arlusian_comittees:0 "Арлуанские Комитеты"
