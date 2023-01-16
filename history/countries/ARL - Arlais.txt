@@ -160,6 +160,7 @@ set_politics = {
 }
 
 add_ideas = { 
+	ARL_three_generals_rule
     outdated_industry 
 	lack_of_scientists 
 }

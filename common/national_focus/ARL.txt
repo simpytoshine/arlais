@@ -291,11 +291,6 @@ focus_tree = {
 		icon = GFX_ARL_severyana_heritage
 		x = 2
 		y = 1
-		available = {
-			NOT = {
-				has_completed_focus = ARL_tour_de_france
-			}
-		}
 		relative_position_id = ARL_helping_hoof
 		prerequisite = { focus = ARL_helping_hoof }
 		cost = 2
@@ -1765,7 +1760,7 @@ focus_tree = {
 		
 	focus = {
 		id = ARL_end_of_pirates
-		#icon = GFX_ARL_end_of_pirates
+		icon = GFX_ARL_end_of_pirates
 		x = 0
 		y = 2
 		available = {
@@ -2005,7 +2000,7 @@ focus_tree = {
 	
 	focus = {
 		id = ARL_blanche_special_zone
-		#icon = GFX_ARL_blanche_special_zone
+		icon = GFX_ARL_blanche_special_zone
 		x = -2
 		y = 1
 		relative_position_id = ARL_great_griffon_movement

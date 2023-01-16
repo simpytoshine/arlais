@@ -1,0 +1,21 @@
+characters = {
+	
+	ARR_three_generals_without_francheska = {
+		name = ARL_three_generals
+		portraits = {
+			civilian = {
+				large = "gfx/leaders/leader_unknown.dds"
+			}
+		}
+		
+		country_leader = {
+			desc = "ARL_three_generals_without_francheska_desc"
+			expire = "1999.1.1"
+			traits = { }
+			ideology = populism
+			id = -1
+		}
+	}
+	
+		
+}

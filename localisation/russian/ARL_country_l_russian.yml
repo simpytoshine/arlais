@@ -23,7 +23,7 @@
     ARL_democratic_party_short:0 "Реформаторы"
     
     ARL_francheska_first:0 "Франческа I"
-    ARL_three_generals:0 "Франческа I и Три Генерала"
+    ARL_three_generals:0 "Франческа I"
     ARL_workers_council:0 "Рабочий совет"
     
     ARL_de_facto_puppet:0 "Номинальный правитель"
@@ -50,7 +50,7 @@
     
     ARL_get_6_helms_1_unis_tt:0 "После начала §RВойны за Арлей§! будет развёрнута 1 дивизия §Hизгнанников Королевской стражи§!."
     
-    ARL_lock_all_focuses:0 "Выполнение фокусов, позволяющих нам укрепить наши позиции в §RВойне за Арлей§!, будет заблокировано!"
+    ARL_lock_all_focuses:0 "Выполнение §Hфокусов§!, позволяющих нам укрепить наши позиции в §RВойне за Арлей§!, будет §Rзаблокировано!§!"
     
     ARL_arl_war_general_catherine:0 "После начала §RВойны за Арлей§! будет доступна §HКатерина Ферц§! в качестве §Yгенерала§!."
     
@@ -73,6 +73,9 @@
     ARL_available_shadow:0 "§HШэдоу Дэш§! будет доступен в качестве §Yгенерала§!."
     
     ##НАЦ ДУХИ##
+    
+    ARL_three_generals_rule:0 "Правление Трёх Генералов"
+    ARL_three_generals_rule_desc:0 "TODO"
     
     ARL_country_in_ruins:0 "Страна в руинах"
     ARL_country_in_ruins_desc:0 "TODO"
@@ -540,8 +543,8 @@
     arl_events.8.a:0 "TODO"
    
     arl_events.9.t:0 "Лицо Арлея"
-    arl_events.9.desc:0 "ФРАНЧЕСКА ШЛЮХА"
-    arl_events.9.a:0 "Cry about it"
+    arl_events.9.desc:0 "TODO"
+    arl_events.9.a:0 "TODO"
     
     arl_events.10.t:0 "Побег"
     arl_events.10.desc:0 "TODO"

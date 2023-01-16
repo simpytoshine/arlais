@@ -575,6 +575,8 @@ country_event = {
 	option = {
 		name = arl_events.28.a 
 		add_stability = -0.25
+		remove_ideas = ARL_three_generals_rule
+		
 		effect_tooltip = {
 			start_civil_war = {
 				ideology = neutrality
@@ -582,6 +584,7 @@ country_event = {
 		}
 		complete_national_focus = ARL_attack_ruayo
 		hidden_effect = {
+		remove_country_leader_trait = ARL_de_facto_puppet
 			JER = {
 				set_autonomy = {
 					target = ROOT
@@ -590,6 +593,7 @@ country_event = {
 					end_civil_wars = yes
 				}
 			}
+			leave_faction = yes
 			482 = {
 				transfer_state_to = ARR
 			}
@@ -601,7 +605,7 @@ country_event = {
 				load_oob = "ARR_ARL_civilwar"
 			}
 			ARL_three_generals = {
-				set_character_name = ARL_three_generals_no_francheska
+				set_character_name = ARL_three_generals_without_francheska
 				set_portraits = {
 					civilian = {
 						large = "gfx/leaders/leader_unknown.dds"
