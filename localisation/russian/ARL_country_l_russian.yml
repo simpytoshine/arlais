@@ -105,7 +105,7 @@
     ARL_army_reorg_idea_desc:0 "TODO"
     
     ARL_blietzkrieg_idea:0 "Блицкриг"
-    ARL_blietzkrieg_idea_desc:0 "БЛИЦКРИИИИИНЖ"
+    ARL_blietzkrieg_idea_desc:0 "TODO"
     
     ARL_bastion_dockyard:0 "Доки Бастиона"
     ARL_bastion_dockyard_desc:0 "TODO"
@@ -156,15 +156,15 @@
     
     ##НАЧАЛЬНЫЕ ФОКУСЫ##
     ARL_we_had_dream:0 "У нас была мечта..."
-    ARL_we_had_dream_desc:0 "У МЕНЯ ЕСТЬ МЕЧТА!"
+    ARL_we_had_dream_desc:0 "TODO"
     
     ARL_no_dream_follow:0 "...которой не суждено было сбыться"
-    ARL_no_dream_follow_desc:0 "YOU ARE BAT-SHIT INSANE"
+    ARL_no_dream_follow_desc:0 "TODO"
     
     ARL_death_of_the_conqueror:0 "Смерть завоевателя..."
     ARL_death_of_the_conqueror_desc:0 "TODO"
     
-    ARL_new_conqueror_birth:0 "...И рождение нового"
+    ARL_new_conqueror_birth:0 "...и рождение нового"
     ARL_new_conqueror_birth_desc:0 "TODO"
     
     ARL_war_of_islands:0 "Война за Острова"
