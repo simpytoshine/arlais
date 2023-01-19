@@ -1,7 +1,7 @@
 capital = 482
 oob = "ARL_1007"
 
-set_research_slots = 1
+set_research_slots = 3
 
 set_technology = {
 	pony_race = 1
@@ -127,11 +127,12 @@ if = {
 }
 actually_fix_weapon_techs = yes #THIS HAS TO BE CALLED IN EVERY HISTORY FILE RIGHT AFTER MAIN set_technology!
 
+recruit_character = ARL_three_generals_without_francheska
 
 set_popularities = {
-	democratic = 40
-	fascism = 15
-	communism = 5
+	democratic = 0
+	fascism = 30
+	communism = 0
 	neutrality = 70
 }
 
@@ -143,8 +144,10 @@ set_politics = {
 }
 
 add_ideas = { 
+	big_science_base
     outdated_industry 
-	lack_of_scientists 
+	lack_of_scientists1
+	poverty3
 }
 
 set_stability = 0.25

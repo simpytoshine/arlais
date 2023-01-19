@@ -6,9 +6,9 @@ state={
 		518 578 3196 3246 3426 3539 6226 6450 6506 6563 6587 6602 9365 9460 9564 11408 11423
 	}
 
-	manpower=124506
-	state_category = rural
-	buildings_max_level_factor=1.00
+	manpower = 765531
+	state_category = large_city
+	buildings_max_level_factor = 1.00
 
 	history = {
 		owner = ARL
@@ -16,11 +16,19 @@ state={
 
 		victory_points = { 3539 5 }
 		victory_points = { 6563 5 }
-		victory_points = { 6226 35 }
+		victory_points = { 6226 25 }
 
 		buildings = {
-			infrastructure = 1
-			industrial_complex = 1
+			infrastructure = 3
+			industrial_complex = 2
+			arms_factory = 1 
+		
+			6226 = {
+				naval_base = 3
+			}
+			6563 = {
+				naval_base = 2
+			}
 		}
 	}
 }

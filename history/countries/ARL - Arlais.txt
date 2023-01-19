@@ -1,7 +1,7 @@
 capital = 482
 oob = "ARL_1007"
 
-set_research_slots = 1
+set_research_slots = 3
 
 set_technology = {
 	pony_race = 1
@@ -138,12 +138,15 @@ recruit_character = ARL_black_marble
 recruit_character = ARL_golden_gavle
 recruit_character = ARL_tropical_dream
 recruit_character = ARL_vivienne_de_monblan
-recruit_character = ARL_ditrich_trot
+recruit_character = ARL_ditricha_trot
 recruit_character = ARL_shadow_dash
 recruit_character = ARL_starke_cragen
 recruit_character = ARL_catherine_fertz
 recruit_character = ARL_sarah_saukort
-recruit_character = ARL_rosaline_treytrua
+recruit_character = ARL_john_silver
+recruit_character = ARL_clelia
+recruit_character = ARL_solid_nib
+
 
 set_popularities = {
 	democratic = 40
@@ -160,8 +163,11 @@ set_politics = {
 }
 
 add_ideas = { 
+	ARL_three_generals_rule
+	big_science_base
     outdated_industry 
-	lack_of_scientists 
+	lack_of_scientists1
+	poverty3
 }
 
 set_stability = 0.25

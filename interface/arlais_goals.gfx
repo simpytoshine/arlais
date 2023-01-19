@@ -301,4 +301,168 @@ spriteTypes = {
 		name = "GFX_ARL_wealth_stonks_good"
 		texturefile = "gfx/interface/goals/ARL/ARL_wealth_stonks_good.tga"
 	}
+	SpriteType = {
+		name = "GFX_ARL_unicornia_focus"
+		texturefile = "gfx/interface/goals/ARL/ARL_unicornia_focus.tga"
+	}
+	SpriteType = {
+		name = "GFX_ARL_integration_ministry"
+		texturefile = "gfx/interface/goals/ARL/ARL_integration_ministry.tga"
+	}
+	SpriteType = {
+		name = "GFX_ARL_command_structure"
+		texturefile = "gfx/interface/goals/ARL/ARL_command_structure.tga"
+	}
+	SpriteType = {
+		name = "GFX_ARL_government_structure"
+		texturefile = "gfx/interface/goals/ARL/ARL_government_structure.tga"
+	}
+	SpriteType = {
+		name = "GFX_ARL_unicorns_school"
+		texturefile = "gfx/interface/goals/ARL/ARL_unicorns_school.tga"
+	}
+	SpriteType = {
+		name = "GFX_ARL_rule_the_sea"
+		texturefile = "gfx/interface/goals/ARL/ARL_rule_the_sea.tga"
+	}
+	SpriteType = {
+		name = "GFX_ARL_electrification"
+		texturefile = "gfx/interface/goals/ARL/ARL_electrification.tga"
+	}
+	SpriteType = {
+		name = "GFX_ARL_avma_inst_focus"
+		texturefile = "gfx/interface/goals/ARL/ARL_avma_inst_focus.tga"
+	}
+	SpriteType = {
+		name = "GFX_ARL_fusilie_moran"
+		texturefile = "gfx/interface/goals/ARL/ARL_fusilie_moran.tga"
+	}
+	SpriteType = {
+		name = "GFX_ARL_grapes_on_north"
+		texturefile = "gfx/interface/goals/ARL/ARL_grapes_on_north.tga"
+	}
+	SpriteType = {
+		name = "GFX_ARL_val_ruayo"
+		texturefile = "gfx/interface/goals/ARL/ARL_val_ruayo.tga"
+	}
+	SpriteType = {
+		name = "GFX_ARL_payback_time"
+		texturefile = "gfx/interface/goals/ARL/ARL_payback_time.tga"
+	}
+	SpriteType = {
+		name = "GFX_ARL_battle_for_cape_part_two"
+		texturefile = "gfx/interface/goals/ARL/ARL_battle_for_cape_part_two.tga"
+	}
+	SpriteType = {
+		name = "GFX_ARL_end_of_pirates"
+		texturefile = "gfx/interface/goals/ARL/ARL_end_of_pirates.tga"
+	}
+	SpriteType = {
+		name = "GFX_ARL_de_monsimaar_family"
+		texturefile = "gfx/interface/goals/ARL/ARL_de_monsimaar_family.tga"
+	}
+	SpriteType = {
+		name = "GFX_ARL_right_reformism"
+		texturefile = "gfx/interface/goals/ARL/ARL_right_reformism.tga"
+	}
+	SpriteType = {
+		name = "GFX_ARL_to_serve_arley"
+		texturefile = "gfx/interface/goals/ARL/ARL_to_serve_arley.tga"
+	}
+	SpriteType = {
+		name = "GFX_ARL_arlesians_arluans"
+		texturefile = "gfx/interface/goals/ARL/ARL_arlesians_arluans.tga"
+	}
+	SpriteType = {
+		name = "GFX_ARL_asp_politics"
+		texturefile = "gfx/interface/goals/ARL/ARL_asp_politics.tga"
+	}
+	SpriteType = {
+		name = "GFX_ARL_lassales_law_focus"
+		texturefile = "gfx/interface/goals/ARL/ARL_lassales_law_focus.tga"
+	}
+	SpriteType = {
+		name = "GFX_ARL_develop_arlean_comittees"
+		texturefile = "gfx/interface/goals/ARL/ARL_develop_arlean_comittees.tga"
+	}
+	SpriteType = {
+		name = "GFX_ARL_10_hour_day"
+		texturefile = "gfx/interface/goals/ARL/ARL_10_hour_day.tga"
+	}
+	SpriteType = {
+		name = "GFX_ARL_arlua_bille"
+		texturefile = "gfx/interface/goals/ARL/ARL_arlua_bille.tga"
+	}
+	SpriteType = {
+		name = "GFX_ARL_under_starry_skies"
+		texturefile = "gfx/interface/goals/ARL/ARL_under_starry_skies.tga"
+	}
+	SpriteType = {
+		name = "GFX_ARL_haukland_military_administration"
+		texturefile = "gfx/interface/goals/ARL/ARL_haukland_military_administration.tga"
+	}
+	SpriteType = {
+		name = "GFX_ARL_great_griffon_movement"
+		texturefile = "gfx/interface/goals/ARL/ARL_great_griffon_movement.tga"
+	}
+	SpriteType = {
+		name = "GFX_ARL_blanche_special_zone"
+		texturefile = "gfx/interface/goals/ARL/ARL_blanche_special_zone.tga"
+	}
+	SpriteType = {
+		name = "GFX_ARL_true_arlesian_names"
+		texturefile = "gfx/interface/goals/ARL/ARL_true_arlesian_names.tga"
+	}
+	SpriteType = {
+		name = "GFX_ARL_sphere_of_interests"
+		texturefile = "gfx/interface/goals/ARL/ARL_sphere_of_interests.tga"
+	}
+	SpriteType = {
+		name = "GFX_ARL_vesalipolis_embassy"
+		texturefile = "gfx/interface/goals/ARL/ARL_vesalipolis_embassy.tga"
+	}
+	SpriteType = {
+		name = "GFX_ARL_outer_intelligence_direction"
+		texturefile = "gfx/interface/goals/ARL/ARL_outer_intelligence_direction.tga"
+	}
+	SpriteType = {
+		name = "GFX_ARL_fuglafuordur"
+		texturefile = "gfx/interface/goals/ARL/ARL_fuglafuordur.tga"
+	}
+	SpriteType = {
+		name = "GFX_ARL_our_new_home"
+		texturefile = "gfx/interface/goals/ARL/ARL_our_new_home.tga"
+	}
+	SpriteType = {
+		name = "GFX_ARL_new_transfer_wave"
+		texturefile = "gfx/interface/goals/ARL/ARL_new_transfer_wave.tga"
+	}
+	SpriteType = {
+		name = "GFX_ARL_nordik_rebuild_program"
+		texturefile = "gfx/interface/goals/ARL/ARL_nordik_rebuild_program.tga"
+	}
+	SpriteType = {
+		name = "GFX_ARL_new_lands_development"
+		texturefile = "gfx/interface/goals/ARL/ARL_new_lands_development.tga"
+	}
+	SpriteType = {
+		name = "GFX_ARL_trimmel_trod_pact"
+		texturefile = "gfx/interface/goals/ARL/ARL_trimmel_trod_pact.tga"
+	}
+	SpriteType = {
+		name = "GFX_ARL_help_need"
+		texturefile = "gfx/interface/goals/ARL/ARL_help_need.tga"
+	}
+	SpriteType = {
+		name = "GFX_ARL_land_for_refugees"
+		texturefile = "gfx/interface/goals/ARL/ARL_land_for_refugees.tga"
+	}
+	SpriteType = {
+		name = "GFX_ARL_vassal_oath"
+		texturefile = "gfx/interface/goals/ARL/ARL_vassal_oath.tga"
+	}
+	SpriteType = {
+		name = "GFX_ARL_promote_the_queendom_of_arleus"
+		texturefile = "gfx/interface/goals/ARL/ARL_promote_the_queendom_of_arleus.tga"
+	}
 }

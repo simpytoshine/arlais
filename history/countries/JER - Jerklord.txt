@@ -284,7 +284,7 @@ if = {
 	}
 	set_autonomy = {
 		target = ARL
-		autonomy_state = autonomy_autonomous_vassal
+		autonomy_state = autonomy_nominal_vassal
 	}
 	set_autonomy = {
 		target = VIN

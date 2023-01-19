@@ -288,14 +288,9 @@ focus_tree = {
 	
 	focus = {
 		id = ARL_severyana_heritage
-		#icon = GFX_ARL_severyana_heritage
+		icon = GFX_ARL_severyana_heritage
 		x = 2
 		y = 1
-		available = {
-			NOT = {
-				has_completed_focus = ARL_tour_de_france
-			}
-		}
 		relative_position_id = ARL_helping_hoof
 		prerequisite = { focus = ARL_helping_hoof }
 		cost = 2
@@ -488,31 +483,19 @@ focus_tree = {
 		}
 		
 		completion_reward = {
+			hidden_effect = {
+				every_state = {
+				limit = {
+					is_core_of = ARR
+				}
+				remove_core_of = ARR
+				}
+			}
 			log = "[GetDateText]: [ARL.GetTag] focus ARL_francheska_first_focus "
 			effect_tooltip = { 
-				country_event = { id = arl_events.29 }
-				set_party_name = {
-					ideology = fascism
-					long_name = ARL_house_council_long
-					name = ARL_house_council
-				}
-				set_party_name = {
-					ideology = democratic
-					long_name = ARL_reformation_movement_long
-					name = ARL_reformation_movement
-				}
-				set_party_name = {
-					ideology = neutrality
-					long_name = ARL_national_saving_long
-					name = ARL_national_saving
-				}
-				set_party_name = {
-					ideology = communism
-					long_name = ARL_first_workers_party_long
-					name = ARL_first_workers_party
-				}
-				
+				country_event = { id = arl_events.29 }				
 			}
+			remove_country_leader_trait = ARL_de_facto_puppet
 			add_ideas = ARL_country_in_ruins
 		}
 	}
@@ -520,7 +503,7 @@ focus_tree = {
 	focus = {
 		id = ARL_bastion_court
 		icon = GFX_ARL_bastion_court
-		x = -9
+		x = -10
 		y = 1
 		relative_position_id = ARL_francheska_first_focus
 		prerequisite = { focus = ARL_francheska_first_focus }
@@ -537,7 +520,7 @@ focus_tree = {
 	focus = {
 		id = ARL_ruayo_court
 		icon = GFX_ARL_ruayo_court
-		x = -7
+		x = -8
 		y = 1
 		relative_position_id = ARL_francheska_first_focus
 		prerequisite = { focus = ARL_francheska_first_focus }
@@ -597,7 +580,7 @@ focus_tree = {
 	focus = {
 		id = ARL_no_more_smutas
 		icon = GFX_ARL_no_more_smutas
-		x = -5
+		x = -6
 		y = 1
 		relative_position_id = ARL_francheska_first_focus
 		prerequisite = { focus = ARL_francheska_first_focus }
@@ -657,9 +640,6 @@ focus_tree = {
 			OR = {
 				has_completed_focus = ARL_confiscate_arrest
 				has_completed_focus = ARL_no_place_for_traitors_focus 
-			}
-			NOT = {
-				has_idea = ARL_country_in_ruins
 			}
 		}
 		cost = 4.3
@@ -756,7 +736,7 @@ focus_tree = {
 	
 	focus = {
 		id = ARL_little_francheskans
-		#icon = GFX_ARL_little_francheskans
+		icon = GFX_ARL_little_francheskans
 		x = 0
 		y = 1
 		relative_position_id = ARL_elections_no_elections
@@ -772,7 +752,7 @@ focus_tree = {
 	focus = {
 		id = ARL_offer_for_offer
 		icon = GFX_ARL_offer_for_offer
-		x = -1
+		x = -2
 		y = 1
 		relative_position_id = ARL_francheska_first_focus
 		prerequisite = { focus = ARL_francheska_first_focus }
@@ -810,8 +790,6 @@ focus_tree = {
 			log = "[GetDateText]: [ARL.GetTag] focus ARL_age_of_unicorns"
 			country_event = { id = arl_events.44 }
 			set_technology = { arlais_age_of_unicorns = 1 popup = no }
-			custom_effect_tooltip = ARL_arlais_age_of_unicorns_tt
-			
 		}
 	}
 	
@@ -855,7 +833,7 @@ focus_tree = {
 	focus = {
 		id = ARL_enemies_everywhere
 		icon = GFX_ARL_enemies_everywhere
-		x = 6
+		x = 5
 		y = 1
 		relative_position_id = ARL_francheska_first_focus
 		prerequisite = { focus = ARL_francheska_first_focus }
@@ -906,8 +884,7 @@ focus_tree = {
 				
 				load_oob = ARL_units_after_reorg
 			}
-			custom_effect_tooltip = ARL_sarah_general_tooltip
-			custom_effect_tooltip = ARL_rosalinda_general_tooltip
+			custom_effect_tooltip = ARL_reorganisation_general_tooltip
 			
 		}
 	}
@@ -964,7 +941,7 @@ focus_tree = {
 			}
 			add_ideas = ARL_blietzkrieg_idea
 			country_event = { id = arl_events.47 }
-			custom_effect_tooltip = ARL_available_ditrich
+			custom_effect_tooltip = ARL_available_ditricha
 		}
 	}
 	
@@ -1335,8 +1312,9 @@ focus_tree = {
 			country_event = { id = arl_events.61 }
 			build_railway = {
 				level = 5
-				build_only_on_allied = yes 
-				start_province = 12860
+				build_only_on_allied = yes
+				path = { 9502 11512 3566 9422 3426 578 6563 3196 3246 6226 }
+				start_province = 9502
 				target_province = 6226
 			}
 		}
@@ -1466,7 +1444,7 @@ focus_tree = {
 		prerequisite = { focus = ARL_synthetic_gasoline }
 		prerequisite = { focus = ARL_we_need_coal }
 		prerequisite = { focus = ARL_arley_work_service_focus }
-		cost = 6.4
+		cost = 6.5
 		completion_reward = {
 			log = "[GetDateText]: [ARL.GetTag] focus ARL_arley_work_service_focus"
 			country_event = { id = arl_events.66 }
@@ -1481,12 +1459,14 @@ focus_tree = {
 	
 	focus = {
 		id = ARL_unicornia_focus
-		x = 0
-		y = 3
+		icon = GFX_ARL_unicornia_focus
+		x = 2
+		y = 4
 		relative_position_id = ARL_unicorns_of_the_world
 		prerequisite = { focus = ARL_unicorns_of_the_world }
 		prerequisite = { focus = ARL_little_francheskans }
 		prerequisite = { focus = ARL_arlua_concern_focus }
+		prerequisite = { focus = ARL_wealth_stonks_good }
 		cost = 1
 		completion_reward = {
 			log = "[GetDateText]: [ARL.GetTag] focus ARL_unicornia_focus"
@@ -1532,6 +1512,7 @@ focus_tree = {
 	
 	focus = {
 		id = ARL_integration_ministry
+		icon = GFX_ARL_integration_ministry
 		x = 0
 		y = 1
 		relative_position_id = ARL_unicornia_focus
@@ -1546,6 +1527,7 @@ focus_tree = {
 	
 	focus = {
 		id = ARL_command_structure
+		icon = GFX_ARL_command_structure
 		x = 0
 		y = 1
 		relative_position_id = ARL_integration_ministry 
@@ -1560,6 +1542,7 @@ focus_tree = {
 	
 	focus = {
 		id = ARL_government_structure
+		icon = GFX_ARL_government_structure
 		x = 0
 		y = 1
 		relative_position_id = ARL_command_structure
@@ -1574,11 +1557,12 @@ focus_tree = {
 	
 	focus = {
 		id = ARL_unicorns_school
+		icon = GFX_ARL_unicorns_school
 		x = -2
 		y = 1
 		relative_position_id = ARL_government_structure
 		prerequisite = { focus = ARL_government_structure }
-		cost = 5.6
+		cost = 5.8
 		completion_reward = {
 			log = "[GetDateText]: [ARL.GetTag] focus ARL_unicorns_school"
 			country_event = { id = arl_events.74 }
@@ -1593,6 +1577,7 @@ focus_tree = {
 	
 	focus = {
 		id = ARL_rule_the_sea
+		icon = GFX_ARL_rule_the_sea
 		x = -2
 		y = 1
 		relative_position_id = ARL_unicorns_school
@@ -1612,6 +1597,7 @@ focus_tree = {
 	
 	focus = {
 		id = ARL_electrification
+		icon = GFX_ARL_electrification
 		x = 0
 		y = 1
 		relative_position_id = ARL_unicorns_school
@@ -1619,7 +1605,7 @@ focus_tree = {
 		cost = 4.3
 		completion_reward = {
 			log = "[GetDateText]: [ARL.GetTag] focus ARL_electrification"
-			country_event = { id = arl_events.75 }
+			country_event = { id = arl_events.103 }
 			unlock_decision_category_tooltip = ARL_water_plant_building_cat
 			add_tech_bonus = {
 				category = industry 
@@ -1631,6 +1617,7 @@ focus_tree = {
 	
 	focus = {
 		id = ARL_avma_inst_focus
+		icon = GFX_ARL_avma_inst_focus
 		x = -2
 		y = 1
 		relative_position_id = ARL_rule_the_sea
@@ -1650,6 +1637,7 @@ focus_tree = {
 	
 	focus = {
 		id = ARL_fusilie_moran
+		icon = GFX_ARL_fusilie_moran
 		x = 0
 		y = 1
 		relative_position_id = ARL_rule_the_sea
@@ -1669,6 +1657,7 @@ focus_tree = {
 	
 	focus = {
 		id = ARL_grapes_on_north
+		icon = GFX_ARL_grapes_on_north
 		x = 0
 		y = 1
 		relative_position_id = ARL_electrification
@@ -1698,6 +1687,7 @@ focus_tree = {
 	
 	focus = {
 		id = ARL_val_ruayo
+		icon = GFX_ARL_val_ruayo
 		x = 0
 		y = 1
 		relative_position_id = ARL_government_structure
@@ -1713,6 +1703,7 @@ focus_tree = {
 	
 	focus = {
 		id = ARL_payback_time
+		icon = GFX_ARL_payback_time
 		x = 0
 		y = 1
 		available = {
@@ -1735,6 +1726,7 @@ focus_tree = {
 	
 	focus = {
 		id = ARL_battle_for_cape_part_two
+		icon = GFX_ARL_battle_for_cape_part_two
 		x = 0
 		y = 1
 		available = {
@@ -1754,6 +1746,7 @@ focus_tree = {
 		
 	focus = {
 		id = ARL_end_of_pirates
+		icon = GFX_ARL_end_of_pirates
 		x = 0
 		y = 2
 		available = {
@@ -1776,6 +1769,7 @@ focus_tree = {
 	
 	focus = {
 		id = ARL_de_monsimaar_family
+		#icon = GFX_ARL_de_monsimaar_family
 		x = 4
 		y = 1
 		available = {
@@ -1792,6 +1786,7 @@ focus_tree = {
 	
 	focus = {
 		id = ARL_right_reformism
+		icon = GFX_ARL_right_reformism
 		x = 0
 		y = 1
 		available = {
@@ -1809,6 +1804,7 @@ focus_tree = {
 	
 	focus = {
 		id = ARL_to_serve_arley
+		icon = GFX_ARL_to_serve_arley
 		x = -2
 		y = 1
 		relative_position_id = ARL_right_reformism
@@ -1828,6 +1824,7 @@ focus_tree = {
 	
 	focus = {
 		id = ARL_arlesians_arluans
+		icon = GFX_ARL_arlesians_arluans
 		x = 0
 		y = 1
 		relative_position_id = ARL_right_reformism
@@ -1844,6 +1841,7 @@ focus_tree = {
 		
 	focus = {
 		id = ARL_asp_politics
+		icon = GFX_ARL_asp_politics
 		x = 2
 		y = 1
 		relative_position_id = ARL_right_reformism
@@ -1860,6 +1858,7 @@ focus_tree = {
 	
 	focus = {
 		id = ARL_lassales_law_focus
+		icon = GFX_ARL_lassales_law_focus
 		x = 0
 		y = 1
 		relative_position_id = ARL_to_serve_arley
@@ -1874,6 +1873,7 @@ focus_tree = {
 	
 	focus = {
 		id = ARL_develop_arlean_comittees
+		icon = GFX_ARL_develop_arlean_comittees
 		x = 0
 		y = 1
 		relative_position_id = ARL_arlesians_arluans
@@ -1881,7 +1881,6 @@ focus_tree = {
 		cost = 1
 		completion_reward = {
 			log = "[GetDateText]: [ARL.GetTag] focus ARL_develop_arlean_comittees"
-			country_event = { id = arl_events.85 }
 			remove_ideas = ARL_dutchess_list_idea
 			add_ideas = ARL_arlua_commitees
 			unlock_decision_category_tooltip = ARL_arlusian_comittees
@@ -1890,6 +1889,7 @@ focus_tree = {
 	
 	focus = {
 		id = ARL_10_hour_day
+		icon = GFX_ARL_10_hour_day
 		x = 0
 		y = 1
 		relative_position_id = ARL_asp_politics
@@ -1903,6 +1903,7 @@ focus_tree = {
 	
 	focus = {
 		id = ARL_arlua_bille
+		icon = GFX_ARL_arlua_bille
 		x = 0 
 		y = 1
 		relative_position_id = ARL_develop_arlean_comittees
@@ -1922,6 +1923,7 @@ focus_tree = {
 	
 	focus = {
 		id = ARL_under_starry_skies
+		#icon = GFX_ARL_under_starry_skies
 		x = 0
 		y = 1
 		relative_position_id = ARL_arlua_bille
@@ -1941,6 +1943,7 @@ focus_tree = {
 	
 	focus = {
 		id = ARL_haukland_military_administration
+		icon = GFX_ARL_haukland_military_administration
 		x = -2
 		y = 1
 		relative_position_id = ARL_end_of_pirates
@@ -1960,6 +1963,7 @@ focus_tree = {
 	
 	focus = {
 		id = ARL_great_griffon_movement
+		icon = GFX_ARL_great_griffon_movement
 		x = 0
 		y = 1
 		relative_position_id = ARL_haukland_military_administration
@@ -1982,6 +1986,7 @@ focus_tree = {
 	
 	focus = {
 		id = ARL_blanche_special_zone
+		icon = GFX_ARL_blanche_special_zone
 		x = -2
 		y = 1
 		relative_position_id = ARL_great_griffon_movement
@@ -2015,6 +2020,7 @@ focus_tree = {
 	
 	focus = {
 		id = ARL_true_arlesian_names
+		icon = GFX_ARL_true_arlesian_names
 		x = 0
 		y = 1
 		relative_position_id = ARL_great_griffon_movement
@@ -2031,12 +2037,13 @@ focus_tree = {
 			658 = {
 				add_manpower = 60000
 			}
-			custom_effect_tooltip = ARL_available_new_comittees
+			custom_effect_tooltip = ARL_available_new_comittees_haukland
 		}
 	}
 	
 	focus = {
 		id = ARL_sphere_of_interests
+		#icon = GFX_ARL_sphere_of_interests
 		x = 2
 		y = 1
 		relative_position_id = ARL_end_of_pirates
@@ -2067,6 +2074,7 @@ focus_tree = {
 	
 	focus = {
 		id = ARL_vesalipolis_embassy
+		icon = GFX_ARL_vesalipolis_embassy
 		x = 0
 		y = 1
 		relative_position_id = ARL_sphere_of_interests
@@ -2106,6 +2114,7 @@ focus_tree = {
 	
 	focus = {
 		id = ARL_outer_intelligence_direction
+		icon = GFX_ARL_outer_intelligence_direction
 		x = 0
 		y = 1
 		relative_position_id = ARL_end_of_pirates
@@ -2123,6 +2132,7 @@ focus_tree = {
 	
 	focus = {
 		id = ARL_fuglafuordur 
+		icon = GFX_ARL_fuglafuordur
 		x = 0
 		y = 1
 		relative_position_id = ARL_outer_intelligence_direction
@@ -2150,6 +2160,7 @@ focus_tree = {
 	
 	focus = {
 		id = ARL_our_new_home
+		icon = GFX_ARL_our_new_home
 		x = 0
 		y = 1
 		relative_position_id = ARL_fuglafuordur
@@ -2189,6 +2200,7 @@ focus_tree = {
 	
 	focus = {
 		id = ARL_new_transfer_wave
+		icon = GFX_ARL_new_transfer_wave
 		x = 0
 		y = 1
 		relative_position_id = ARL_our_new_home
@@ -2228,7 +2240,7 @@ focus_tree = {
 				add_manpower = 170000
 			}
 			
-			custom_effect_tooltip = ARL_available_new_comittees
+			custom_effect_tooltip = ARL_available_new_comittees_vedina
 			
 			403 = {
 				set_state_name = ARL_STATE_malabry
@@ -2255,6 +2267,7 @@ focus_tree = {
 	
 	focus = {
 		id = ARL_nordik_rebuild_program
+		icon = GFX_ARL_nordik_rebuild_program
 		x = -2
 		y = 1
 		relative_position_id = ARL_new_transfer_wave
@@ -2278,6 +2291,7 @@ focus_tree = {
 	
 	focus = {
 		id = ARL_new_lands_development
+		icon = GFX_ARL_new_lands_development
 		x = 0
 		y = 1
 		relative_position_id = ARL_new_transfer_wave
@@ -2292,6 +2306,7 @@ focus_tree = {
 	
 	focus = {
 		id = ARL_trimmel_trod_pact
+		#icon = GFX_ARL_trimmel_trod_pact
 		x = 2
 		y = 1
 		relative_position_id = ARL_new_transfer_wave
@@ -2314,6 +2329,7 @@ focus_tree = {
 	
 	focus = {
 		id = ARL_help_need
+		icon = GFX_ARL_help_need
 		x = 0
 		y = 1
 		relative_position_id = ARL_nordik_rebuild_program
@@ -2355,6 +2371,7 @@ focus_tree = {
 	
 	focus = {
 		id = ARL_land_for_refugees
+		icon = GFX_ARL_land_for_refugees
 		x = 0
 		y =	1
 		relative_position_id = ARL_new_lands_development
@@ -2369,6 +2386,7 @@ focus_tree = {
 	
 	focus = {
 		id = ARL_vassal_oath
+		icon = GFX_ARL_vassal_oath
 		x = 0
 		y = 1
 		relative_position_id = ARL_land_for_refugees
@@ -2380,12 +2398,12 @@ focus_tree = {
 			log = "[GetDateText]: [ARL.GetTag] focus ARL_vassal_oath"
 			country_event = { id = arl_events.101 }
 			set_technology = { arlais_nordik_griffon_knights = 1 }
-			custom_effect_tooltip = ARL_arlais_nordik_griffon_knights_tt
 		}
 	}
 	
 	focus = {
 		id = ARL_promote_the_queendom_of_arleus
+		icon = GFX_ARL_promote_the_queendom_of_arleus
 		x = 0
 		y = 1
 		available = {

@@ -575,6 +575,11 @@ country_event = {
 	option = {
 		name = arl_events.28.a 
 		add_stability = -0.25
+		set_politics = {
+			ruling_party = fascism
+			elections_allowed = no
+		}
+		remove_ideas = ARL_three_generals_rule
 		effect_tooltip = {
 			start_civil_war = {
 				ideology = neutrality
@@ -582,6 +587,36 @@ country_event = {
 		}
 		complete_national_focus = ARL_attack_ruayo
 		hidden_effect = {
+			promote_character = ARL_clelia
+			promote_character = ARL_john_silver
+			promote_character = ARL_solid_nib
+			set_party_name = {
+				ideology = neutrality
+				long_name = ARL_neutrality_post_cw_long
+				name = ARL_neutrality_post_cw
+			}
+			set_party_name = {
+				ideology = fascism
+				long_name = ARL_fascism_post_cw_long
+				name = ARL_fascism_post_cw
+			}
+			set_party_name = {
+				ideology = democratic
+				long_name = ARL_democratic_post_cw_long
+				name = ARL_democratic_post_cw
+			}
+			set_party_name = {
+				ideology = communism
+				long_name = ARL_communism_post_cw_long
+				name = ARL_communism_post_cw
+			}
+			set_popularities = {
+				democratic = 30
+				neutrality = 5
+				fascism = 40
+				communism = 25
+			}
+			remove_country_leader_trait = ARL_de_facto_puppet
 			JER = {
 				set_autonomy = {
 					target = ROOT
@@ -590,6 +625,7 @@ country_event = {
 					end_civil_wars = yes
 				}
 			}
+			leave_faction = yes
 			482 = {
 				transfer_state_to = ARR
 			}
@@ -599,9 +635,28 @@ country_event = {
 					type = civil_war
 				}
 				load_oob = "ARR_ARL_civilwar"
+				add_equipment_to_stockpile = {
+					type = infantry_equipment_1
+					amount = 5000
+					producer = ARL
+				}
+				add_equipment_to_stockpile = {
+					type = artillery_equipment_1
+					amount = 350
+				}
+				add_equipment_to_stockpile = {
+					type = support_equipment_1
+					amount = 350
+				}
+			every_state = {
+				limit = {
+					is_core_of = ARL
+				}
+				add_core_of = ARR
 			}
+		}
 			ARL_three_generals = {
-				set_character_name = ARL_three_generals_no_francheska
+				set_character_name = ARL_three_generals_without_francheska
 				set_portraits = {
 					civilian = {
 						large = "gfx/leaders/leader_unknown.dds"
@@ -611,8 +666,10 @@ country_event = {
 			}
 			ARR = { 
 				promote_character = ARL_three_generals
+				remove_country_leader_trait = ARL_de_facto_puppet
 			}
 			ARL_francheska_first = {
+				add_country_leader_trait = ARL_de_facto_puppet
 				add_country_leader_role = {
 					promote_leader = yes 
 					country_leader = {
@@ -699,7 +756,6 @@ country_event = {
 					}
 				}
 			}
-			
 		}
 	}
 }
@@ -1742,4 +1798,572 @@ country_event = {
 	}
 }
 
+country_event = {
+	
+	id = arl_events.81
+	title = arl_events.81.t 
+	desc = arl_events.81.desc 
+	
+	is_triggered_only = yes 
+	
+	immediate = {
+		hidden_effect = {
+			log = "[GetDateText]: [ARL.GetTag] event arl_events.81"
+		}
+	}
+	
+	option = {
+		name = arl_events.81.a 
+	}
+}
 
+country_event = {
+	
+	id = arl_events.82
+	title = arl_events.82.t 
+	desc = arl_events.82.desc 
+	
+	is_triggered_only = yes 
+	
+	immediate = {
+		hidden_effect = {
+			log = "[GetDateText]: [ARL.GetTag] event arl_events.82"
+		}
+	}
+	
+	option = {
+		name = arl_events.82.a 
+	}
+}
+
+country_event = {
+	
+	id = arl_events.83
+	title = arl_events.83.t 
+	desc = arl_events.83.desc 
+	
+	is_triggered_only = yes 
+	
+	immediate = {
+		hidden_effect = {
+			log = "[GetDateText]: [ARL.GetTag] event arl_events.83"
+		}
+	}
+	
+	option = {
+		name = arl_events.83.a 
+	}
+}
+
+country_event = {
+	
+	id = arl_events.84
+	title = arl_events.84.t 
+	desc = arl_events.84.desc 
+	
+	is_triggered_only = yes 
+	
+	immediate = {
+		hidden_effect = {
+			log = "[GetDateText]: [ARL.GetTag] event arl_events.84"
+		}
+	}
+	
+	option = {
+		name = arl_events.84.a 
+	}
+}
+
+country_event = {
+	
+	id = arl_events.85
+	title = arl_events.85.t 
+	desc = arl_events.85.desc 
+	
+	is_triggered_only = yes 
+	
+	immediate = {
+		hidden_effect = {
+			log = "[GetDateText]: [ARL.GetTag] event arl_events.85"
+		}
+	}
+	
+	option = {
+		name = arl_events.85.a 
+	}
+}
+
+country_event = {
+	
+	id = arl_events.86
+	title = arl_events.86.t 
+	desc = arl_events.86.desc 
+	
+	is_triggered_only = yes 
+	
+	immediate = {
+		hidden_effect = {
+			log = "[GetDateText]: [ARL.GetTag] event arl_events.86"
+		}
+	}
+	
+	option = {
+		name = arl_events.86.a 
+	}
+}
+
+country_event = {
+	
+	id = arl_events.87
+	title = arl_events.87.t 
+	desc = arl_events.87.desc 
+	
+	is_triggered_only = yes 
+	
+	immediate = {
+		hidden_effect = {
+			log = "[GetDateText]: [ARL.GetTag] event arl_events.87"
+		}
+	}
+	
+	option = {
+		name = arl_events.87.a 
+	}
+}
+
+country_event = {
+	
+	id = arl_events.88
+	title = arl_events.88.t 
+	desc = arl_events.88.desc 
+	
+	is_triggered_only = yes 
+	
+	immediate = {
+		hidden_effect = {
+			log = "[GetDateText]: [ARL.GetTag] event arl_events.88"
+		}
+	}
+	
+	option = {
+		name = arl_events.88.a 
+	}
+}
+
+country_event = {
+	
+	id = arl_events.89
+	title = arl_events.89.t 
+	desc = arl_events.89.desc 
+	
+	is_triggered_only = yes 
+	
+	immediate = {
+		hidden_effect = {
+			log = "[GetDateText]: [ARL.GetTag] event arl_events.89"
+		}
+	}
+	
+	option = {
+		name = arl_events.89.a 
+	}
+}
+
+country_event = {
+	
+	id = arl_events.90
+	title = arl_events.90.t 
+	desc = arl_events.90.desc 
+	
+	is_triggered_only = yes 
+	
+	immediate = {
+		hidden_effect = {
+			log = "[GetDateText]: [ARL.GetTag] event arl_events.90"
+		}
+	}
+	
+	option = {
+		name = arl_events.90.a 
+	}
+}
+
+country_event = {
+	
+	id = arl_events.91
+	title = arl_events.91.t 
+	desc = arl_events.91.desc 
+	
+	is_triggered_only = yes 
+	
+	immediate = {
+		hidden_effect = {
+			log = "[GetDateText]: [ARL.GetTag] event arl_events.91"
+		}
+	}
+	
+	option = {
+		name = arl_events.91.a 
+	}
+}
+
+country_event = {
+	
+	id = arl_events.92
+	title = arl_events.92.t 
+	desc = arl_events.92.desc 
+	
+	is_triggered_only = yes 
+	
+	immediate = {
+		hidden_effect = {
+			log = "[GetDateText]: [ARL.GetTag] event arl_events.92"
+		}
+	}
+	
+	option = {
+		name = arl_events.92.a 
+	}
+}
+
+country_event = {
+	
+	id = arl_events.93
+	title = arl_events.93.t 
+	desc = arl_events.93.desc 
+	
+	is_triggered_only = yes 
+	
+	immediate = {
+		hidden_effect = {
+			log = "[GetDateText]: [ARL.GetTag] event arl_events.93"
+		}
+	}
+	
+	option = {
+		name = arl_events.93.a 
+	}
+}
+
+country_event = {
+	
+	id = arl_events.94
+	title = arl_events.94.t 
+	desc = arl_events.94.desc 
+	
+	is_triggered_only = yes 
+	
+	immediate = {
+		hidden_effect = {
+			log = "[GetDateText]: [ARL.GetTag] event arl_events.94"
+		}
+	}
+	
+	option = {
+		name = arl_events.94.a 
+	}
+}
+
+country_event = {
+	
+	id = arl_events.95
+	title = arl_events.95.t 
+	desc = arl_events.95.desc 
+	
+	is_triggered_only = yes 
+	
+	immediate = {
+		hidden_effect = {
+			log = "[GetDateText]: [ARL.GetTag] event arl_events.95"
+		}
+	}
+	
+	option = {
+		name = arl_events.95.a 
+	}
+}
+
+country_event = {
+	
+	id = arl_events.96
+	title = arl_events.96.t 
+	desc = arl_events.96.desc 
+	
+	is_triggered_only = yes 
+	
+	immediate = {
+		hidden_effect = {
+			log = "[GetDateText]: [ARL.GetTag] event arl_events.96"
+		}
+	}
+	
+	option = {
+		name = arl_events.96.a 
+	}
+}
+
+country_event = {
+	
+	id = arl_events.97
+	title = arl_events.97.t 
+	desc = arl_events.97.desc 
+	
+	is_triggered_only = yes 
+	
+	immediate = {
+		hidden_effect = {
+			log = "[GetDateText]: [ARL.GetTag] event arl_events.97"
+		}
+	}
+	
+	option = {
+		name = arl_events.97.a 
+	}
+}
+
+country_event = {
+	
+	id = arl_events.98
+	title = arl_events.98.t 
+	desc = arl_events.98.desc 
+	
+	is_triggered_only = yes 
+	
+	immediate = {
+		hidden_effect = {
+			log = "[GetDateText]: [ARL.GetTag] event arl_events.98"
+		}
+	}
+	
+	option = {
+		name = arl_events.98.a 
+	}
+}
+
+country_event = {
+	
+	id = arl_events.99
+	title = arl_events.99.t 
+	desc = arl_events.99.desc 
+	
+	is_triggered_only = yes 
+	
+	immediate = {
+		hidden_effect = {
+			log = "[GetDateText]: [ARL.GetTag] event arl_events.99"
+		}
+	}
+	
+	option = {
+		name = arl_events.99.a 
+	}
+}
+
+country_event = {
+	
+	id = arl_events.100
+	title = arl_events.100.t 
+	desc = arl_events.100.desc 
+	
+	is_triggered_only = yes 
+	
+	immediate = {
+		hidden_effect = {
+			log = "[GetDateText]: [ARL.GetTag] event arl_events.100"
+		}
+	}
+	
+	option = {
+		name = arl_events.100.a 
+	}
+}
+
+country_event = {
+	
+	id = arl_events.101
+	title = arl_events.101.t 
+	desc = arl_events.101.desc 
+	
+	is_triggered_only = yes 
+	
+	immediate = {
+		hidden_effect = {
+			log = "[GetDateText]: [ARL.GetTag] event arl_events.101"
+		}
+	}
+	
+	option = {
+		name = arl_events.101.a 
+	}
+}
+
+country_event = {
+	
+	id = arl_events.102
+	title = arl_events.102.t 
+	desc = arl_events.102.desc 
+	
+	is_triggered_only = yes 
+	
+	immediate = {
+		hidden_effect = {
+			log = "[GetDateText]: [ARL.GetTag] event arl_events.102"
+		}
+	}
+	
+	option = {
+		name = arl_events.102.a 
+	}
+}
+
+country_event = {
+	
+	id = arl_events.103
+	title = arl_events.103.t 
+	desc = arl_events.103.desc 
+	
+	is_triggered_only = yes 
+	
+	immediate = {
+		hidden_effect = {
+			log = "[GetDateText]: [ARL.GetTag] event arl_events.103"
+		}
+	}
+	
+	option = {
+		name = arl_events.103.a 
+	}
+}
+
+country_event = {
+	
+	id = arl_events.104
+	title = arl_events.104.t 
+	desc = arl_events.104.desc 
+	
+	is_triggered_only = yes 
+	
+	immediate = {
+		hidden_effect = {
+			log = "[GetDateText]: [ARL.GetTag] event arl_events.104"
+		}
+	}
+	
+	option = {
+		name = arl_events.104.a 
+	}
+}
+
+country_event = {
+	
+	id = arl_events.105
+	title = arl_events.105.t 
+	desc = arl_events.105.desc 
+	
+	is_triggered_only = yes 
+	
+	immediate = {
+		hidden_effect = {
+			log = "[GetDateText]: [ARL.GetTag] event arl_events.105"
+		}
+	}
+	
+	option = {
+		name = arl_events.105.a 
+	}
+}
+
+country_event = {
+	
+	id = arl_events.106
+	title = arl_events.106.t 
+	desc = arl_events.106.desc 
+	
+	is_triggered_only = yes 
+	
+	immediate = {
+		hidden_effect = {
+			log = "[GetDateText]: [ARL.GetTag] event arl_events.106"
+		}
+	}
+	
+	option = {
+		name = arl_events.106.a 
+	}
+}
+
+country_event = {
+	
+	id = arl_events.107
+	title = arl_events.107.t 
+	desc = arl_events.107.desc 
+	
+	is_triggered_only = yes 
+	
+	immediate = {
+		hidden_effect = {
+			log = "[GetDateText]: [ARL.GetTag] event arl_events.107"
+		}
+	}
+	
+	option = {
+		name = arl_events.107.a 
+	}
+}
+
+country_event = {
+	
+	id = arl_events.108
+	title = arl_events.108.t 
+	desc = arl_events.108.desc 
+	
+	is_triggered_only = yes 
+	
+	immediate = {
+		hidden_effect = {
+			log = "[GetDateText]: [ARL.GetTag] event arl_events.108"
+		}
+	}
+	
+	option = {
+		name = arl_events.108.a 
+	}
+}
+
+country_event = {
+	
+	id = arl_events.109
+	title = arl_events.109.t 
+	desc = arl_events.109.desc 
+	
+	is_triggered_only = yes 
+	
+	immediate = {
+		hidden_effect = {
+			log = "[GetDateText]: [ARL.GetTag] event arl_events.109"
+		}
+	}
+	
+	option = {
+		name = arl_events.109.a 
+	}
+}
+
+country_event = {
+	
+	id = arl_events.110
+	title = arl_events.110.t 
+	desc = arl_events.110.desc 
+	
+	is_triggered_only = yes 
+	
+	immediate = {
+		hidden_effect = {
+			log = "[GetDateText]: [ARL.GetTag] event arl_events.110"
+		}
+	}
+	
+	option = {
+		name = arl_events.110.a 
+	}
+}
