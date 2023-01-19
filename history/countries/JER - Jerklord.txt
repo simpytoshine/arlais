@@ -283,16 +283,16 @@ if = {
 		autonomy_state = autonomy_autonomous_vassal
 	}
 	set_autonomy = {
-		target = ARL
-		autonomy_state = autonomy_nominal_vassal
-	}
-	set_autonomy = {
 		target = VIN
 		autonomy_state = autonomy_nominal_vassal
 	}
 	set_autonomy = {
 		target = MER
 		autonomy_state = autonomy_dominion
+	}
+	set_autonomy = {
+		target = ARL
+		autonomy_state = autonomy_nominal_vassal
 	}
 	else = {
 		puppet = JFT

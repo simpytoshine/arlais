@@ -146,7 +146,7 @@ recruit_character = ARL_sarah_saukort
 recruit_character = ARL_john_silver
 recruit_character = ARL_clelia
 recruit_character = ARL_solid_nib
-
+recruit_character = ARL_rosaline_treytrua
 
 set_popularities = {
 	democratic = 40
