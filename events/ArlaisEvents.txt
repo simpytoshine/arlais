@@ -684,7 +684,7 @@ country_event = {
 						infantry = { x = 0 y = 2 }
 						infantry = { x = 1 y = 0 }
 						infantry = { x = 1 y = 1 }
-						infantry = { x = 2 y = 2 }
+						infantry = { x = 1 y = 2 }
 						
 							
 					}
