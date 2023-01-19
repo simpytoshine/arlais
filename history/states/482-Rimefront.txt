@@ -6,15 +6,15 @@ state={
 		433 487 544 579 1071 1525 3518 3566 3582 4060 5078 6454 6492 7455 9225 9422 9436 9502 9989 10061 11140 11451 11485 11501 11512 11527 11551 11910 11967 12730 12860
 	}
 
-	manpower=197607
-	state_category = rural
+	manpower = 1486682
+	state_category = metropolis
 	buildings_max_level_factor=1.00
 
 	history = {
 		owner = ARL
 		add_core_of = ARL
 
-		victory_points = { 9502 25 }
+		victory_points = { 9502 35 }
 		victory_points = { 579 5 }
 		victory_points = { 12860 5 }
 		victory_points = { 487 5 }
@@ -24,10 +24,18 @@ state={
 		
 
 		buildings = {
-			infrastructure = 1
-			industrial_complex = 1
-
+			infrastructure = 4
+			industrial_complex = 3
+			arms_factory = 2
+			air_base = 3
+			
 			9502 = {
+				naval_base = 3
+			}
+			579 = {
+				naval_base = 1
+			}
+			3566 = {
 				naval_base = 1
 			}
 		}

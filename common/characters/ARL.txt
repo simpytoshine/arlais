@@ -12,19 +12,10 @@ characters = {
 		country_leader = {
 			desc = "ARL_francheska_first_desc"
 			expire = "1999.1.1"
-			traits = { }
+			traits = { ARL_de_facto_puppet }
 			ideology = magocracy
 			id = -1
 		}
-		
-		country_leader = {
-			desc = "ARL_francheska_first_desc"
-			expire = "1999.1.1"
-			traits = { }
-			ideology = socialism
-			id = -1
-		}
-		
 	}
 	
 	ARL_three_generals = {
@@ -40,7 +31,7 @@ characters = {
 			desc = "ARL_three_generals_desc"
 			expire = "1999.1.1"
 			traits = { ARL_de_facto_puppet }
-			ideology = populism
+			ideology = despotism
 			id = -1
 		}
 	} 
@@ -353,6 +344,58 @@ characters = {
 			visible = {
 				has_completed_focus = ARL_army_reorganisation 
 			}
+		}
+	}
+	ARL_clelia = {
+		
+		name = ARL_clelia
+		portraits = {
+			civilian = {
+				large = "gfx/leaders/leader_unknown.dds"
+			}
+		}
+		
+		country_leader = {
+			desc = "ARL_clelia_desc"
+			expire = "1999.1.1"
+			traits = { }
+			ideology = harmonic_magocracy
+			id = -1
+		}
+	}
+	ARL_john_silver = {
+		
+		name = ARL_john_silver
+		portraits = {
+			civilian = {
+				large = "gfx/leaders/leader_unknown.dds"
+			}
+		}
+		
+		country_leader = {
+			desc = "ARL_john_silver_desc"
+			expire = "1999.1.1"
+			traits = { }
+			ideology = despotism
+			id = -1
+		}
+	}
+	
+	ARL_solid_nib = {
+		
+		name = ARL_solid_nib
+		portraits = {
+			civilian = {
+				large = "gfx/leaders/leader_unknown.dds"
+			}
+		}
+		
+		country_leader = {
+			desc = "ARL_solid_nib_desc"
+			expire = "1999.1.1"
+			traits = { }
+			ideology = democratic_socialism
+			id = -1
 		}
 	}
 }

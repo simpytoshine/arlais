@@ -587,6 +587,29 @@ country_event = {
 		}
 		complete_national_focus = ARL_attack_ruayo
 		hidden_effect = {
+			promote_character = ARL_clelia
+			promote_character = ARL_john_silver
+			promote_character = ARL_solid_nib
+			set_party_name = {
+				ideology = neutrality
+				long_name = ARL_neutrality_post_cw_long
+				name = ARL_neutrality_post_cw
+			}
+			set_party_name = {
+				ideology = fascism
+				long_name = ARL_fascism_post_cw_long
+				name = ARL_fascism_post_cw
+			}
+			set_party_name = {
+				ideology = democratic
+				long_name = ARL_democratic_post_cw_long
+				name = ARL_democratic_post_cw
+			}
+			set_party_name = {
+				ideology = communism
+				long_name = ARL_communism_post_cw_long
+				name = ARL_communism_post_cw
+			}
 			set_popularities = {
 				democratic = 30
 				neutrality = 5
@@ -612,7 +635,26 @@ country_event = {
 					type = civil_war
 				}
 				load_oob = "ARR_ARL_civilwar"
+				add_equipment_to_stockpile = {
+					type = infantry_equipment_1
+					amount = 5000
+					producer = ARL
+				}
+				add_equipment_to_stockpile = {
+					type = artillery_equipment_1
+					amount = 350
+				}
+				add_equipment_to_stockpile = {
+					type = support_equipment_1
+					amount = 350
+				}
+			every_state = {
+				limit = {
+					is_core_of = ARL
+				}
+				add_core_of = ARR
 			}
+		}
 			ARL_three_generals = {
 				set_character_name = ARL_three_generals_without_francheska
 				set_portraits = {
@@ -624,8 +666,10 @@ country_event = {
 			}
 			ARR = { 
 				promote_character = ARL_three_generals
+				remove_country_leader_trait = ARL_de_facto_puppet
 			}
 			ARL_francheska_first = {
+				add_country_leader_trait = ARL_de_facto_puppet
 				add_country_leader_role = {
 					promote_leader = yes 
 					country_leader = {
@@ -712,7 +756,6 @@ country_event = {
 					}
 				}
 			}
-			
 		}
 	}
 }

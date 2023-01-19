@@ -22,9 +22,22 @@
     ARL_democratic_party:0 "Придворный совет - реформаторы"
     ARL_democratic_party_short:0 "Реформаторы"
     
+    ARL_fascism_post_cw:0 "Придворный Совет"
+    ARL_fascism_post_cw_long:0 "Придворный Совет"
+    ARL_neutrality_post_cw:0 "Национальное Спасение"
+    ARL_neutrality_post_cw_long:0 "Национальное Спасение"
+    ARL_democratic_post_cw:0 "Движение за Реформацию"
+    ARL_democratic_post_cw_long:0 "Движение за Реформацию"
+    ARL_communism_post_cw:0 "I Съезд Трудящихся"
+    ARL_communism_post_cw_long:0 "I Съезд Трудящихся"
+    
+    
     ARL_francheska_first:0 "Франческа I"
     ARL_three_generals:0 "Франческа I"
     ARL_workers_council:0 "Рабочий совет"
+	ARL_solid_nib:0 "Солид Ниб"
+	ARL_clelia:0 "Клелия де Монсиммар"
+	ARL_john_silver:0 "Джон Силвер"
     
     ARL_de_facto_puppet:0 "Номинальный правитель"
     ARL_can_not_declare_wars:0 "  - §RНе может объявлять войны§!"

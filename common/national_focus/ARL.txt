@@ -483,31 +483,19 @@ focus_tree = {
 		}
 		
 		completion_reward = {
+			hidden_effect = {
+				every_state = {
+				limit = {
+					is_core_of = ARR
+				}
+				remove_core_of = ARR
+				}
+			}
 			log = "[GetDateText]: [ARL.GetTag] focus ARL_francheska_first_focus "
 			effect_tooltip = { 
-				country_event = { id = arl_events.29 }
-				set_party_name = {
-					ideology = fascism
-					long_name = ARL_house_council_long
-					name = ARL_house_council
-				}
-				set_party_name = {
-					ideology = democratic
-					long_name = ARL_reformation_movement_long
-					name = ARL_reformation_movement
-				}
-				set_party_name = {
-					ideology = neutrality
-					long_name = ARL_national_saving_long
-					name = ARL_national_saving
-				}
-				set_party_name = {
-					ideology = communism
-					long_name = ARL_first_workers_party_long
-					name = ARL_first_workers_party
-				}
-				
+				country_event = { id = arl_events.29 }				
 			}
+			remove_country_leader_trait = ARL_de_facto_puppet
 			add_ideas = ARL_country_in_ruins
 		}
 	}
@@ -652,9 +640,6 @@ focus_tree = {
 			OR = {
 				has_completed_focus = ARL_confiscate_arrest
 				has_completed_focus = ARL_no_place_for_traitors_focus 
-			}
-			NOT = {
-				has_idea = ARL_country_in_ruins
 			}
 		}
 		cost = 4.3
@@ -1327,8 +1312,9 @@ focus_tree = {
 			country_event = { id = arl_events.61 }
 			build_railway = {
 				level = 5
-				build_only_on_allied = yes 
-				start_province = 12860
+				build_only_on_allied = yes
+				path = { 9502 11512 3566 9422 3426 578 6563 3196 3246 6226 }
+				start_province = 9502
 				target_province = 6226
 			}
 		}
