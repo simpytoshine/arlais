@@ -266,6 +266,7 @@ add_to_faction = VIN
 add_to_faction = JRR
 add_to_faction = JEB
 add_to_faction = MER
+add_to_faction = ARL
 if = {
 	limit = {
 		has_dlc = "Together for Victory"
@@ -292,7 +293,7 @@ if = {
 	}
 	set_autonomy = {
 		target = ARL
-		autonomy_state = autonomy_nominal_vassal
+		autonomy_state = autonomy_dominion
 	}
 	else = {
 		puppet = JFT
