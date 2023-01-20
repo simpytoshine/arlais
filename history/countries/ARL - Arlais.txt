@@ -149,6 +149,7 @@ recruit_character = ARL_solid_nib
 recruit_character = ARL_rosaline_treytrua
 
 set_cosmetic_tag = JER_PUPPET
+set_country_flag = griffon_continent_country
 set_popularities = {
 	democratic = 40
 	fascism = 15

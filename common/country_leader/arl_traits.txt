@@ -19,3 +19,15 @@ leader_traits = {
 		stability_factor = 0.1
 		army_attack_factor = 0.1
 	}
+	
+				##КОНЦЕРНЫ##
+	
+	ARL_forad_trait = {
+		random = no
+		equipment_bonus = {
+			armor = {
+				soft_attack = 0.05 reliability = 0.2 build_cost_ic = -0.1
+			}
+		}
+	}
+}

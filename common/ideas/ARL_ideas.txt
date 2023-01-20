@@ -475,8 +475,12 @@ ideas = {
 				has_completed_focus = ARL_forad_focus
 			}
 			research_bonus = {
-				armor = 0.15
+				armor = 0.2
 			}
+			modifier = {
+				army_armor_speed_factor = 0.15
+			}
+			traits = { ARL_forad_trait }
 		}
 	}
 	
