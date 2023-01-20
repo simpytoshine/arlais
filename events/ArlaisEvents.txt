@@ -587,14 +587,15 @@ country_event = {
 		}
 		complete_national_focus = ARL_attack_ruayo
 		hidden_effect = {
-			promote_character = ARL_clelia
-			promote_character = ARL_john_silver
-			promote_character = ARL_solid_nib
-			ARL_three_generals = {
+			ARL_francheska_first = {
 				remove_country_leader_role = {
 					ideology = neutrality
 				}
 			}
+			promote_character = ARL_clelia
+			promote_character = ARL_john_silver
+			promote_character = ARL_solid_nib
+			promote_character = ARL_francheska_first
 			set_party_name = {
 				ideology = neutrality
 				long_name = ARL_neutrality_post_cw_long
@@ -675,13 +676,12 @@ country_event = {
 			}
 			ARL_francheska_first = {
 				add_country_leader_trait = ARL_de_facto_puppet
-				add_country_leader_role = {
-					promote_leader = yes 
+				add_country_leader_role = { 
 					country_leader = {
 						desc = "ARL_francheska_first_desc"
 						expire = "1999.1.1"
 						traits = { }
-						ideology = populism
+						ideology = magocracy
 						id = -1
 					}
 				}
