@@ -1,0 +1,45 @@
+objectTypes = {
+	
+	
+	pdxmesh = {
+		name = "ArlaisLight_mesh"
+		file = "gfx/models/EAWEntity/vehicles/ArlaisTankLight.mesh"
+
+		animation = { id = "attack"			type = "FRA_tank_light_attack_animation" }
+		animation = { id = "idle"			type = "FRA_tank_light_idle_animation" }
+		animation = { id = "move"			type = "FRA_tank_light_moving_animation" }
+		
+		scale = 0.6
+		
+	}	
+	
+	pdxmesh = {
+		name = "ArlaisMedium_mesh"
+		file = "gfx/models/EAWEntity/vehicles/ArlaisTankMedium.mesh"
+
+		animation = { id = "attack"			type = "FRA_tank_medium_attack_animation" }
+		animation = { id = "idle"			type = "FRA_tank_medium_idle_animation" }
+		animation = { id = "move"			type = "FRA_tank_medium_moving_animation" }
+		scale = 0.5
+	}	
+	
+	pdxmesh = {
+		name = "ArlaisHeavy_mesh"
+		file = "gfx/models/EAWEntity/vehicles/ArlaisTankHeavy.mesh"
+
+		animation = { id = "attack"			type = "FRA_tank_heavy_attack_animation" }
+		animation = { id = "idle"			type = "FRA_tank_heavy_idle_animation" }
+		animation = { id = "move"			type = "FRA_tank_heavy_moving_animation" }
+		scale = 0.65
+	}
+	
+	pdxmesh = {
+		name = "ArlaisModern_mesh"
+		file = "gfx/models/EAWEntity/vehicles/ArlaisTankModern.mesh"
+
+		animation = { id = "attack"			type = "FRA_tank_heavy_attack_animation" }
+		animation = { id = "idle"			type = "FRA_tank_heavy_idle_animation" }
+		animation = { id = "move"			type = "FRA_tank_heavy_moving_animation" }
+		scale = 0.65
+	}
+	

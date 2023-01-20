@@ -1,0 +1,33 @@
+objectTypes = {
+
+##########################
+        # Arlais #
+##########################
+	
+
+	pdxmesh = {
+		name = "ArlaisACType1_mesh"
+		file = "gfx/models/EAWEntity/vehicles/ArlaisACType1.mesh"
+
+		animation = { id = "attack"			type = "ITA_armored_car_1_attack_animation" }
+		animation = { id = "idle"			type = "ITA_armored_car_1_idle_animation" }
+		animation = { id = "move"			type = "ITA_armored_car_1_moving_animation" }
+	}
+	
+	pdxmesh = {
+		name = "ArlaisACType2_mesh"
+		file = "gfx/models/EAWEntity/vehicles/ArlaisACType2.mesh"
+
+		animation = { id = "attack"			type = "ITA_armored_car_1_attack_animation" }
+		animation = { id = "idle"			type = "ITA_armored_car_1_idle_animation" }
+		animation = { id = "move"			type = "ITA_armored_car_1_moving_animation" }
+	}
+	
+	pdxmesh = {
+		name = "ArlaisACType3_mesh"
+		file = "gfx/models/EAWEntity/vehicles/ArlaisACType3.mesh"
+
+		animation = { id = "attack"			type = "FRA_armored_car_3_attack_animation" }
+		animation = { id = "idle"			type = "FRA_armored_car_3_idle_animation" }
+		animation = { id = "move"			type = "FRA_armored_car_3_moving_animation" }
+	}
