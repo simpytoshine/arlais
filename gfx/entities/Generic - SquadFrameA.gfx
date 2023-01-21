@@ -1,0 +1,12 @@
+objectTypes = {
+
+	pdxmesh = {
+		name = "SquadFrameA_mesh"
+		file = "gfx/models/EAWEntity/vehicles/ARLSquadFrameA.mesh"
+		
+		animation = { id = "idle"  			type = "artillery_frame_idle_animation" }
+		animation = { id = "move"  			type = "artillery_frame_moving_animation" }
+		animation = { id = "attack"  		type = "artillery_frame_attack_animation" }
+	}
+	
+	}
