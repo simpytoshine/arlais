@@ -2007,11 +2007,30 @@ focus_tree = {
 						amount = 14
 					}
 				}
-				658 = {
-					set_state_name = ARL_STATE_chatone
-				}
-				660 = {
-					set_state_name = ARL_STATE_gera
+				hidden_effect = {
+				
+					658 = {
+						set_state_name = ARL_STATE_chatone
+					}
+					660 = {
+						set_state_name = ARL_STATE_gera
+					}
+					set_province_name = {
+						id = 10522
+						name = vp_10522_new
+					}
+					set_province_name = {
+						id = 8360
+						name = vp_8360_new
+					}
+					set_province_name = {
+						id = 10382
+						name = vp_10382_new
+					}
+					set_province_name = {
+						id = 98
+						name = vp_98_new
+					}
 				}
 				
 			}
@@ -2242,26 +2261,117 @@ focus_tree = {
 			}
 			
 			custom_effect_tooltip = ARL_available_new_comittees_vedina
-			
-			403 = {
-				set_state_name = ARL_STATE_malabry
+			hidden_effect = {
+				
+				403 = {
+					set_state_name = ARL_STATE_malabry
+				}
+				484 = {
+					set_state_name = ARL_STATE_chatne
+				}
+				575 = {
+					set_state_name = ARL_STATE_neully
+				}
+				430 = {
+					set_state_name = ARL_STATE_nuasy
+				}
+				576 = {
+					set_state_name = ARL_STATE_fore
+				}
+				584 = {
+					set_state_name = ARL_STATE_serraine
+				}
+				set_province_name = {
+					id = 12587
+					name = vp_12587_new
+				}
+				set_province_name = {
+					id = 3465
+					name = vp_3465_new
+				}
+				set_province_name = {
+					id = 6088
+					name = vp_6088_new
+				}
+				set_province_name = {
+					id = 7030
+					name = vp_7030_new
+				}
+				set_province_name = {
+					id = 286
+					name = vp_286_new
+				}
+				
+				set_province_name = {
+					id = 6275
+					name = vp_6275_new
+				}
+				set_province_name = {
+					id = 10869
+					name = vp_10869_new
+				}
+				set_province_name = {
+					id = 2333
+					name = vp_2333_new
+				}
+				set_province_name = {
+					id = 13078
+					name = vp_13078_new
+				}
+				set_province_name = {
+					id = 9977
+					name = vp_9977_new
+				}
+				set_province_name = {
+					id = 108
+					name = vp_108_new
+				}
+				set_province_name = {
+					id = 10386
+					name = vp_10386_new
+				}
+				set_province_name = {
+					id = 278
+					name = vp_278_new
+				}
+				set_province_name = {
+					id = 3102
+					name = vp_3102_new
+				}
+				set_province_name = {
+					id = 6202
+					name = vp_6202_new
+				}
+				set_province_name = {
+					id = 520
+					name = vp_520_new
+				}
+				set_province_name = {
+					id = 1170
+					name = vp_1170_new
+				}
+				set_province_name = {
+					id = 1566
+					name = vp_1566_new
+				}
+				set_province_name = {
+					id = 12492
+					name = vp_12492_new
+				}
+				set_province_name = {
+					id = 4541
+					name = vp_4541_new
+				}
+				set_province_name = {
+					id = 10155
+					name = vp_10155_new
+				}
+				set_province_name = {
+					id = 5094
+					name = vp_5094_new
+				}
 			}
-			484 = {
-				set_state_name = ARL_STATE_chatne
-			}
-			575 = {
-				set_state_name = ARL_STATE_neully
-			}
-			430 = {
-				set_state_name = ARL_STATE_nuasy
-			}
-			576 = {
-				set_state_name = ARL_STATE_fore
-			}
-			584 = {
-				set_state_name = ARL_STATE_serraine
-			}
-			
+				
 			
 		}
 	}

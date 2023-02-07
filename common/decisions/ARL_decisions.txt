@@ -1,4 +1,206 @@
 
+ARL_water_plant_building_cat_vimre = {
+	
+	ARL_vimre_financies = {
+		
+		days_remove = 90
+		cost = 50
+		fire_only_once = yes 
+		complete_effect = {
+			log = "[GetDateText]: [ARL.GetTag] decision ARL_vimre_financies complete_effect"
+		}
+		remove_effect = {
+			log = "[GetDateText]: [ARL.GetTag] decision ARL_vimre_financies remove_effect"
+			add_to_variable = { ARL_vimre_progress_var = 1 }
+			add_to_variable = { ARL_vimre_progress_perc_var = 10 tooltip = ARL_increase_vimre_plant_perc }
+		}
+	}
+	
+	ARL_vimre_general_project = {
+		
+		days_remove = 90
+		cost = 50
+		visible = {
+			check_variable = { ARL_vimre_progress_var > 0 }
+		}
+		fire_only_once = yes 
+		complete_effect = {
+			log = "[GetDateText]: [ARL.GetTag] decision ARL_vimre_general_project complete_effect"
+		}
+		remove_effect = {
+			log = "[GetDateText]: [ARL.GetTag] decision ARL_vimre_general_project remove_effect"
+			add_to_variable = { ARL_vimre_progress_var = 1 }
+			add_to_variable = { ARL_vimre_progress_perc_var = 10 tooltip = ARL_increase_vimre_plant_perc }
+		}
+	}
+	
+	ARL_vimre_get_infrast_base = {
+		
+		days_remove = 90
+		cost = 50
+		visible = {
+			check_variable = { ARL_vimre_progress_var > 1 }
+		}
+		fire_only_once = yes 
+		complete_effect = {
+			log = "[GetDateText]: [ARL.GetTag] decision ARL_vimre_get_infrast_base complete_effect"
+		}
+		remove_effect = {
+			log = "[GetDateText]: [ARL.GetTag] decision ARL_vimre_get_infrast_base remove_effect"
+			add_to_variable = { ARL_vimre_progress_var = 1 }
+			add_to_variable = { ARL_vimre_progress_perc_var = 20 tooltip = ARL_increase_vimre_plant_perc }
+		}
+	}
+	
+	ARL_vimre_main_building = {
+		
+		days_remove = 120
+		cost = 100
+		visible = {
+			check_variable = { ARL_vimre_progress_var > 2 }
+		}
+		fire_only_once = yes 
+		complete_effect = {
+			log = "[GetDateText]: [ARL.GetTag] decision ARL_vimre_main_building complete_effect"
+		}
+		remove_effect = {
+			log = "[GetDateText]: [ARL.GetTag] decision ARL_vimre_main_building remove_effect"
+			add_to_variable = { ARL_vimre_progress_var = 1 }
+			add_to_variable = { ARL_vimre_progress_perc_var = 35 tooltip = ARL_increase_vimre_plant_perc }
+		}
+	}
+	
+	ARL_vimre_ending_building = {
+		
+		days_remove = 1
+		cost = 150
+		visible = {
+			check_variable = { ARL_vimre_progress_var > 3 }
+		}
+		fire_only_once = yes 
+		complete_effect = {
+			log = "[GetDateText]: [ARL.GetTag] decision ARL_vimre_ending_building complete_effect"
+		}
+		remove_effect = {
+			log = "[GetDateText]: [ARL.GetTag] decision ARL_vimre_ending_building remove_effect"
+			add_to_variable = { ARL_vimre_progress_var = 1 }
+			add_to_variable = { ARL_vimre_progress_perc_var = 35 tooltip = ARL_increase_vimre_plant_perc }
+			if = {
+				limit = {
+					AND = {
+						check_variable = { ARL_elorna_progress_perc_var = 100 }
+						check_variable = { ARL_vimre_progress_perc_var = 100 }
+					}
+				}
+				add_ideas = ARL_two_great_plants
+						
+			}
+		}
+	}
+	
+}
+
+
+ARL_water_plant_building_cat_elorna = {
+	
+	ARL_elorna_financies = {
+		
+		days_remove = 90
+		cost = 50
+		fire_only_once = yes 
+		complete_effect = {
+			log = "[GetDateText]: [ARL.GetTag] decision ARL_elorna_financies complete_effect"
+		}
+		remove_effect = {
+			log = "[GetDateText]: [ARL.GetTag] decision ARL_elorna_financies remove_effect"
+			add_to_variable = { ARL_elorna_progress_var = 1 }
+			add_to_variable = { ARL_elorna_progress_perc_var = 10 tooltip = ARL_increase_elorna_plant_perc }
+		}
+	}
+	
+	ARL_elorna_general_project = {
+		
+		days_remove = 90
+		cost = 50
+		visible = {
+			check_variable = { ARL_elorna_progress_var > 0 }
+		}
+		fire_only_once = yes 
+		complete_effect = {
+			log = "[GetDateText]: [ARL.GetTag] decision ARL_elorna_general_project complete_effect"
+		}
+		remove_effect = {
+			log = "[GetDateText]: [ARL.GetTag] decision ARL_elorna_general_project remove_effect"
+			add_to_variable = { ARL_elorna_progress_var = 1 }
+			add_to_variable = { ARL_elorna_progress_perc_var = 10 tooltip = ARL_increase_elorna_plant_perc }
+		}
+	}
+	
+	ARL_elorna_get_infrast_base = {
+		
+		days_remove = 90
+		cost = 50
+		visible = {
+			check_variable = { ARL_elorna_progress_var > 1 }
+		}
+		fire_only_once = yes 
+		complete_effect = {
+			log = "[GetDateText]: [ARL.GetTag] decision ARL_elorna_get_infrast_base complete_effect"
+		}
+		remove_effect = {
+			log = "[GetDateText]: [ARL.GetTag] decision ARL_elorna_get_infrast_base remove_effect"
+			add_to_variable = { ARL_elorna_progress_var = 1 }
+			add_to_variable = { ARL_elorna_progress_perc_var = 20 tooltip = ARL_increase_elorna_plant_perc }
+		}
+	}
+	
+	ARL_elorna_main_building = {
+		
+		days_remove = 120
+		cost = 100
+		visible = {
+			check_variable = { ARL_elorna_progress_var > 2 }
+		}
+		fire_only_once = yes 
+		complete_effect = {
+			log = "[GetDateText]: [ARL.GetTag] decision ARL_elorna_main_building complete_effect"
+		}
+		remove_effect = {
+			log = "[GetDateText]: [ARL.GetTag] decision ARL_elorna_main_building remove_effect"
+			add_to_variable = { ARL_elorna_progress_var = 1 }
+			add_to_variable = { ARL_elorna_progress_perc_var = 35 tooltip = ARL_increase_elorna_plant_perc }
+		}
+	}
+	
+	ARL_elorna_ending_building = {
+		
+		days_remove = 200
+		cost = 150
+		visible = {
+			check_variable = { ARL_elorna_progress_var > 3 }
+		}
+		fire_only_once = yes 
+		complete_effect = {
+			log = "[GetDateText]: [ARL.GetTag] decision ARL_elorna_ending_building complete_effect"
+		}
+		remove_effect = {
+			log = "[GetDateText]: [ARL.GetTag] decision ARL_elorna_ending_building remove_effect"
+			add_to_variable = { ARL_elorna_progress_var = 1 }
+			add_to_variable = { ARL_elorna_progress_perc_var = 35 tooltip = ARL_increase_elorna_plant_perc }
+			if = {
+				limit = {
+					AND = {
+						check_variable = { ARL_elorna_progress_perc_var = 100 }
+						check_variable = { ARL_vimre_progress_perc_var = 100 }
+					}
+				}
+				add_ideas = ARL_two_great_plants
+			}
+		}
+	}
+	
+}
+
 
 ARL_arlusian_comittees = {
 	

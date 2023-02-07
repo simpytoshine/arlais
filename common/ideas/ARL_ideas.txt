@@ -460,6 +460,19 @@ ideas = {
 			}
 		}
 		
+		ARL_two_great_plants = {
+			removal_cost = -1
+			allowed = {
+				always = yes 
+			}
+			
+			modifier = {
+				production_speed_buildings_factor = 0.15
+				consumer_goods_factor = -0.1
+				stability_factor = 0.1
+				local_resources_factor = 0.15
+			}
+		}
 		
 	}
 	

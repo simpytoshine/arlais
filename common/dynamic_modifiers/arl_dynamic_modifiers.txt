@@ -1,0 +1,12 @@
+ARL_moving_lgotas = {	
+	
+	enable = {
+		always = yes 
+	}
+	state_production_speed_industrial_complex_factor = 0.1
+	state_production_speed_infrastructure_factor = 0.15
+	state_production_speed_rail_way_factor = 0.25
+	state_production_speed_supply_node_factor = 0.25
+	monthly_population = 0.5
+}
+
