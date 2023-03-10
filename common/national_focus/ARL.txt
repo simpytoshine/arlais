@@ -491,13 +491,32 @@ focus_tree = {
 				}
 				remove_core_of = ARR
 				}
+				add_dynamic_modifier = {
+					modifier = ARL_country_in_ruins_dynamic 
+				}
+				set_variable = {
+					ARL_ruins_stability_modifier = -0.25
+					ARL_ruins_war_support_modifier = -0.5 
+					ARL_ruins_pp_gain_modifier = -0.5
+					ARL_ruins_consumer_goods_modifier = 0.25
+					ARL_ruins_local_resources_modifier = -0.5
+					ARL_ruins_research_speed_modifier = -0.25
+					ARL_ruins_industrial_cap_fac_modifier = -0.5
+					ARL_ruins_dock_cap_modifier = -0.5
+					ARL_ruins_war_goal_modifier	= 2
+					ARL_ruins_pol_advisor_cost_modifier = 1
+					ARL_ruins_democracy_modifier = 0.2
+					ARL_ruins_neutrality_modifier = 0.1
+					ARL_ruins_communism_modifier = 0.3
+					ARL_ruins_training_time_modifier = 0.5
+				}
 			}
 			log = "[GetDateText]: [ARL.GetTag] focus ARL_francheska_first_focus "
 			effect_tooltip = { 
 				country_event = { id = arl_events.29 }				
 			}
 			remove_country_leader_trait = ARL_de_facto_puppet
-			add_ideas = ARL_country_in_ruins
+			custom_effect_tooltip = ARL_pizdec_v_arlee
 		}
 	}
 	
@@ -1453,7 +1472,6 @@ focus_tree = {
 			add_political_power = 300
 			add_research_slot = 1
 			remove_ideas = ARL_dreams_of_big
-			remove_ideas = ARL_country_in_ruins
 			add_ideas = ARL_arlesian_miracle_idea
 		}
 	}
@@ -2434,7 +2452,6 @@ focus_tree = {
 				modifier = FBK_villages_diplo
 				target = CHN 
 			}
-			
 		}
 	}
 	
@@ -2532,9 +2549,7 @@ focus_tree = {
 			remove_country_leader_trait = ARL_militarist_duchess_trait
 			add_country_leader_trait = ARL_queen_mother
 		}
-		
-		
-	
+	}	
 }
 	
 	

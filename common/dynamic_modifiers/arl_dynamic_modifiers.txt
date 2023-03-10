@@ -10,3 +10,26 @@ ARL_moving_lgotas = {
 	monthly_population = 0.5
 }
 
+ARL_country_in_ruins_dynamic =  {
+	icon = GFX_idea_FRA_scw_intervention_republicans_focus
+	enable = {
+		always = yes
+		has_completed_focus = ARL_francheska_first_focus
+	}
+	stability_factor = ARL_ruins_stability_modifier
+	war_support_factor = ARL_ruins_war_support_modifier
+	political_power_gain = ARL_ruins_pp_gain_modifier
+	consumer_goods_factor = ARL_ruins_consumer_goods_modifier
+	local_resources_factor = ARL_ruins_local_resources_modifier
+	research_speed_factor = ARL_ruins_research_speed_modifier
+	industrial_capacity_factory = ARL_ruins_industrial_cap_fac_modifier
+	industrial_capacity_dockyard = ARL_ruins_dock_cap_modifier
+	justify_war_goal_time = ARL_ruins_war_goal_modifier
+	political_advisor_cost_factor = ARL_ruins_pol_advisor_cost_modifier
+	democratic_drift = ARL_ruins_democracy_modifier
+	neutrality_drift = ARL_ruins_neutrality_modifier
+	communism_drift = ARL_ruins_communism_modifier
+	training_time_factor = ARL_ruins_training_time_modifier 
+}
+
+
